@@ -7,7 +7,7 @@ router.get("/", async(req, res)=>{
        const products = await Product.find().lean().exec()
        res.status(200).send(products)
     }catch(e){
-        res.status(500).send(e.message)
+        res.status(500).send("wrong")
     }
 
 })
