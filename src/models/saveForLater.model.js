@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
 
-const cartSchema = mongoose.Schema({
+const saveSchema = mongoose.Schema({
     userId:{Type:mongoose.Schema.Types.ObjectId,
         ref:"user",
         required:true
         },
-products:[{Type:mongoose.Schema.Types.ObjectId,
+    products:[{Type:mongoose.Schema.Types.ObjectId,
           ref:"product"          
 }]
 },{
@@ -17,4 +17,4 @@ timestamps:true
 })
 
 
-module.exports = mongoose.model("cart", cartSchema)
+module.exports = mongoose.model("save", saveSchema)
