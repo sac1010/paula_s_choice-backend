@@ -9,8 +9,8 @@ router.get("/", async(req, res)=>{
     }catch(e){
         res.status(500).send(e.message)
     }
-const products = await Product.find().lean.exec()
+
 })
 
 
-module.exports = router
+module.exports = router 
