@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "icon" href = "https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"  type = "image/x-icon"> 
+    <title>Payment Paula's Choice</title>
+    <link rel="stylesheet" href="./styles/Shipping.css" />
+  </head>
+  <body>
+    <div id="RLeft">
+      <div id="mHead">
+        <div id="Rhead">
+          <a href="home.html">
+            <h2>PAULA❜S CHOICE</h2>
+            <h4>SKINCARES</h4>
+          </a>
+        </div>
+        <div id="steps">
+          <div id="1step">
+            <div id="cl">1</div>
+            <p>SHIPPING</p>
+          </div>
+          <hr />
+          <div id="Pstep">
+            <div id="secCl">2</div>
+            <p style="color: lavender">PAYMENT</p>
+          </div>
+          <hr />
+          <div id="3step">
+            <div id="secCl">3</div>
+            <p style="color: lavender">REVIEW</p>
+          </div>
+          <hr />
+          <div id="4step">
+            <div id="secCl">4</div>
+            <p style="color: lavender">COMPLETE</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Rmain">
+        <h2>Shipping</h2>
+        <hr />
+        <br />
+        <p1>Shipping Address</p1>
+        <form id="Rmyform">
+          <div id="name">
+            <input type="text" placeholder="First Name" id="fname" required />
+            <input type="text" placeholder="Last Name" id="lname" required />
+          </div>
+          <label>Add Company Name</label><br />
+          <select id="country">
+            <option value="--">Country/region</option>
+            <option value="India">India</option>
+            <option value="Russia">Russia</option>
+            <option value="Canada">Canada</option>
+            <option value="China">China</option>
+            <option value="United States">United States</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="Israel">Israel</option>
+            <option value="Singapore">Singapore</option>
+          </select>
+          <input type="text" placeholder="Street Address" id="StreetAdd" />
+
+          <label>Add Apt, Suite, etc.</label><br />
+          <input type="text" placeholder="City" id="City" />
+
+          <div id="area">
+            <select id="state">
+              <option value="--">State/Province</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Hariyana">Haryana</option>
+              <option value="Utter Pradesh">Utter Pradesh</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Karnataka">Karnataka</option>
+            </select>
+            <input type="number" id="pin" placeholder="ZIP / Postal Code" />
+          </div>
+          <input
+            type="number"
+            placeholder="Phone Number"
+            id="phone"
+          /><br /><br />
+
+          <input type="checkbox" />
+          <label style="color: black; font-weight: bold"
+            >Make this my default shipping address</label
+          >
+
+          <div id="button">
+            <input type="submit" value="SAVE" id="btns" /><br /><br /><br />
+            <a href="Shipping.html"
+              ><input type="submit" value="Cancel" id="btnc"
+            /></a>
+          </div>
+        </form>
+      </div>
+      <div id="terms">
+        <p>
+          By continuing, you agree to our <a href="/">Terms of use.</a>For more
+          informationn about our privacy practics, plese see our
+          <a href="/">Privicy Policy.</a>
+        </p>
+        <img
+          src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw3b046b8b/mcafee.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div id="Rright">
+      <div class="flex">
+        <div>Order Summary</div>
+        <div class="flex summary">
+          <div id="cartNum">1 item</div>
+          <div id="estTotal1" class="bold">112$</div>
+        </div>
+      </div>
+      <hr />
+      <div>Edit bag</div>
+      <hr />
+      <div id="scontainer"></div>
+      <hr />
+      <div class="flex">
+        <div class="bold">subtotal</div>
+        <div id="subtotal">112$</div>
+      </div>
+      <div class="flex">
+        <div class="bold">shipping</div>
+        <div id="shipping">0$</div>
+      </div>
+      <hr />
+      <div class="flex">
+        <div class="bold">Est. Total</div>
+        <div id="estTotal" class="bold">112$</div>
+      </div>
+      <hr />
+    </div>
+  </body>
+</html>
+<script src="./components/Shipping.js"></script>

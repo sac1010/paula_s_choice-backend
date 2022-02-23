@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/handf.css">
+    <link rel="stylesheet" href="./styles/covid.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <title>COVID-19 Information</title>
+    <link rel = "icon" href = "https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"  type = "image/x-icon"> 
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="covid">
+        <div class="dtog">
+        <p>WE'RE IN THIS TOGETHER</p>
+        </div>
+        <p>At Paula’s Choice Skincare, our clients and community are at the core of what we do each day. Our hearts 
+            go out to all of those impacted by COVID-19. During this time, all of us are being advised to make changes
+             in our daily lives, but one thing that won’t change is our commitment to inform and serve you.
+             The safety of our customers, employees and their loved ones is our top priority. </p>
+        <p class="bld"><b> IT’S TIME TO TAKE CARE OF EACH OTHER </b></p>
+        <p>Because research and testing have always been central to who we are, Paula's Choice Skincare is donating $50,000
+            to the COVID-19 Solidarity Response Fund for World Health Organization. The COVID-19 Response Fund works to 
+            track and understand the spread of the virus, ensure patients get the care they need, gives frontline workers
+            essential supplies and information,
+            and accelerates efforts to develop vaccines,
+            tests and treatments.
+        </p>
+        <p class="bld"><b>WE’RE HERE FOR YOU</b></p>
+        <p>Paulaschoice.com will remain open for business.
+            We’re taking proactive steps to avoid disruptions to product availability
+            on paulaschoice.com, however, we anticipate temporary shipping delays.
+            Due to safety procedures, please expect a delay for pending orders and customer inquiries. 
+            Learn more on our <span>shipping page</span>.
+            Check your <span>order status</span> for the latest information.
+        </p>
+        <p class="bld1">
+            We’re also helping by doing what we do best—sharing skin care knowledge. 
+            Our <span>Client Services</span> team is always here to provide personal skin care advice via email, 
+            chat or phone <span>1.800.831.4088</span> . Plus, we’ll be bringing you more online content than ever 
+            before on social media like <span>Instagram</span> and <span>Facebook</span>.
+        </p>
+        <p class="bld"><b>SAFETY FIRST</b></p>
+        <p>
+            Our teams around the globe are  closely monitoring this rapidly evolving situation and will  
+            continue to  act with an abundance of caution. We are following  international recommendations 
+            from the CDC, WHO  and  local  government regulations.  Globally, we have recommended all employees
+            who are able to do so work from home and have suspended business travel  and events.  We have implemented 
+            flexible paid time off policies  to ensure that our employees are able to put their health & safety first.   
+            We are closely monitoring conditions where our products are manufactured. Our warehouses are following CDC 
+            recommendations along with our normal safety protocol and working in a clean environment  to ensure  that 
+            our products are manufactured and shipped to you  safely.
+        </p>
+        <p class="bld1">
+            We  are  continuing  to monitor and respond to this rapidly changing situation and implement additional 
+            measures as needed. In the meantime, never hesitate to reach out to our Client Services team with any questions or 
+            concerns. We appreciate your patience, understanding and support. Take care of yourself and each other—we’re 
+            in this together. 
+        </p>
+        <p class="bld"><b>A NOTE FROM OUR FOUNDER, PAULA BEGOUN</b></p>
+        <p>
+            During this time of uncertainty, I want to remind all of us that we’re often at our best when life is challenging. 
+            It’s in these moments that we seek to help others and remember the true meaning of life. For Paula’s Choice Skincare, 
+            regardless of the obstacles we’ve faced along the way, these have always been our values and how we get through 
+            whatever comes our way.
+        </p>
+        <p class="bld1">
+            The other morning, I was reminded of how important routine and skin care is to me—especially when everything else feels 
+            out of control. It’s the perfect moment to slow down, care for myself and stay grounded in the present.
+        </p>
+        <p class="bld1">
+            I hope you experience that same moment of calm and confidence through the simple but powerful act of caring for your skin. 
+            Rest assured that no matter what, we will always be here to give you the right information to take the best care of 
+            your complexion.
+        </p>
+        <p class="bld1">
+            Wishing you great health and loving support from all of us here at Paula’s Choice Skincare.
+        </p>
+        <img id="psign" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd48e7935/images/paula-sig.png" alt="">
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+
+    import navbar from "./components/dnav.js"
+    import footer from "./components/dfoot.js"
+
+    let nav = document.getElementById("navbar")
+    nav.innerHTML = navbar()
+
+    let foot = document.getElementById("footer")
+    foot.innerHTML = footer()
+    let y = JSON.parse(localStorage.getItem("name"))
+    
+
+    let user = document.getElementById("user")
+    user.innerText = y;
+
+</script>

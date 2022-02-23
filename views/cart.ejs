@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping bag</title>
+    <link rel = "icon" href = "https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"  type = "image/x-icon"> 
+
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="./styles/handf(sac).css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="navbar">
+        <div id="dfrstbr">
+          <div>
+            <p>Free Shipping on $49</p>
+          </div>
+          <div>
+            <p>20% Off 2+ Items</p>
+          </div>
+          <div>
+            <p>Paula's Choice Perks <a href="">Get Started</a></p>
+          </div>
+        </div>
+        <div id="dscndbr">
+          <div class="dsignoffer">
+            <p>< Continue Shopping</p>
+          </div>
+          <div class="dpaula">
+            <a href="">
+              <h1>PAULA'S CHOICE</h1>
+              <h3>SKINCARE</h3>
+            </a>
+          </div>
+          <div class="dsearch">
+            <input type="text" id="dsrch" placeholder="Search for skin care" />
+            <button id="dsym">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="daccount">
+            <h3 id="user">SIGN IN</h3>
+            <a href=""><i class="fas fa-user"></i></a>
+            <div class="dbox dac">
+              <div class="dac1">
+                <p>
+                  HELLO <strong>BEAUTIFUL</strong>/<strong>HANDSOME</strong>,
+                </p>
+                <p><a href="">Login</a> or <a href="">Sign Up</a></p>
+              </div>
+              <div class="dac2">
+                <div>
+                  <p>Account Profile</p>
+                </div>
+                <div>
+                  <p>Orders</p>
+                </div>
+                <div>
+                  <p>Shipping Information</p>
+                </div>
+                <div>
+                  <p>Billing Information</p>
+                </div>
+              </div>
+              <div class="dac2">
+                <div>
+                  <p>Paula's Choice Perks</p>
+                </div>
+                <div>
+                  <p>Auto Replenishment</p>
+                </div>
+                <div>
+                  <p>My Routine</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dbag">
+            <h3>BAG</h3>
+            <a href=""><i class="fas fa-shopping-bag"></i></a>
+            <p id="dcount">0</p>
+          </div>
+        </div>
+
+
+
+
+        
+        <!-- <div id="dthrdbr">
+          <div class="dscp">
+            <p>SKIN CARE PRODUCTS</p>
+            <div class="dbox">
+              <div class="dcnt">
+                <div class="dhvr">
+                  <p>Body Care</p>
+                  <p>Cleanser</p>
+                  <p>Exfoliant</p>
+                  <div class="dm dhvr">
+                    <p>AHA Exfoliant</p>
+                    <p>BHA Exfoliant</p>
+                  </div>
+                </div>
+                <div class="dhvr">
+                  <p>Eye Cream</p>
+                  <p>Face Masks</p>
+                  <p>Face Serum</p>
+                  <p>Face Toner</p>
+                  <p>Hair Care</p>
+                </div>
+                <div class="dhvr">
+                  <p>Lip Care</p>
+                  <p>Makeup</p>
+                  <p>Men's Skin Care</p>
+                </div>
+                <div class="dhvr">
+                  <p>Moisturizer</p>
+                  <div class="dm dhvr">
+                    <p>Dry Skin Moisturizer</p>
+                    <p>Anti-Aging Moisturizer</p>
+                    <p>Oily Skin Moisturizer</p>
+                  </div>
+                  <p>Natural Skin Care</p>
+                </div>
+                <div class="dhvr">
+                  <p>Skin Booster</p>
+                  <p>Skin Brigthener</p>
+                  <p>Skin Supplements</p>
+                  <p>Sunscreen</p>
+                </div>
+              </div>
+              <div class="dicns"></div>
+            </div>
+          </div>
+          <div class="dsc">
+            <p>SKIN CONCERNS</p>
+            <div class="dbox dbox1">
+              <div class="dhvr">
+                <p>Acne-Prone</p>
+                <div class="dm dhvr">
+                  <p>Benzoyl Peroxide Treatments</p>
+                </div>
+                <p>Anti-Aging</p>
+                <div class="dm dhvr">
+                  <p>Wrinkles</p>
+                </div>
+                <p>Anti-Pollution Skin Care</p>
+                <p>Blackheads</p>
+                <p>Bumpy Skin</p>
+              </div>
+              <div class="dhvr">
+                <p>Dehydrated Skin</p>
+                <p>Dull Skin</p>
+                <p>Clogged Pores</p>
+                <p>Oil Control</p>
+                <p>Skin Firming</p>
+                <p>Skin Redness</p>
+                <p>Uneven Skin Tone</p>
+              </div>
+            </div>
+          </div>
+          <div class="dst">
+            <p>SKIN TYPE</p>
+            <div class="dbox dbox2">
+              <div class="dd">
+                <div class="dhvr">
+                  <p>Dry Skin</p>
+                  <div class="dm dhvr">
+                    <p>Face Wash for Dry Skin</p>
+                    <p>Moisturizer for Dry Skin</p>
+                    <p>Toner for Dry Skin</p>
+                  </div>
+                  <p>Normal Skin</p>
+                  <p>Combination Skill</p>
+                </div>
+                <div class="dhvr">
+                  <p>Oily Skin</p>
+                  <div class="dm dhvr">
+                    <p>Face Wash for Oily Skin</p>
+                    <p>Moisturizer for Oily Skin</p>
+                    <p>Toner for Oily Skin</p>
+                  </div>
+                  <p>Sensitive Skin</p>
+                  <div class="dm dhvr">
+                    <p>Face Wash for Sensitive Skin</p>
+                    <p>Moisturizer for Sensitive Skin</p>
+                    <p>Toner for Sensitive Skin</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dd2">
+                <a href=""><p>SHOP BY SKIN TYPES ></p></a>
+              </div>
+            </div>
+          </div>
+          <div class="di">
+            <p>INGREDIENTS</p>
+            <div class="dbox dbox3">
+              <div class="dhvr">
+                <p>Azelaic Acid</p>
+                <p>Bakuchiol</p>
+                <p>Ceramides</p>
+                <p>Glycolic Acid</p>
+                <p>Hyaluronic Acid</p>
+                <p>Lactic Acid</p>
+              </div>
+              <div class="dhvr">
+                <p>Niacinamide</p>
+                <p>Omega Fatty Acids</p>
+                <p>Peptides</p>
+                <p>Retinol</p>
+                <p>Salicylic Acid</p>
+                <p>Vitamin C</p>
+              </div>
+            </div>
+          </div>
+          <div class="dt">
+            <p>TRENDING</p>
+            <div class="dbox dbox4">
+              <div class="dhvr">
+                <p>Award Winners</p>
+                <p>Collections</p>
+                <p>Expert Picks</p>
+                <p>Offers</p>
+                <p>Top Rated</p>
+              </div>
+              <div>
+                <img
+                  src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw70632ec7/images/plp-card/pc_210516_desktop_plp-card_glamour-beauty-award.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="dscr">
+            <p>SKIN CARE RESOURCES</p>
+            <div class="dbox dbox5">
+              <div class="dhvr">
+                <p>Routine Finder</p>
+                <p>Skin Quiz</p>
+                <p>Expert Advice</p>
+                <div class="dm dhvr">
+                  <p>Ingredient Dictionary</p>
+                  <p>Skin Care Advice</p>
+                </div>
+                <p>Paula's Choice Perks</p>
+              </div>
+              <div>
+                <img
+                  src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwb588c324/images/plp-card/pc_210303_desktop_plp-card_loyalty-sub_cta.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>/* -->
+
+
+
+
+
+
+      </div>
+    </div>
+    <div id="responsiveness">
+      <div id="emptyAlert" class="title">
+        There are no items in your bag at this time.
+      </div>
+      <div id="main">
+        <div id="left">
+          <div class="flex">
+            <div class="title">
+              Shopping Bag <span id="cartNum">0 item</span>
+            </div>
+            <img
+              class="mcafee"
+              src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw3b046b8b/mcafee.png"
+              alt=""
+            />
+          </div>
+          <div class="perks">
+            PAULA'S CHOICE PERKS
+|
+You have 0 points
+          </div>
+          <div class="heading flex">
+            <div class="product">PRODUCT</div>
+            <div>SIZE</div>
+            <div>QTY</div>
+            <div>TOTAL</div>
+          </div>
+          
+          <div id="container"></div>
+        </div>
+        <div id="right">
+          <div class="shipping">
+            <div class="bold">Estimate Tax & Shipping</div>
+            <input type="number" placeholder="enter zip" class="zip" id="zip" />
+            <button id="estimate">ESTIMATE</button>
+            <div id="estimateData"></div>
+            <hr />
+            <div class="flex">
+              <div class="bold">subtotal</div>
+              <div id="price">$32</div>
+            </div>
+            <div class="flex">
+              <div class="bold">shipping</div>
+              <div id="shipping">5$</div>
+            </div>
+            <hr />
+            <div class="flex">
+              <div class="bold">EST. total</div>
+              <div class="flex">
+                <div id="total" class="bold">$47.69</div>
+                <div class="bold" id="discounted"></div>
+              </div>
+            </div>
+            <div>Shipping and tax calculated at checkout</div>
+            <button id="checkout">CHECKOUT</button>
+            <div>
+              <img
+                class="pay-opt"
+                src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw3ae45472/payment-options-us-title_468.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="coupon">
+            <div>see promotion details</div>
+            <div class="offer">*use 'masai30' for instant 30% off</div>
+            <input
+              type="text"
+              placeholder="Enter Coupon Code"
+              id="coupon-code"
+            />
+            <button id="coupon-apply">APPLY</button>
+            <div id="coupon"></div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="flex">
+        <div class="title">Your Saved Items</div>
+        <div class="itemNum">items : <span id="savedItems">0</span></div>
+      </div>
+
+      <div id="saved"></div>
+      <hr />
+      <img
+        class="midImg"
+        src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw6e89dd94/images/Cart/us_200415_desktop_cart-cards@2x.png"
+        alt=""
+      />
+          <!-- recommended items-->
+    <h2 id="Anrecheadoneyou">TRY OUR BEST SELLERS IN A MINI SIZE</h2>
+    <div id="Anre"></div>
+    <!-- recommended items-->
+    </div>
+
+
+
+
+
+
+    <div id="footer">
+      <div id="dfooter">
+        <div id="dbox1">
+          <div class="dlft">
+            <div>
+              <p>OUR COLLECTIONS</p>
+              <p>Boosters</p>
+              <p>Calm</p>
+              <p>Clear</p>
+              <p>Clinical</p>
+              <p>Defense</p>
+              <p>Earth Sourced</p>
+              <p>Exfoliant</p>
+              <p>Hydralight</p>
+            </div>
+            <div>
+              <p>Moisture Boost</p>
+              <p>Omega+ Complex</p>
+              <p>PC4Men</p>
+              <p>Resist</p>
+              <p>Skin Balancing</p>
+              <p>Skin Perfecting</p>
+              <p>Skin Recovery</p>
+              <p>View All</p>
+            </div>
+          </div>
+          <div class="drgt">
+            <div id="dtp">
+              <div>
+                <p>WHO WE ARE</p>
+                <p><a href="/about.html"> About Us </a></p>
+                <p>Paula's Story</p>
+                <p>Paula's Choice Perks</p>
+                <p>COVID-19 Information</p>
+                <p>Sustainability & Recycling</p>
+                <p>Careers</p>
+                <p>Auto Replenishment</p>
+                <p>Science Advisory Board</p>
+                <p>Research & Education Team</p>
+                <p>On The Rise Program</p>
+              </div>
+              <div>
+                <p>CLIENT SERVICES</p>
+                <p>Order Status</p>
+                <p>Help Center</p>
+                <p>Private Consultation</p>
+                <p>My Account</p>
+                <p>Email Us</p>
+              </div>
+              <div>
+                <p>PARTNERS</p>
+                <p>Student Discount</p>
+                <p>Affiliate Program</p>
+                <p>International</p>
+              </div>
+            </div>
+            <div id="dmd">
+              <div>
+                <p>SIGN UP FOR SPECIAL OFFERS</p>
+                <div>
+                  <input type="text" placeholder="Enter your email" />
+                  <button id="dsub">SIGN UP</button>
+                </div>
+              </div>
+              <div>
+                <p>1.800.831.4088</p>
+                <div>
+                  <a href="https://www.facebook.com/PaulasChoice.Inc">
+                    <i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://twitter.com/paulaschoice"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="https://www.youtube.com/user/PaulasChoiceBeauty">
+                    <i class="fab fa-youtube"></i
+                  ></a>
+                  <a href="https://www.pinterest.com/paulaschoice">
+                    <i class="fab fa-pinterest-p"></i
+                  ></a>
+                  <a href="https://www.instagram.com/paulaschoice">
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div id="dtd">
+              <div>
+                <p>PAYMENT OPTIONS</p>
+                <div>
+                  <img
+                    src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw8a429350/images/footer/desktop-payment-icons.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <p>SAFE & SECURE</p>
+                <div>
+                  <img
+                    src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw0f07a73e/images/footer/mcafee-60.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dbox2">
+          <div class="dabt">
+            <p>
+              © Copyright 2021 Paula's Choice. All rights reserved. Paula's
+              Choice and Cosmetics Cop are registered trademarks of Paula's
+              Choice, LLC.
+            </p>
+          </div>
+          <div class="dtrms">
+            <div>
+              <p>TERMS OF USE</p>
+            </div>
+            <div>
+              <p>ACCESSIBILITY</p>
+            </div>
+            <div>
+              <p>PRIVACY/SECURITY</p>
+            </div>
+            <div>
+              <p>DON'T SELL MY DATA</p>
+            </div>
+            <div>
+              <p>SITE MAP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./components/cart.js"></script>

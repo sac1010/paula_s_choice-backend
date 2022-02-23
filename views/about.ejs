@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/handf.css">
+    <link rel="stylesheet" href="./styles/dabout.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+    <title>About Us | Paula's Choice</title>
+    <link rel = "icon" href = "https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"  type = "image/x-icon"> 
+</head>
+<body>
+    <div id="dhead"></div>
+    <div id="dmid">
+        <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw2a013058/images/landing/about-us/us_190418_about-page_desktop_1-hero_1280x620.jpg" alt="">
+        <img id="dimg" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwe8378ea3/images/landing/about-us/us_190418_about-page_desktop_2-smart-choices_1280x640.jpg" alt="">
+        <img id="dimg" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw29956652/images/landing/about-us/us_190418_about-page_desktop_3-formulatory-philosophy_1280x810.jpg" alt="">
+        <img id="dimg" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwb47ae30f/images/landing/about-us/us_190418_about-page_desktop_4-ingrediants-we-avoid_1280x620.jpg" alt="">
+        <img id="dimg" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw34e62c61/images/landing/about-us/us_190418_about-page_desktop_5-science-safety_1280x690.jpg" alt="">
+        <img id="dimg" src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwcde36429/images/landing/about-us/us_190418_about-page_desktop_6-customer-service_1280x545.jpg" alt="">
+    </div>
+    <div id="dfooter"></div>
+</body>
+</html>
+<script type="module">
+
+    import navbar from "./components/dnav.js"
+    import footer from "./components/dfoot.js"
+
+    let dhd = document.getElementById("dhead")
+    dhd.innerHTML = navbar()
+
+    let dft = document.getElementById("dfooter")
+    dft.innerHTML = footer()
+
+    let y = JSON.parse(localStorage.getItem("name"))
+    
+
+    let user = document.getElementById("user")
+    user.innerText = y;
+
+</script>

@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e3cc9ecf17.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/handf.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="icon"
+      href="https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"
+      type="image/x-icon"
+    />
+    <title>Shop Paula's Choice</title>
+  </head>
+  <style>
+    #homeDisplay {
+      margin: auto;
+      width: 95%;
+      margin-bottom: 5%;
+    }
+    #homeDiv1 > a > img {
+      width: 100%;
+      /* margin: auto; */
+    }
+    #homeDiv1 {
+      margin: auto;
+      margin-bottom: 5%;
+    }
+    #homeDiv2 {
+      margin-bottom: 5%;
+    }
+    #category {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+    }
+
+    #homeDiv4 {
+      display: flex;
+      gap: 5%;
+      margin: auto;
+      width: 50%;
+    }
+    #homeDiv4 > div:nth-child(2) {
+      /* border-bottom: 7px solid black; */
+      /* width: 100%; */
+      margin-bottom: 0px;
+    }
+    hr {
+      margin-top: 0px;
+      width: 50%;
+      margin: auto;
+      border: 2px solid rgb(141, 140, 140);
+      /* color: black; */
+      background-color: rgb(95, 93, 93);
+      margin-bottom: 5%;
+    }
+
+    #Anurecommend {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      /* border:1px solid black; */
+      grid-gap: 15px;
+      text-align: center;
+      grid: border 1px solid black;
+    }
+
+    #homeDiv6 {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    #homeDiv7 {
+      display: flex;
+      margin-bottom: 5%;
+    }
+
+    #homeDiv8 {
+      display: flex;
+      /* margin-bottom: 5%; */
+    }
+    #homeDiv9 {
+      width: 100%;
+      margin: auto;
+      height: 100px;
+      background-color: #fbf2e7;
+      border: 1px solid transparent;
+      margin-bottom: 5%;
+    }
+    #homeDiv9 > a {
+      color: black;
+      font-weight: bolder;
+      text-align: center;
+    }
+    #homeDiv9 > a > p {
+      padding: auto;
+      margin-top: 3%;
+    }
+    #best:hover {
+      text-decoration: underline;
+    }
+    #award:hover {
+      text-decoration: underline;
+    }
+    #kits:hover {
+      text-decoration: underline;
+    }
+    @media only screen and (min-width: 0px) and (max-width: 376px) {
+      #Anurecommend {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+      }
+      hr {
+        margin-top: 0px;
+        width: 100%;
+        margin: auto;
+        border: 1px solid rgb(252, 248, 248);
+        /* color: black; */
+        background-color: rgb(190, 187, 187);
+        margin-bottom: 5%;
+      }
+      #homeDiv4 {
+        display: flex;
+        gap: 5%;
+        margin: auto;
+        width: 95%;
+        font-size: 9px;
+        font-weight: 100;
+        text-align: center;
+      }
+    }
+  </style>
+  <body>
+    <div id="navbar"></div>
+    <div id="signModal" class="modal">
+      <div class="modal1">
+        <span id="dclse"><i class="fas fa-times" id="cross1"></i></span>
+        <h1><strong>Create Account</strong></h1>
+        <div id="ib">
+          <p>Email</p>
+          <input type="text" id="dmail" />
+        </div>
+        <div id="ib1">
+          <p>First Name</p>
+          <input type="text" id="dsfname" />
+        </div>
+        <div id="ib2">
+          <p>Last Name</p>
+          <input type="text" id="dlname" />
+        </div>
+        <div id="ib3">
+          <p>Password</p>
+          <input type="password" id="dspass" />
+        </div>
+        <div id="ib4">
+          <h2>Create Account</h2>
+        </div>
+        <div id="or">
+          <p><span>or</span></p>
+        </div>
+        <div id="ib5">
+          <a href="">
+            <h2>SIGN IN</h2>
+          </a>
+        </div>
+        <div id="or">
+          <p><span>or</span></p>
+        </div>
+        <div id="ib6">
+          <a href="">
+            <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="logModal" class="modal">
+      <div id="modal2">
+        <span id="dclse"><i class="fas fa-times" id="cross"></i></span>
+        <h1><strong>Sign In</strong></h1>
+        <div id="iib">
+          <p>Email</p>
+          <input type="text" id="dumail" required />
+        </div>
+        <div id="iib1">
+          <p>Password</p>
+          <input type="password" id="dupass" />
+        </div>
+        <div id="iib4">
+          <h2>Sign In</h2>
+        </div>
+        <div id="or">
+          <p><span>or</span></p>
+        </div>
+        <div id="iib2">
+          <h2>Create Account</h2>
+        </div>
+        <div id="or">
+          <p><span>or</span></p>
+        </div>
+        <div id="ib6">
+          <a href="">
+            <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="homeDisplay">
+      <div id="homeDiv1">
+        <a href="product_data.html"
+          ><img
+            src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw180ac48d/images/homepage-new/us_211229_desktop_hp-panel_routine-focus.jpg"
+            alt=""
+        /></a>
+      </div>
+
+      <div id="homeDiv2">
+        <a href=""
+          ><img
+            src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwed856e08/images/homepage-new/pc_211229_desktop_hp-panel_expert-edit.jpg"
+            alt=""
+            width="100%"
+            height="50%"
+        /></a>
+      </div>
+
+      <div id="category">
+        <a href="product_data.html"
+          ><img
+            src="images copy/cleansers.png"
+            width="100%"
+            height="100%"
+            alt=""
+        /></a>
+        <a href="product_data.html"
+          ><img src="images copy/toners.png" width="100%" height="100%" alt=""
+        /></a>
+        <a href="product_data.html"
+          ><img
+            src="images copy/exfoliants.png"
+            width="100%"
+            height="100%"
+            alt=""
+        /></a>
+        <a href="product_data.html"
+          ><img
+            src="images copy/moisturizers.png"
+            width="100%"
+            height="100%"
+            alt=""
+        /></a>
+        <a href="product_data.html"
+          ><img
+            src="images copy/sunscreen.png"
+            width="100%"
+            height="100%"
+            alt=""
+        /></a>
+        <a href="product_data.html"
+          ><img src="images copy/acne.png" width="100%" height="100%" alt=""
+        /></a>
+        <a href="product_data.html"
+          ><img
+            src="images copy/antiaging.png"
+            width="100%"
+            height="100%"
+            alt=""
+        /></a>
+        <a href="product_data.html"
+          ><img
+            src="images copy/whatsNew.png"
+            width="100%"
+            height="100%"
+            alt=""
+        /></a>
+        <!-- <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw8d51952d/images/homepage-new/desktoplaunchpad/us_220101_desktop_launchpad.jpg" alt=""> -->
+      </div>
+
+      <div id="homeDiv4">
+        <div id="kits"><h2 id="jello">ANTI AGING</h2></div>
+        <div id="award"><h2 id="award">AWARD WINNERS</h2></div>
+        <div id="best"><h2 id="best">BEST SELLERS</h2></div>
+      </div>
+      <hr />
+
+      <div id="Anurecommend"></div>
+
+      <div id="homeDiv6">
+        <a href="beautyBegins.html"
+          ><img
+            src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd6b440a1/images/homepage-new/pc_210303_desktop_hp-panel_loyalty_short.jpg"
+            width="100%"
+            height="100%"
+            alt=""
+        /></a>
+      </div>
+
+      <div id="homeDiv7">
+        <a href="quiz.html"
+          ><img
+            src="images copy/Screenshot 2022-01-19 125247.png"
+            alt=""
+            width="100%"
+            height="100%"
+        /></a>
+        <a href="routine.html"
+          ><img
+            src="images copy/Screenshot 2022-01-19 125400.png"
+            alt=""
+            width="100%"
+            height="100%"
+        /></a>
+      </div>
+
+      <div id="homeDiv8">
+        <a href=""
+          ><img
+            src="images copy/beautyBegins.png"
+            alt=""
+            width="100%"
+            height="90%"
+        /></a>
+
+        <a href="about.html"
+          ><img src="images copy/philos.png" alt="" width="100%" height="90%"
+        /></a>
+        <a href="recycle.html"
+          ><img
+            src="images copy/recycling.png"
+            alt=""
+            width="100%"
+            height="90%"
+        /></a>
+      </div>
+
+      <div id="homeDiv9">
+        <a href="Covid-19.html"
+          ><p>WE'RE IN TOGETHER. HERE'S HOW WE'RE HANDLING COVID-19</p></a
+        >
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script src="./components/footer.js"></script>
+<script type="module">
+  import navbar from "./components/dnav.js";
+  import footer from "./components/dfoot.js";
+
+  let nav = document.getElementById("navbar");
+  nav.innerHTML = navbar();
+
+  let foot = document.getElementById("footer");
+  foot.innerHTML = footer();
+
+  document.querySelector("#best").addEventListener("click", best);
+  function best() {
+    console.log("here");
+    var data = [
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwe307fdcd/images/products/calm-redness-relief-spf-30-mineral-moisturizer-dry-9130-L.png?sw=360&sfrm=png",
+        name: "CALM",
+        about:
+          "Redness Relief SPF 30 Mineral Moisturizer for Normal to Dry Skin",
+        price: "$31.00",
+        reviews: "137",
+        star1: 4,
+        desc: "A mineral-based sunscreen that replenishes dry, sensitive skin with smoothing hydration while protecting it against damaging UVA/UVB rays.",
+        point1: "Diminishes the appearance of redness",
+        point2: "Helps keep skin looking younger, longer",
+        point3: "Creamy lotion texture",
+        point4: "Use as the last step in your AM skincare routine",
+        why: "CALM Redness Relief SPF 30 Mineral Moisturizer Normal to Dry Skin combines the gentlest mineral-based sunscreen ingredients in a creamy advanced formula. You will have beautiful hydrated skin with the improved appearance of fine lines, dullness, and uneven skin tone. Sensitive skin will be comforted and cushioned with soothing emollients and a skin-enriching texture.",
+        what: "A redness-minimizing mix of soothing plant extracts, antioxidants, and peptides work to calm sensitive skin so it looks visibly younger and feels healthier. With daily use, skin will become less prone to temporary redness and visible signs of sensitivity, and, most important, may help to lower the risk of premature skin aging. The pure mineral zinc oxide sunscreen decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. Gentle enough even for skin prone to rosacea.",
+        how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwfbfb4897/images/pdp/us_210218_desktop_pdp-banner_calm-dry-kit.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw49f5a8a7/images/views/calm-redness-relief-spf-30-mineral-moisturizer-dry-9130-L-alt.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/sxMdsikC9uM",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw2a819a6d/images/products/skin-recovery-replenishing-moisturizer-1860-L.png?sw=360&sfrm=png",
+        name: "SKIN RECOVERY",
+        about: "Replenishing Moisturizer",
+        price: "$31.00",
+        reviews: "411",
+        star1: 4,
+        desc: "Contains a proprietary blend of proven moisturizing ingredients for instant and lasting hydration for dry skin. Helps minimize the appearance of wrinkles and visibly improves skin’s texture.",
+        point1: "Helps preserve skin’s moisture content",
+        point2: "Antioxidants and plant oils restore radiance",
+        point3: "Luxurious creamy texture",
+        point4: "Use as the last step in your PM skincare routine",
+        why: "SKIN RECOVERY Replenishing Moisturizer blends research-proven hydrating ingredients with plant- and vitamin-derived antioxidants that help deliver anti-aging results for renewed radiance and amazing softness like you’ve never experienced before.",
+        what: "Drenches dry skin with a mix of emollients, anti-aging peptides, and fortifying antioxidants that work to repel the impact of free-radical damage and help defend against environmental attack. From the first application, skin looks and feels perfectly supple and comfortable, even around the eyes. Loved by those with very sensitive skin, but suitable even for skin prone to eczema.",
+        how: "Ideal for softening and smoothing the face, neck and eye area. At night, use as the last step in your skincare routine. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw84440e67/images/pdp/us_200713_desktop_pdp-panel_1860_review.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw18e7bab7/images/views/skin-recovery-replenishing-moisturizer-1860-L-swatch.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/wdn4A8q00XM",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw4e4509b0/images/products/calm-redness-relief-spf-30-mineral-moisturizer-oily-9170-L.png?sw=360&sfrm=png",
+        name: "CALM",
+        about:
+          "Redness Relief SPF 30 Mineral Moisturizer for Normal to Oily Skin",
+        price: "$31.00",
+        reviews: "99",
+        star1: 4,
+        desc: "A lightweight mineral-based sunscreen that calms and soothes sensitive skin while protecting it against damaging UVA/UVB rays.",
+        point1: "Diminishes the appearance of redness",
+        point2: "Helps keep skin looking younger, longer",
+        point3: "Non-greasy lotion leaves a soft matte finish",
+        point4: "Use as the last step in your AM skincare routine",
+        why: "CALM Redness Relief SPF 30 Mineral Moisturizer Normal to Oily Skin pampers sensitive, reddened skin with its gentle, broad-spectrum mineral-based sun protection and soothing antioxidants, all in an ultra-light silky lotion that leaves a soft matte finish.",
+        what: "Moisturizes while providing soothing skin relief and preventing the appearance of premature aging from sun damage. The SPF 30 is a significant benefit as it decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. It’s gentle enough for sensitive skin and even suitable for skin prone to rosacea.",
+        how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd8545e61/images/pdp/us_210218_desktop_lp_pdp-banner_calm-oily-kit.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwb65a73ee/images/products/calm-redness-relief-moisturizer-oily-9180-L.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/sxMdsikC9uM",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwd9f2b7e1/images/products/pc4men-sooth-smooth-8720-L.png?sw=360&sfrm=png",
+        name: "PC4MEN",
+        about: "Soothe + Smooth",
+        price: "$33.00",
+        reviews: "23",
+        star1: 5,
+        desc: "Change your thinking about after-shave. Address those bumps, help stop skin from looking older, calm redness and soften skin, all in one non-irritating, fragrance-free formula.",
+        point1: "Combats multiple signs of aging",
+        point2: "Minimizes pore size",
+        point3: "Soothes redness & softens skin",
+        point4: "Water-light, non-irritating formula",
+        why: "PC4MEN Soothe + Smooth is like no other after-shave you’ve ever used; it's gentle and fragrance free, yet delivers dramatic results with its combination of potent exfoliating and anti-aging ingredients. This water-light fluid calms redness, doesn’t sting even a little, softens skin, vanquishes redness, and minimizes signs of aging.",
+        what: "Quickly makes red bumps less visible, calms razor sting, unclogs pores, and diminishes the signs of aging—all in a completely non-irritating formula. The watery texture makes it feel like there’s nothing on your face, yet the fast-penetrating formula delivers powerful benefits, making skin quickly look and feel softer and healthier.",
+        how: "Use twice daily after cleansing or shaving. It can also be used on days you don’t shave. For daytime, follow with PC4MEN Daytime Protect SPF 30. At night, follow with PC4MEN Nighttime Repair.  If you have a salicylate allergy, check with your physician before using any products that contain salicylic acid.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwd9f2b7e1/images/products/pc4men-sooth-smooth-8720-L.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/5vxKbS1TN-w",
+        star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw162f68cd/images/products/calm-redness-relief-1-percent-bha-lotion-exfoliant-9100-L.png?sw=360&sfrm=png",
+        name: "CALM",
+        about: "Redness Relief 1% BHA Lotion Exfoliant",
+        price: "$32.00",
+        reviews: "147",
+        star1: 4,
+        desc: "A completely gentle, non-abrasive, leave-on exfoliant that sheds built-up layers of dead skin to reveal the hidden radiant skin beneath. Perfect for someone with sensitive skin who wants to visibly diminish pore size and the appearance of wrinkles and ease redness.",
+        point1: "Salicylic acid (BHA) provides gentle exfoliation",
+        point2: "Reveals glowing, hydrated skin",
+        point3: "Lightweight lotion is perfect for sensitive skin",
+        point4: "Use twice daily after cleansing & toning skin",
+        why: "CALM Redness Relief 1% BHA Lotion Exfoliant is a leave-on, sheer lightweight lotion with a texture that works to soothe redness and smooth away dry skin with skin-plumping hydration. It also diminishes the appearance of wrinkles and lessens the size of pores.",
+        what: "Gently exfoliates skin’s surface as well as inside the pores to enhance skin renewal, while hydrating and soothing ingredients promote visibly calm, even-toned skin. Skin-soothing plant extracts ease extra-sensitive, red skin for a more unified, healthier-looking appearance. Helps unclog and refine the look of enlarged pores and diminishes the appearance of wrinkles. Gentle enough even for those with skin prone to rosacea.",
+        how: "Apply once or twice daily after cleansing and toning. Apply a dime-sized amount over the entire face, including the eye (avoid the lower lash line and eyelids). Do not rinse. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw48e719e1/images/pdp/us_210218_desktop_pdp-banner_calm-exfoliant.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwe6991130/images/products/calm-redness-relief-1-percent-bha-lotion-exfoliant-9109-S.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/3wjvz2WTqHg",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+    ];
+
+    displayProd(data);
+    function displayProd(data) {
+      document.querySelector("#Anurecommend").innerHTML = "";
+      data.map(function (elem) {
+        var div = document.createElement("div");
+        var div2 = document.createElement("div");
+        div2.style.height = "220px";
+        div2.style.backgroundColor = "#f9f9fb";
+        var div3 = document.createElement("div");
+        div3.style.display = "flex";
+        var img = document.createElement("img");
+        img.src = elem.img;
+        img.style.width = "100%";
+        img.style.height = "100%";
+        var name = document.createElement("p");
+        name.textContent = elem.name;
+        name.style.fontSize = "13px";
+        var about = document.createElement("p");
+        about.textContent = elem.about;
+        about.style.fontSize = "13px";
+        about.style.fontWeight = "600";
+        var price = document.createElement("p");
+        price.textContent = elem.price;
+        price.style.marginTop = "24px";
+        price.style.fontSize = "13px";
+        var star = document.createElement("img");
+        star.src = elem.star;
+        star.style.width = "100px";
+        star.style.height = "20px";
+        var reviews = document.createElement("p");
+        reviews.textContent = elem.reviews + " " + "Reviews";
+        reviews.style.fontSize = "11px";
+        reviews.style.fontWeight = "600";
+        reviews.style.marginTop = "4px";
+        reviews.style.marginLeft = "5px";
+        div2.append(img);
+        div3.append(star, reviews);
+        div.append(div2, name, about, price, div3);
+        div.setAttribute("class", "givehoverstyle");
+        div.onclick = function () {
+          window.location.href = "product_individual.html";
+        };
+        document.querySelector("#Anurecommend").append(div);
+
+        // sending data to localStorage
+        // var arr=[]
+        // arr.push(elem)
+        // div.addEventListener("click",senddata);
+        // function senddata(){
+        //     localStorage.setItem("paulasChoice",JSON.stringify(arr))
+        // }
+      });
+    }
+
+    // for adding products to bag by sachin
+    //  document.getElementById("Aaddtobagbox").addEventListener("click", ()=>{
+    //      let cartDataObj = JSON.parse(localStorage.getItem("paulasChoice"))
+    //      let currentProduct = cartDataObj[0]
+    //      let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+    //      cartData.push(currentProduct)
+    //      localStorage.setItem("cartData", JSON.stringify(cartData))
+    //      alert("product added to cart")
+    //  })
+
+    //ends here
+
+    // document.getElementById("best").style.borderBottom = "7px solid black";
+  }
+
+  document.querySelector("#kits").addEventListener("click", kits);
+  function kits() {
+    console.log("here");
+    var data = [
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf86ad70d/images/products/resist-anti-aging-eye-gel-2140-L.png?sw=360&sfrm=png",
+        name: "RESIST",
+        about: "Anti-Aging Eye Gel",
+        price: "$35.00",
+        reviews: "110",
+        star1: 4,
+        desc: "A light, refreshing gel that addresses multiple signs of aging, hydrates, minimizes fine lines and visibly brightens to eliminate signs of fatigue.",
+        point1: "Refreshes & renews delicate skin around the eye",
+        point2: "Contains peptides, hyaluronic acid & licoric",
+        point3: "Cooling applicator soothes puffiness on contact",
+        point4: "Use twice daily as needed",
+        why: "A unique blend of multi-functional ingredients visibly brighten, hydrate, minimize the appearance of fine lines, and reduce signs of fatigue around the eye area.",
+        what: "Antioxidant-rich plant extracts sooth skin and protect from environmental stress, including the visible effects of pollution.",
+        how: "Using applicator or finger, gently massage a small amount (no larger than the size of a pea) around the eye area. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw7db27581/images/views/resist-anti-aging-eye-gel-2140-L_swatch.png?sw=360&sfrm=jpg",
+        youtube: "https://www.youtube.com/embed/0nNG2PZTGu8",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw22d02dc3/images/products/resist-daily-smoothing-treatment-5-percent-aha-7660-L.png?sw=360&sfrm=png",
+        name: "RESIST",
+        about: "Daily Smoothing Treatment with 5% AHA",
+        price: "$35.00",
+        reviews: "281",
+        star1: 4,
+        desc: "A daily leave-on AHA exfoliant that reveals a truly smoother, more radiant, even-toned complexion by helping skin naturally exfoliate as younger skin does.",
+        point1: "Renews the appearance of dry, sun-damaged skin",
+        point2: "Naturally exfoliates dead skin cells",
+        point3: "Lightweight, hydrating lotion consistency",
+        point4: "Use once or twice daily after cleansing & toning",
+        why: "RESIST Daily Smoothing Treatment with 5% AHA refines the surface of skin with exceptionally gentle and completely non-abrasive exfoliation. It also offers additional benefits, including hydration, soothing antioxidants, and a mix of fortifying skin-restoring ingredients.",
+        what: "Reveals youthful radiant skin and helps reduce the appearance of fine lines and wrinkles. This innovative daily-use formula includes glycolic acid to continually revitalizes skin’s texture, visibly evens skin tone, and helps promote visibly firmer-looking, smoother skin. A specially selected mix of antioxidants helps fight the impact of free-radical damage, while ceramides and peptides bind moisture for beautifully radiant skin.",
+        how: "Apply once or twice daily after cleansing and toning. Apply a dime-sized amount over the entire face, avoiding direct contact with eyes and lips. Do not rinse. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.        When using your product for the first time, you may need to “prime” the dispenser. To prime, simply pump the dispenser slowly about 10-15 times. If the dispenser stops working at any time, simply repeat the priming step. Do not attempt to dismantle the package.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw28a87195/images/swatches/resist-daily-smoothing-treatment-5-percent-aha-7660-L_anniversary.png?sw=360&sfrm=jpg",
+        youtube: "https://www.youtube.com/embed/D5sExzgqbXM",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw35479eb8/images/products/clinical-03-percent-retinol-2-percent-bakuchiol-treatment-8015-L.png?sw=360&sfrm=png",
+        name: "CLINICAL",
+        about: "0.3% Retinol+2% Bakuchiol Treatment",
+        price: "$56.00",
+        reviews: "142",
+        star1: 5,
+        desc: "Triple-action retinol, bakuchiol and peptides support collagen-depleted skin to target fine lines, deep wrinkles, enlarged pores and loss of firmness.",
+        point1: "Mid-strength 0.3% retinol fights wrinkles",
+        point2: "2% bakuchiol amplifies retinol’s wrinkle-fighting power",
+        point3: "Peptides support healthy collagen for improved firmness",
+        point4: "Light lotion texture absorbs quickly",
+        why: "Research shows that bakuchiol and retinol work even better together. Plant-derived bakuchiol is one of a few ingredients that can stabilize retinol, allowing it to work more effectively and for longer, even at a lower concentration. The addition of peptides helps to stimulate and strengthen skin to visibly combat sagging.",
+        what: "Moderate-strength retinol and a 2% strength of plant-derived bakuchiol work with firming peptides to deliver multi-level repair and rejuvenation. It quickly targets fine lines, deep wrinkles, uneven skin tone, enlarged pores and rough texture for youthful-looking skin.",
+        how: "Limit initial use to three times per week; gradually increase frequency to every evening as tolerated. Apply 1-2 pumps over face and neck, avoiding contact with eyes, eyelids and lips. Follow with moisturizer. During the day, finish with a sunscreen rated SPF 30 or greater",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwe065e5e8/images/pdp/us_200127_mobile_pdp-panel_8015-Bakuchiol-launch_stats.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw24321023/images/views/clinical-03-percent-retinol-2-percent-bakuchiol-treatment-8015-L_lifestyle1.png?sw=360&sfrm=jpg",
+        youtube: "https://www.youtube.com/embed/NyYkBnaM9gc",
+        star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw06cc02d5/images/products/resist-1-percent-retinol-booster-7870-L.png?sw=360&sfrm=png",
+        name: "BOOSTER",
+        about: "1% Retinol Booster",
+        price: "$52.00",
+        reviews: "102",
+        star1: 4,
+        desc: "This lightweight, concentrated booster with 1% encapsulated retinol helps to even skin tone, renew radiance, brighten, improve the appearance of wrinkles and create a smooth complexion.",
+        point1: "Pure form of retinol in a slow-release delivery system",
+        point2: "Peptides restore skin’s youthful appearance",
+        point3: "Fluid lotion texture visibly improves loss of firmness",
+        point4: "Use alone or add to your moisturizer or serum",
+        why: "1% Retinol Booster is a concentrated, pure form of retinol in a slow-release delivery system with a light fluid lotion texture. It also includes a superior assortment of potent antioxidants to help produce the most beautiful appearance for your skin imaginable.",
+        what: "Improves the appearance of fine lines, wrinkles, uneven skin tone, bumps, pore size, and other visible signs of aging. Our encapsulated retinol can help to quickly bring about a more clarified, vibrant, younger-looking appearance, complete with visible refinement of the look of pores, uneven skin tone, and deep wrinkles.",
+        how: "Carefully press the pump at the top of the container to dispense 2-3 drops for the face. During the day, finish with a moisturizer with SPF 30 or greater. Can be applied under the eye area, avoiding the eye itself.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwf8608600/images/pdp/us_210331_mobile_pdp-panel_7870_review.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwff9f4311/images/views/1-percent-retinol-booster-7870-L_spill.png?sw=360&sfrm=jpg",
+        youtube: "https://www.youtube.com/embed/a8-ZX_I6seI",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwcda565aa/images/products/resist-anti-aging-clear-skin-hydrator-7691-L.png?sw=360&sfrm=png",
+        name: "RESIST",
+        about: "Anti-Aging Clear Skin Hydrator",
+        price: "$35.00",
+        reviews: "457",
+        star1: 4,
+        desc: "A one-of-a-kind anti-aging moisturizer that provides immediate hydration while nourishing skin, creating a more even-looking skin tone and a brighter complexion, all while defending skin against environmental stresses.",
+        point1: "Visibly improves pores size",
+        point2: "Vitamin C and niacinamide brighten and smooth skin",
+        point3: "Unique gel-lotion formula",
+        point4: "Use as the last step in your PM skincare routine",
+        why: "RESIST Anti-Aging Clear Skin Hydrator is an advanced formula with a proprietary complex of essential youth-extending ingredients, including vitamin C and niacinamide, designed to target uneven skin tone, skin discolorations, pore size, and hydration.",
+        what: "Instantly improves skin texture as it helps refine the look of pores and uneven skin tone. Niacinamide, vitamin C, and adenosine join forces in an ultra-light fluid for hydrating results that feel as good as they look. This ideal multi-tasker is perfect for those struggling with wrinkles, loss of firmness, bumpy skin, and dehydration.",
+        how: "Ideal for softening and smoothing the face, neck and eye area. At night, use as the last step in your skincare routine. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw32802fe0/images/products/resist-anti-aging-clear-skin-hydrator-7697-M.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/WovrWaCYwwQ",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+    ];
+
+    displayProd(data);
+    function displayProd(data) {
+      document.querySelector("#Anurecommend").innerHTML = "";
+      data.map(function (elem) {
+        var div = document.createElement("div");
+        var div2 = document.createElement("div");
+        div2.style.height = "220px";
+        div2.style.backgroundColor = "#f9f9fb";
+        var div3 = document.createElement("div");
+        div3.style.display = "flex";
+        var img = document.createElement("img");
+        img.src = elem.img;
+        img.style.width = "100%";
+        img.style.height = "100%";
+        var name = document.createElement("p");
+        name.textContent = elem.name;
+        name.style.fontSize = "13px";
+        var about = document.createElement("p");
+        about.textContent = elem.about;
+        about.style.fontSize = "13px";
+        about.style.fontWeight = "600";
+        var price = document.createElement("p");
+        price.textContent = elem.price;
+        price.style.marginTop = "24px";
+        price.style.fontSize = "13px";
+        var star = document.createElement("img");
+        star.src = elem.star;
+        star.style.width = "100px";
+        star.style.height = "20px";
+        var reviews = document.createElement("p");
+        reviews.textContent = elem.reviews + " " + "Reviews";
+        reviews.style.fontSize = "11px";
+        reviews.style.fontWeight = "600";
+        reviews.style.marginTop = "4px";
+        reviews.style.marginLeft = "5px";
+        div2.append(img);
+        div3.append(star, reviews);
+        div.append(div2, name, about, price, div3);
+        div.setAttribute("class", "givehoverstyle");
+        div.onclick = function () {
+          window.location.href = "product_individual.html";
+        };
+        document.querySelector("#Anurecommend").append(div);
+
+        // sending data to localStorage
+        // var arr=[]
+        // arr.push(elem)
+        // div.addEventListener("click",senddata);
+        // function senddata(){
+        //     localStorage.setItem("paulasChoice",JSON.stringify(arr))
+        // }
+      });
+    }
+
+    // for adding products to bag by sachin
+    //  document.getElementById("Aaddtobagbox").addEventListener("click", ()=>{
+    //      let cartDataObj = JSON.parse(localStorage.getItem("paulasChoice"))
+    //      let currentProduct = cartDataObj[0]
+    //      let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+    //      cartData.push(currentProduct)
+    //      localStorage.setItem("cartData", JSON.stringify(cartData))
+    //      alert("product added to cart")
+    //  })
+
+    //ends here
+
+    // document.getElementById("best").style.borderBottom = "7px solid black";
+  }
+
+  document.querySelector("#award").addEventListener("click", award);
+  function award() {
+    console.log("here");
+    var data = [
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw1d4de0df/images/products/skin-recovery-daily-moisturizing-lotion-spf-30-1460-L.png?sw=360&sfrm=png",
+        name: "SKIN RECOVERY",
+        about: "Daily Moisturizing Lotion SPF 30",
+        price: "$31.00",
+        reviews: "350",
+        star1: 4,
+        desc: "A mineral-based moisturizer with SPF that protects, softens and reconditions skin by helping maintain skin’s optimal hydration levels and decreasing the risk of early skin aging.",
+        point1: "Contains a unique complex of anti-aging peptides",
+        point2: "Skin-recovering ingredients transform dry skin",
+        point3: "Rich cream formula",
+        point4: "Use as the last step in your AM skincare routine",
+        why: "SKIN RECOVERY Daily Moisturizing Lotion SPF 30 goes above and beyond what other daytime moisturizers provide. This creamy formula replenishes dry skin for a younger-looking appearance while helping to protect from sun damage and early skin aging. It has an abundant mix of potent antioxidants, skin-restoring ceramides, and anti-aging peptides to visibly smooth fine lines and wrinkles while adding a satin glow for skin that looks younger. Works beautifully under makeup.",
+        what: "Helps defend against signs of environmental assault and essential for restoring and improving a youthful-looking radiance. The pure mineral zinc oxide sunscreen is a significant benefit as it decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. Formulated to be gentle enough for sensitive skin, including skin prone to eczema.",
+        how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwa54875a9/images/views/skin-recovery-daily-moisturizing-lotion-spf-30-1460-L-alt.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/arYlf3G8wr4",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw328c6d74/images/products/earth-sourced-power-berry-serum-8530-L.png?sw=360&sfrm=png",
+        name: "EARTH SOURCED",
+        about: "Power Berry Serum",
+        price: "$33.00",
+        reviews: "69",
+        star1: 5,
+        desc: "This 95% natural serum gives skin a healthy glow through a potent combination of berries selected for their proven antioxidant power in nature.",
+        point1: "13 berries neutralize environmental damage",
+        point2: "Preserves youthful-looking skin",
+        point3: "Silicone-free, milky-gel texture lightly hydrates",
+        point4: "All-natural pink shade",
+        why: "SKIN RECOVERY Daily Moisturizing Lotion SPF 30 goes above and beyond what other daytime moisturizers provide. This creamy formula replenishes dry skin for a younger-looking appearance while helping to protect from sun damage and early skin aging. It has an abundant mix of potent antioxidants, skin-restoring ceramides, and anti-aging peptides to visibly smooth fine lines and wrinkles while adding a satin glow for skin that looks younger. Works beautifully under makeup.",
+        what: "Helps defend against signs of environmental assault and essential for restoring and improving a youthful-looking radiance. The pure mineral zinc oxide sunscreen is a significant benefit as it decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. Formulated to be gentle enough for sensitive skin, including skin prone to eczema.",
+        how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw61ec64c0/images/views/earth-sourced-power-berry-serum-8530-L_lifestyle1.png?sw=360&sfrm=jpg",
+        youtube: "https://www.youtube.com/embed/b5fVm9AWoVM",
+        star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwd911b4f8/images/products/resist-c15-super-booster-7770-L.png?sw=360&sfrm=png",
+        name: "BOOSTER",
+        about: "C15 Super Booster",
+        price: "$52",
+        reviews: "1057",
+        star1: 5,
+        desc: "This concentrated booster with 15% pure vitamin C dramatically brightens uneven skin while improving the appearance of wrinkles and fine lines.",
+        point1: "Reveals a more radiant complexion",
+        point2: "Vitamin C visibly brightens skin",
+        point3: "Feather-light, liquid formula absorbs quickly",
+        point4: "Use alone or add to your moisturizer or serum",
+        why: "C15 Super Booster contains a highly concentrated form of vitamin C and an assortment of skin-stabilizing antioxidants and skin-replenishing ingredients. Combined, they provide exceptional results including improving the appearance of uneven skin tone, brightening a dull complexion, and helping skin ward off the impact of environmental assaults.",
+        what: "Diminishes visible signs of aging for smoother, brighter, and firmer-feeling skin with a blend of 15% stabilized vitamin C (l-ascorbic acid) at a pH of 3.0, potent antioxidants including vitamin E and ferulic acid, and skin-smoothing peptides. You'll see dramatically younger-looking and more radiant skin day after day!",
+        how: "Dispense 2-3 drops into the palm of your hand and then apply to your face. Add a couple more drops if you will also be applying to your neck and chest. During the day, finish with a moisturizer with SPF 30 or greater. Can be applied under the eye area, avoiding the eye itself.",
+        sideimg1:
+          "https://m.media-amazon.com/images/S/aplus-media/sc/0b0f1de5-aa3e-47bf-a889-0ae97eba7d06.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+        sideimg2:
+          "https://m.media-amazon.com/images/S/aplus-media/sc/d2028629-3006-435a-a3ec-cdcf58c270d9.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwa8eb8c65/images/views/boost-c15-super-booster-7770-L-swatch.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/48_LfumtTB8",
+        star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwd5773a88/images/products/resist-skin-restoring-moisturizer-spf-50-7970-L.png?sw=360&sfrm=png",
+        name: "RESIST",
+        about: "Skin Restoring Moisturizer with SPF 50",
+        price: "$35.00",
+        reviews: "164",
+        star1: 4,
+        desc: "This antioxidant-rich moisturizer hydrates and protects with superstar ingredients like niacinamide, shea butter and licorice for flawless, younger-looking skin.",
+        point1: "Helps prevent premature aging",
+        point2: "Antioxidants protect against environmental stressors",
+        point3: "Hydrating cream leaves a dewy finish",
+        point4: "Use as the last step in your AM skincare routine",
+        why: "RESIST Skin Restoring Moisturizer with SPF 50 protects against the entire range of sun’s UVA rays while also providing UVB protection. Powerhouse antioxidants like shea butter, coffee seed and apple are joined by tone-improving niacinamide and licorice for skin whose appearance gets better with each use.",
+        what: "Broad spectrum SPF 50 helps prevent premature aging while helping to improve skin health and hydration. Leaves a soft, dewy finish and provides superior anti-aging benefits.The SPF 50 is a significant benefit as it decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures.",
+        how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If not applied liberally, you’ll need to reapply every two hours after skin is exposed to direct sunlight. If you plan to swim or perspire, you must apply a water-resistant sunscreen.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwa4e7ecab/images/pdp/us_200622_desktop_pdp-panel_7970_review.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwe300cf8d/images/products/resist-skin-restoring-moisturizer-spf-50-7977-M.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/lg40fy3lid0",
+        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+      },
+      {
+        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw5e46f627/images/products/clear-anti-redness-exfoliating-solution-2-percent-bha-extra-strength-6210-L.png?sw=360&sfrm=png",
+        name: "CLEAR",
+        about:
+          "Extra Strength Anti-Redness Exfoliating Solution With 2% Salicylic Acid",
+        price: "$32.00",
+        reviews: "266",
+        star1: 5,
+        desc: "This gentle leave-on exfoliant with salicylic acid clears stubborn acne and blackheads with a maximum pore-penetrating formula. It also calms redness and provides light hydration for healthy, flake-free skin.",
+        point1: "For stubborn acne",
+        point2: "Unclogs blackheads and minimizes pore size",
+        point3: "Water-light yet potent formula produces fast results",
+        point4: "Use up to twice daily after cleansing skin",
+        why: "CLEAR Extra Strength Anti-Redness Exfoliating Solution with 2% Salicylic Acid has a potent acne-fighting formula that immediately reduces blackheads, pimples, white bumps, and acne by unclogging pores and calming redness.",
+        what: "Say no to harsh scrubs that do more harm than good to skin. This non-irritating anti-acne powerhouse exfoliates dead skin in the most gentle, non-abrasive way possible. There are no harsh ingredients of any kind that can cause more problems for your skin. Its silky fluid texture leaves skin feeling soft and hydrated. Even suitable for skin prone to cystic acne.",
+        how: "Gently apply using fingers or a cotton pad over entire face and neck, including the eye area (avoid lash line and eyelids) after cleansing and toning. Do not rinse. Start Slowly: Apply every other day and note skin's response. Then use up to twice daily. For daytime, always finish with SPF 30+. For nighttime, follow with the rest of your routine. If you have a salicylate allergy, check with your physician before using any products that contain salicylic acid.",
+        sideimg1:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+        sideimg2:
+          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw7a1987ac/images/pdp/us_210219_desktop_pdp-panel_clear.jpg",
+        img22:
+          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0766f88/images/swatches/clear-anti-redness-exfoliating-solution-2-percent-bha-extra-strength-6210-L_swatch.png?sw=360&sfrm=png",
+        youtube: "https://www.youtube.com/embed/bFnlofgPks8",
+        star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
+      },
+    ];
+
+    displayProd(data);
+    function displayProd(data) {
+      document.querySelector("#Anurecommend").innerHTML = "";
+      data.map(function (elem) {
+        var div = document.createElement("div");
+        var div2 = document.createElement("div");
+        div2.style.height = "220px";
+        div2.style.backgroundColor = "#f9f9fb";
+        var div3 = document.createElement("div");
+        div3.style.display = "flex";
+        var img = document.createElement("img");
+        img.src = elem.img;
+        img.style.width = "100%";
+        img.style.height = "100%";
+        var name = document.createElement("p");
+        name.textContent = elem.name;
+        name.style.fontSize = "13px";
+        var about = document.createElement("p");
+        about.textContent = elem.about;
+        about.style.fontSize = "13px";
+        about.style.fontWeight = "600";
+        var price = document.createElement("p");
+        price.textContent = elem.price;
+        price.style.marginTop = "24px";
+        price.style.fontSize = "13px";
+        var star = document.createElement("img");
+        star.src = elem.star;
+        star.style.width = "100px";
+        star.style.height = "20px";
+        var reviews = document.createElement("p");
+        reviews.textContent = elem.reviews + " " + "Reviews";
+        reviews.style.fontSize = "11px";
+        reviews.style.fontWeight = "600";
+        reviews.style.marginTop = "4px";
+        reviews.style.marginLeft = "5px";
+        div2.append(img);
+        div3.append(star, reviews);
+        div.append(div2, name, about, price, div3);
+        div.setAttribute("class", "givehoverstyle");
+        div.onclick = function () {
+          window.location.href = "product_individual.html";
+        };
+        document.querySelector("#Anurecommend").append(div);
+
+        // sending data to localStorage
+        // var arr=[]
+        // arr.push(elem)
+        // div.addEventListener("click",senddata);
+        // function senddata(){
+        //     localStorage.setItem("paulasChoice",JSON.stringify(arr))
+        // }
+      });
+    }
+
+    // for adding products to bag by sachin
+    //  document.getElementById("Aaddtobagbox").addEventListener("click", ()=>{
+    //      let cartDataObj = JSON.parse(localStorage.getItem("paulasChoice"))
+    //      let currentProduct = cartDataObj[0]
+    //      let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+    //      cartData.push(currentProduct)
+    //      localStorage.setItem("cartData", JSON.stringify(cartData))
+    //      alert("product added to cart")
+    //  })
+
+    //ends here
+  }
+
+  let mod = document.getElementById("signModal");
+  let sign = document.getElementById("dsign");
+
+  let log = document.getElementById("dlog");
+  let mod2 = document.getElementById("logModal");
+  let close = document.getElementById("cross");
+  let close1 = document.getElementById("cross1");
+
+  sign.onclick = () => {
+    mod.style.visibility = "visible";
+  };
+  window.onclick = (event) => {
+    if (event.target == mod || event.target == mod2) {
+      mod.style.visibility = "hidden";
+      mod2.style.visibility = "hidden";
+    }
+  };
+  log.onclick = () => {
+    mod2.style.visibility = "visible";
+  };
+  close.onclick = () => {
+    console.log("magic");
+    mod2.style.visibility = "hidden";
+  };
+  close1.onclick = () => {
+    mod.style.visibility = "hidden";
+  };
+  let create = document.getElementById("ib4");
+  create.onclick = function () {
+    registerData();
+    mod.style.visibility = "hidden";
+  };
+
+  var arr = JSON.parse(localStorage.getItem("userdata")) || [];
+  function registerData() {
+    event.preventDefault();
+    var name = document.querySelector("#dsfname").value;
+    var email = document.querySelector("#dmail").value;
+    var password = document.querySelector("#dspass").value;
+
+    var obj = {
+      username: name,
+      usermail: email,
+      userpass: password,
+    };
+    arr.push(obj);
+    console.log(arr);
+    localStorage.setItem("userdata", JSON.stringify(arr));
+  }
+
+  let login = document.getElementById("iib4");
+  login.onclick = function () {
+    loginData();
+  };
+
+  var loginarr = JSON.parse(localStorage.getItem("userdata")) || [];
+  function loginData() {
+    var id = document.querySelector("#dumail").value;
+    var pass = document.querySelector("#dupass").value;
+    for (var i = 0; i < loginarr.length; i++) {
+      console.log("111");
+      if (loginarr[i].usermail == id && loginarr[i].userpass == pass) {
+        alert("logged Successfully");
+        let a = loginarr[i].username;
+        var x = localStorage.setItem("name", JSON.stringify(a));
+        let z = JSON.parse(localStorage.getItem("name"));
+        let user = document.getElementById("user");
+        user.innerText = z;
+        mod2.style.visibility = "hidden";
+      }
+    }
+  }
+  let b = JSON.parse(localStorage.getItem("name")) || [];
+  let user = document.getElementById("user");
+  user.innerText = b;
+
+  var data = [
+    {
+      img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0fd0988/images/products/skin-perfecting-2-percent-bha-liquid-2010-L.png?sw=360&sfrm=png",
+      name: "SKIN PERFECTING",
+      about: "2% BHA Liquid Exfoliant",
+      price: "$32.00",
+      reviews: "3908",
+      star1: 4,
+      desc: "Our #1 product worldwide + cult favorite, this gentle leave-on exfoliant with salicylic acid quickly unclogs pores, smooths wrinkles, brightens and evens out skin tone.",
+      point1: "Clears & minimizes enlarged pores",
+      point2: "BHA (beta hydroxy acid) sheds built-up layers of skin",
+      point3: "Fluid, lightweight texture absorbs quickly",
+      point4: "Use up to twice daily after cleansing & toning skin",
+      desc: "2% BHA clears pores allowing 10% niacinamide to quickly improve uneven tone, minimize pores and visibly reduce wrinkles and discolorations.",
+      why: "A unique leave-on formula that’s gentle enough for daily use on all skin types. Exfoliates dead skin cells while clearing pores for a more even, radiant tone, plus visibly reduces fine lines and wrinkles to reveal remarkably smoother, younger-looking skin. This exfoliant has an optimal pH range of 3.2–3.8  2021 Glamour Beauty Award Readers' Choice, Best Acne Treatment , 2020 Teen Vogue Acne Award, Best Exfoliant 2019 Women & Home Beauty Award, Best Blemish Treatment 2019 GQ Grooming Award, Best Face Products for Men",
+      what: "Skin becomes dull, dry and congested when dead skin cells build up on its surface. Beta hydroxy acid (BHA, also known as salicylic acid) mimics the natural exfoliation process of younger skin by helping it shed extra layers while unclogging and clearing pores.",
+      how: "Gently apply using fingers or a cotton pad over entire face and neck, including the eye area (avoid lash line and eyelids) after cleansing and toning. Do not rinse.   Start Slowly: Apply every other day and note skin's response. Then use up to twice daily. For daytime, always finish with SPF 30+. For nighttime, follow with the rest of your routine. If you have a salicylate allergy, check with your physician before using any products that contain salicylic acid. ",
+      sideimg1:
+        "https://m.media-amazon.com/images/S/aplus-media/sc/c5bffd7d-93d0-49f4-8ff8-a338a0d44a1f.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      sideimg2:
+        "https://m.media-amazon.com/images/S/aplus-media/sc/cad25933-48a5-4d70-839e-979e0de7ad86.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      img22:
+        "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwa8eb8c65/images/views/boost-c15-super-booster-7770-L-swatch.png?sw=360&sfrm=png",
+      youtube: "https://www.youtube.com/embed/Eu3xQElhix8",
+      star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    },
+    {
+      img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw9c06758f/images/products/resist-10-percent-niacinamide-booster-7980-L.png?sw=360&sfrm=png",
+      name: "BOOSTER",
+      about: "10% Niacinamide Booster",
+      price: "$46.00",
+      reviews: "373",
+      star1: 4,
+      desc: "This concentrated 10% niacinamide serum booster dramatically improves uneven skin tone and refines the appearance of pore size, skin texture and fine lines.",
+      point1: "Promotes a brighter, younger-looking appearance",
+      point2: "Niacinamide (vitamin B3) visibly minimizes pore size",
+      point3: "Sheer, ultra-light liquid formula",
+      point4: "Use alone or add to your moisturizer or serum",
+      why: "10% Niacinamide Booster is the first concentrated 10% niacinamide formula blended with natural calming and superior hydrating ingredients to address the frustrating combination of enlarged pores plus visible signs of aging, such as: uneven skin tone, lack of radiance, rough surface skin texture, redness, and dryness. The results after only a few days will impress you.",
+      what: "Niacinamide is a form of vitamin B3, which research has proven can reduce the appearance of enlarged pores, uneven skin tone, wrinkles, and dry skin. The light-as-water texture is designed to dramatically enhance your skincare while also providing soothing agents to promote visibly calm skin. Antioxidants and skin-replenishing ingredients make this product a multi-tasking must-have solution for all skin types.",
+      how: "Dispense 2-3 drops into the palm of your hand and then apply to your face. Add a couple more drops if you will also be applying to your neck and chest. During the day, finish with a moisturizer with SPF 30 or greater. Can be applied under the eye area, avoiding the eye itself.",
+      sideimg1:
+        "https://m.media-amazon.com/images/S/aplus-media/sc/ce316567-0bd2-47ef-9197-2304907fe31d.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      sideimg2:
+        "https://m.media-amazon.com/images/S/aplus-media/sc/e2307bec-9bda-4a78-bb52-d894ee1274fd.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      img22:
+        "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwc68f7b77/images/views/resist-10-percent-niacinamide-booster-7980-L-lifestyle1.png?sw=360&sfrm=jpg",
+      youtube: "https://www.youtube.com/embed/d6dqtQ3dQ-k",
+      star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    },
+    {
+      img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw015fa2f3/images/products/clinical-niacinamide-20-percent-treatment-8030-L.png?sw=360&sfrm=png",
+      name: "CLINICAL",
+      about: "Niacinamide 20% Treatment",
+      price: "$50.00",
+      reviews: "373",
+      star1: 4,
+      desc: "A highly concentrated niacinamide (vitamin B3) serum that effectively tightens and minimizes the look of sagging pores and rough bumps caused by age or sun damage.",
+      point1: "Dramatically reduces the look of stretched pores",
+      point2: "Helps reduce hard, clogged bumps",
+      point3: "Visibly improves blotchy tone & fades post-blemish marks",
+      point4: "Also reduces orange-peel texture",
+      why: "This innovative serum is the first ever to contain niacinamide at a safe, effective 20% concentration. This advanced level, complemented by purslane and acetyl glucosamine, steadily smooths out rough, orange-peel texture and tenacious bumps.",
+      what: "Niacinamide (vitamin B3) is a smart, multifaceted ingredient that uniquely penetrates skin’s surface to help improve the look of sagging, stretched pores. It normalizes pore function and protects from further stretching when exposed to damaging UV light for a dramatically smoother, younger-looking complexion.",
+      how: "Apply a few drops of Niacinamide 20% once or twice daily after cleansing, toning, and exfoliating. At night, layer with other treatment products as needed and follow with moisturizer; during the day, finish with a sunscreen rated SPF 30 or greater.",
+      sideimg1:
+        "https://m.media-amazon.com/images/S/aplus-media-library-service-media/d0e8c623-789a-4eee-99b7-a1d726da0f7f.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      sideimg2:
+        "https://m.media-amazon.com/images/S/aplus-media-library-service-media/e07188e0-3032-4578-b08c-11d5539b543f.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      img22:
+        "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw3490ecb0/images/views/clinical-niacinamide-20-percent-treatment-8030-L_lifestyle1.png?sw=360&sfrm=jpg",
+      youtube: "https://www.youtube.com/embed/4D-W98LOYPU",
+      star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    },
+    {
+      img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwb89f098f/images/products/resist-super-antioxidant-concentrate-serum-7640-L.png?sw=360&sfrm=png",
+      name: "RESIST",
+      about: "Super Antioxidant Serum",
+      price: "$41.00",
+      reviews: "489",
+      star1: 4,
+      desc: "A hydrating, antioxidant-enriched serum that restores visible radiance for dull, dry skin while fighting against environmental attack.",
+      point1: "Essential for improving visible signs of aging",
+      point2: "Improves the appearance of dull, uneven skin tone",
+      point3: "Restores hydration to dry, sun damaged skin",
+      point4: "Use twice daily after cleansing, toning, and exfoliating",
+      why: "RESIST Super Antioxidant Concentrate Serum contains an impressive range of plant- and vitamin-derived antioxidants that work synergistically to visibly improve the appearance of wrinkles, uneven skin tone, dryness, and vibrancy.",
+      what: "Stabilized Vitamin C and peptides plus potent antioxidants combine to help preserve and rejuvenate skin’s surface and to visibly enhance firmness. This state-of-the-art serum helps minimize damage from environmental attack that cause skin to look older, while also helping to visibly improve a dull skin tone for smooth, radiant results.",
+      how: "Smooth a few drops onto face, neck and eye area before moisturizing. For optimal results, use AM and PM. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
+      sideimg1:
+        "https://m.media-amazon.com/images/S/aplus-media-library-service-media/7801f8a2-82e4-4378-b4f0-0b41a73d542b.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      sideimg2:
+        "https://m.media-amazon.com/images/S/aplus-media/sc/a0a28529-768f-446b-bf9c-e05b91e60ccd.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      img22:
+        "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw8d6680b6/images/views/resist-super-antioxidant-concentrate-serum-7640-L_swatch.png?sw=360&sfrm=jpg",
+      youtube: "https://www.youtube.com/embed/M0VgrDtSwE4",
+      star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    },
+    {
+      img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw0e464cbb/images/products/defense-essential-glow-moisturizer-spf-30-2230-L.png?sw=360&sfrm=png",
+      name: "DEFENSE",
+      about: "Essential Glow Moisturizer SPF 30",
+      price: "$31.00",
+      reviews: "354",
+      star1: 5,
+      desc: "This illuminating moisturizer shields skin with all-mineral sun protection plus antioxidants to help protect against the effects of environmental damage.",
+      point1: "Creates an instant, healthy glow for makeup-optional skin",
+      point2:
+        "12 antioxidants visibly diminish the signs of environment-based aging",
+      point3: "Lightweight, illuminating cream",
+      point4: "Apply as the last step of your morning routine",
+      why: "This daytime anti-aging moisturizer combines all-mineral, broad-spectrum sun protection with licorice, kiwi, argan, niacinamide, vitamin c and other plant and vitamin-derived antioxidants specifically chosen for their ability to defend skin against air pollution and the harmful effects of blue light exposure.",
+      what: "Every morning, skin faces environmental threats that chip away at its appearance. This daytime hydrator protects from UV and blue light, plus helps neutralize airborne pollutants before they cause damage. Works all day to visibly repair and brighten skin so it looks younger and more vibrant",
+      how: "Apply liberally to face, neck, and eye area as the last step in your morning skincare routine.",
+      sideimg1:
+        "https://m.media-amazon.com/images/S/aplus-media/sc/b1b8d770-608c-41d2-87db-5da4964cd430.__CR0,0,970,300_PT0_SX970_V1___.jpg",
+      img22:
+        "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwc336bf58/images/views/defense-essential-glow-moisturizer-spf-40-2230-L-swatch.png?sw=360&sfrm=png",
+      youtube: "https://www.youtube.com/embed/lbRFeEiIPTI",
+      sideimg2:
+        "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw7b01d9e5/images/pdp/us_201113_desktop_pdp-panel_defense-collection.jpg",
+      star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
+    },
+  ];
+
+  displayProd(data);
+  function displayProd(data) {
+    data.map(function (elem) {
+      var div = document.createElement("div");
+      var div2 = document.createElement("div");
+      div2.style.height = "220px";
+      div2.style.backgroundColor = "#f9f9fb";
+      var div3 = document.createElement("div");
+      div3.style.display = "flex";
+      var img = document.createElement("img");
+      img.src = elem.img;
+      img.style.width = "100%";
+      img.style.height = "100%";
+      var name = document.createElement("p");
+      name.textContent = elem.name;
+      name.style.fontSize = "13px";
+      var about = document.createElement("p");
+      about.textContent = elem.about;
+      about.style.fontSize = "13px";
+      about.style.fontWeight = "600";
+      var price = document.createElement("p");
+      price.textContent = elem.price;
+      price.style.marginTop = "24px";
+      price.style.fontSize = "13px";
+      var star = document.createElement("img");
+      star.src = elem.star;
+      star.style.width = "100px";
+      star.style.height = "20px";
+      var reviews = document.createElement("p");
+      reviews.textContent = elem.reviews + " " + "Reviews";
+      reviews.style.fontSize = "11px";
+      reviews.style.fontWeight = "600";
+      reviews.style.marginTop = "4px";
+      reviews.style.marginLeft = "5px";
+      div2.append(img);
+      div3.append(star, reviews);
+      div.append(div2, name, about, price, div3);
+      div.setAttribute("class", "givehoverstyle");
+      div.onclick = function () {
+        window.location.href = "product_individual.html";
+      };
+      document.querySelector("#Anurecommend").append(div);
+
+      // sending data to localStorage
+      var arr = [];
+      arr.push(elem);
+      div.addEventListener("click", senddata);
+      function senddata() {
+        localStorage.setItem("paulasChoice", JSON.stringify(arr));
+      }
+    });
+  }
+
+  var accordions = document.getElementsByClassName("accordion");
+
+  for (var i = 0; i < accordions.length; i++) {
+    accordions[i].onclick = function () {
+      this.classList.toggle("is-open");
+
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        // accordion is currently open, so close it
+        content.style.maxHeight = null;
+      } else {
+        // accordion is currently closed, so open it
+        content.style.maxHeight = content.scrollHeight + "px";
+        console.log("hello");
+      }
+    };
+  }
+
+  // for adding products to bag
+  //  document.getElementById("Aaddtobagbox").addEventListener("click", ()=>{
+  //      let cartDataObj = JSON.parse(localStorage.getItem("paulasChoice"))
+  //      let currentProduct = cartDataObj[0]
+  //      let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+  //      cartData.push(currentProduct)
+  //      localStorage.setItem("cartData", JSON.stringify(cartData))
+  //      alert("product added to cart")
+  //  })
+
+  //  //ends here
+
+  // setting read more functionality to footer
+
+  // var accordions = document.getElementsByClassName("accordion");
+
+  // for (var i = 0; i < accordions.length; i++) {
+  //   accordions[i].onclick = function() {
+  //     this.classList.toggle('is-open');
+
+  //     var content = this.nextElementSibling;
+  //     if (content.style.maxHeight) {
+  //       // accordion is currently open, so close it
+  //       content.style.maxHeight = null;
+  //     } else {
+  //       // accordion is currently closed, so open it
+  //       content.style.maxHeight = content.scrollHeight + "px";
+  //       console.log("hello")
+  //     }
+  //   }
+  // }
+
+  let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+  document.getElementById("dcount").innerText = cartData.length;
+</script>
