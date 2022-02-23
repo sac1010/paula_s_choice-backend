@@ -2,7 +2,7 @@ document.querySelector("#Rmyform").addEventListener("submit",addresspart)
   var data=JSON.parse(localStorage.getItem("addressdata"))||[];
 
    var button = document.querySelector("#btns").addEventListener("click",function(){
-       window.location.href="Payment.html"
+       window.location.href="/Payment"
    })
   
 function addresspart(event){
