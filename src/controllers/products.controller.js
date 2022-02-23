@@ -12,5 +12,16 @@ router.get("/", async(req, res)=>{
 
 })
 
+router.patch("/", async(req, res)=>{
+    try{
+       const products = await Product.updateMany()
+       res.status(200).send(products)
+    }catch(e){
+        res.status(500).send("wrong")
+    }
+
+})
+
+
 
 module.exports = router 
