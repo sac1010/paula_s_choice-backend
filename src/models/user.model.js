@@ -12,6 +12,8 @@ timestamps:true
 })
 
 
+UserSchema.methods.verifyPassword 
+
 
 
 module.exports = mongoose.model("user", UserSchema)
