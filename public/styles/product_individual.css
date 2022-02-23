@@ -1,0 +1,742 @@
+body{
+    font-family: proxima-nova, sans-serif;
+}
+#Anavbar{
+    width:100%;
+    height:250px;
+}
+#Ancontainer{
+    width:100%;
+    height:800px;
+    /* border:5px solid red; */
+}
+#Aoneproduct{
+    margin-top: 200px;
+    margin-bottom: 60px;
+    width:75%;
+    height:550px;
+    margin:auto;
+    /* border:5px solid black; */
+    display: flex;
+}
+#Apicture{
+    width:100%;
+    height:450px;
+    display: flex;
+    /* border:1px solid red; */
+    background-color: #fcfaf7;
+}
+#Adetails{
+    width:48%;
+    height:100%;
+    margin-top: 18px;
+    margin-left: 5%;
+    /* border:1px solid blue; */
+}
+#Aname{
+    width:50%;
+    height:10px;
+    font-size: 14px;
+    /* border:1px solid black; */
+}
+#Aabout{
+    width:100%;
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 5px;
+    /* border:1px solid black; */
+}
+#Aratingbox{
+    width:100%;
+    height:20px;
+    /* border:1px solid black; */
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#Adescription{
+    width:100%;
+    margin-top: 5%;
+    font-size: 15px;
+    line-height: 25px;
+    /* border:1px solid red; */
+}
+#Apoint{
+    width:100%;
+    height:18%;
+    font-size: 13px;
+    line-height: 20px;
+    /* border:1px solid green; */
+}
+#Asizequanbox{
+    width:70%;
+    height:20%;
+    /* border:1px solid purple; */
+    display: flex;
+}
+#Asize{
+    width:30%;
+    height:40%;
+    font-size: 13px;
+}
+#Ansizebox{
+    width:100%;
+    height:90%;
+    border:1px solid rgb(138, 137, 137);
+    border-radius:5px;
+    text-align: center;
+    font-weight: bold;
+}
+#Atravel{
+    width:30%;
+    height:100%;
+    margin-left: 10px;
+    /* border:1px solid green; */
+}
+#Atravelsize{
+    width:100%;
+    height:35%;
+    margin-top: 52%;
+    border-radius:5px;
+    border:1px solid rgb(138, 137, 137);
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+#Atravelsize:hover{
+    border:3px solid black;
+}
+#Ansizebox:hover{
+    border:3px solid black;
+}
+#Aquantity{
+    width:30%;
+    height:100%;
+    margin-left: 10px;
+    font-size: 13px;
+    /* border:1px solid black; */
+}
+#Aquantityselect{
+    width:100%;
+    height:35%;
+    border-radius:5px;
+    margin-top: 2px;
+    border:1px solid rgb(138, 137, 137);
+}
+#Aautobox{
+    width:100%;
+    height:20%;
+}
+#Ainputrepl{
+    width:20px;
+    height:20px;
+}
+#Ajointhem{
+    display: flex;
+}
+#Aautoimg{
+    margin-top: 2px;
+}
+#Arepl{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    color:#333133;
+    margin-left: 7px;
+    /* margin-bottom: 20px; */
+}
+#Asavefree{
+    font-size: 11px;
+    color:#333133;
+    font-weight: 500;
+    margin-left: 8%;
+    margin-top: 1px;
+}
+#Aautofreeselect{
+    width:65%;
+    height:42%;
+    margin-left: 8%;
+    border-radius:5px;
+}
+#Aaddtobagbox{
+    width:100%;
+    height:9%;
+    background-color: #333133;
+    /* border:1px solid black; */
+    border-radius:5px;
+    text-align:center;
+    font-size: 15px;
+    margin-top: 1%;
+}
+#Aaddtobagbox:hover{
+    cursor:pointer;
+}
+#Amakeboxinside{
+    width:50%;
+    border:1px solid transparent;
+    height:100%;
+    margin:auto;
+    color:white;
+}
+#Aimportantnotebox{
+    width:100%;
+    height:3%;
+    margin-top: 7%;
+    /* border:1px solid black; */
+    display: flex;
+    font-size: 11px;
+    font-weight: 600;
+    color:#4b494b;
+    text-decoration: underline;
+}
+#Acruelup{
+    margin-top: 1px;
+}
+#Acashimg{
+    margin-left: 16px;
+}
+
+#Apicimg{
+    margin:auto;
+    width:84%;
+    height:74%;
+    margin-top:8%;
+    margin-bottom:8%;
+    margin-left:8%;
+    margin-right:8%;
+}
+#Atravelup{
+    margin-top: 13px;
+}
+#Aprice{                           
+    margin-left: 10%;
+    /* border:1px solid black; */
+    font-weight:bold;
+    font-size: 13px;
+}
+#starandrew{
+    width:60%;
+    height:100%;
+    /* border:1px solid black; */
+    display:flex;
+    font-size: 11px;
+    color:#738395;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#Areview{
+    margin-top: 4px;
+    margin-left: 5px;
+}
+#Areviewstyle{                
+    font-size: 11px;
+    font-weight: 600;
+}
+#Ahome{
+    height:30px;
+}
+#Abriefbox{
+    width:100%;
+    min-height: 300px; 
+    max-height:350px;
+    margin-top: 160px;
+    /* border:1px solid orange; */
+    display: flex; 
+    justify-content: space-around;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+#Arecheadoneyou{
+    text-align: center;
+    border-bottom: 5px solid #585858;
+    width:30%;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    color:#333133;
+}
+#onebrief{
+    width:30%;
+    height:500px;
+    /* border:1px solid black; */
+}
+#twobrief{
+    width:30%;
+    height:500px;
+    /* border:1px solid black; */
+}
+#threebrief{
+    width:30%;
+    height:500px;           
+    /* border:1px solid black; */
+}
+#makebold{
+    font-size: 22px;
+    font-weight: 200;
+}
+#Aoneimg{
+    width:100%;
+    /* border:1px solid black; */
+}
+#Atwoimg,#Afourimg,#Athreeimg{
+    width:100%;                          
+    margin-top: 30px;
+    /* border:1px solid black; */
+}
+#smallprodbox{
+    display: flex;
+    width:55%;
+    height:50px;
+    margin:auto;
+    /* border:1px solid black; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#smallimg1{
+    width:60px;
+    height:50;
+    border:1px solid rgb(221, 220, 220);
+    background-color:#fcfaf7 ;
+}
+#smallimg1:hover{
+    border:2px solid black;
+}
+#smallimg2:hover{
+    border:2px solid black;
+} 
+#smallimg2{                                                          
+    width:60px;
+    height:50;                                                  
+    background-color:#fcfaf7 ;
+    border:1px solid rgb(226, 223, 223);
+}
+#smallimg3{
+    width:60px;
+    height:50;
+    border:1px solid rgb(231, 228, 228);
+    background-size:100% 100%;
+    background-image:url("https://cdn0.iconfinder.com/data/icons/controls-essential/48/v-02-512.png");
+}
+#smallimg3:hover{
+    border:2px solid black;
+}
+#bigsmallimg{
+    width:47%;
+    /* border:1px solid black; */
+} 
+#leftarrowbox{
+    width:4%;
+    height:100%;
+    /* border:1px solid black; */
+}
+#rightarrowbox{
+    width:4%;
+    height:100%;
+    /* border:1px solid black; */
+}
+#Apicturemain{
+    width:92%;
+    height:100%;
+    /* border:1px solid green; */
+} 
+#leftarr,#rightarr{
+    margin-top:200px;
+    font-size: 20px;
+    color:#959498;
+}
+#leftarr:hover{
+    cursor: pointer;
+    font-size:23px;
+}
+#rightarr:hover{
+    cursor: pointer;
+    font-size:23px;
+}
+#Are{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* border:1px solid black; */
+    grid-gap:15px;
+    text-align: center;
+    grid: border 1px solid black;
+}
+.givehoverstyle:hover{
+    border:1px solid rgb(223, 221, 221);
+}
+#Aitalicres{
+    line-height: 25px;
+    color:rgb(59, 58, 58);
+}
+#Aresanding{
+    display: flex;
+    width:98%;
+    margin-left:1%;
+    margin-right: 1%;
+    height:380px;
+    margin-top: 5%;
+    /* border:1px solid black; */
+    justify-content: space-between;
+    font-size: 12px;
+}
+#Aresearchmiddle{
+    text-align: center;
+    font-size: 23px;
+}
+#Aresearch{
+    width:48%;
+    height:100%;
+    /* border:1px solid black; */
+}
+#Aingredients{
+    width:48%;
+    height:100%;
+    color:rgb(17, 17, 17);                                 
+    /* border:1px solid black; */
+}
+#Aratestarflex{
+    width:23%;
+    height:25px;
+    /* border:1px solid black; */
+    margin:auto;
+    display: flex;
+}
+#Abasedon{
+    margin-top: 7px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 8px;
+    color:rgb(49, 49, 49);
+}
+#Awriteitdown{
+    width:14%;                  
+    height:48px;
+    background-color: #333133;
+    margin:auto;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+#Awritenow{
+    width:70%;
+    height:50%;
+    margin-top: 10%;
+    margin:auto;
+    color:white;
+    border:1px solid transparent;
+    text-align: center;
+    font-size: 14px;
+}
+#threepointsevenbox{
+    border:1px solid rgb(190, 189, 189);
+    border-radius: 3px;
+    width:30px;
+    padding-top: 3px;
+    margin-left: 8px;
+    text-align: center;
+}
+#Arateboxing{
+    width:95%;
+    margin:auto;
+    margin-top: 30px;
+    height:270px;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+#Aratinginmiddle{
+    text-align: center;
+    font-size: 37px;
+    color:#333133;
+    /* border:1px solid black; */
+}          
+#Astarrboxhighlow{
+    width:32%;
+    height:270px;
+    border:1px solid rgb(199, 196, 196);
+    justify-content: space-around;
+    /* border:1px solid black; */
+}
+#Apros{
+    width:32%;
+    height:270px;
+    border:1px solid rgb(199, 196, 196);
+    /* border:1px solid black; */
+}
+#Acons{
+    width:32%;
+    height:270px;
+    border:1px solid rgb(199, 196, 196);
+    /* border:1px solid black; */
+}
+#Agreyhead{
+    width:100%;
+    height:19%;
+    background-color:#eeeff1;
+    border:1px solid transparent;
+    /* margin-top: 1px; */
+}
+#Aonerate,#Atworate,#Athreerate,#Afourrate,#Afiverate{
+    display: flex;
+    width:100%;
+    height:10%;
+    margin-bottom: 10px;
+    /* border:1px solid black; */
+}
+#Aonerate{
+    margin-top: 10px;
+}
+#Anustar{
+    width:65%;
+    height:70%;
+    margin-top:15px;
+    margin-left:5%;
+    margin-right:5%;
+    background-color: #eeeff1;
+}
+#Anustar1{
+    width:65%;
+    height:70%;
+    margin-top:15px;
+    margin-left:7%;
+    margin-right:5%;
+    background-color: #eeeff1;
+}
+#Afivestar{
+    width:80%;
+    height:100%;
+    background-color: #ffcc00;
+}
+#Afourstar{
+    width:20%;
+    height:100%;
+    background-color: #ffcc00;
+} 
+#Athreestar{
+    width:20%;
+    height:100%;
+    background-color: #ffcc00;
+}
+#Atwostar{
+    width:40%;
+    height:100%;
+    background-color: #ffcc00;
+}
+#Aonestar{
+    width:50%;
+    height:100%;
+    background-color: #ffcc00;
+} 
+#prosnumberword{
+    display: flex;
+    width:40%;
+    height:10%;
+    margin-bottom: 10px;
+}
+#prosnumberword1{
+    display: flex;
+    width:40%;
+    height:10%;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+#consnumberword{
+    display: flex;
+    width:40%;
+    height:10%;
+    margin-bottom: 10px;
+}
+#consnumberword1{
+    display: flex;
+    width:40%;
+    height:10%;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+} 
+#Around{
+    height:20px;
+    border-radius: 35%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    background-color: #eeeff1;
+    font-weight: bold;
+    margin-left:10px;
+    color:rgb(27, 26, 26);
+}
+#Atextlight{
+    font-size:14px;
+    margin-top: 20px;
+    color:rgb(27, 26, 26);
+}
+.Apicimgzoom:hover{
+    transform: scale(1.3);
+    transition: transform .6s;
+
+}
+#Amanybox{
+    width:100%;
+    height:300px;
+    /* border:1px solid black; */
+}
+#Aage{
+    width:100%;
+    height:10%;
+    /* border:1px solid black; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 3%;
+}
+#Abestuses,#Adescribeyourself,#Askintype{
+    width:100%;
+    height:10%;
+    /* border:1px solid black; */
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 3%;
+}
+#Aageword{
+    margin-right: 12%;
+
+}
+#Abestuseword{
+    margin-right: 8%;
+}
+#Adescribeword{
+    margin-right: 4%;
+}
+#Askinword{
+    margin-right: 8%;
+}
+#Acustomerscount{
+    width:92%;
+    height:25%;
+    /* border:1px solid red; */
+    background-color: #eeeff1;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+#Asortreviewsby{
+    width:15%;
+    padding:10px;
+    height:60%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#Asortreviewsby:focus{
+    border:3px solid black;
+}
+#Athreefiveone{
+    margin-top:25px;
+}
+#Acommentcontainer{
+    width:92%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height:200px;
+    /* border:1px solid black; */
+    margin-bottom:100px;
+}
+#Afivestarcomment{
+    display: flex;
+    height:10%;
+    width:100%;
+    /* border:1px solid black; */
+}
+#Afivenumberbox{
+    width:18px;
+    height:85%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border:1px solid rgb(197, 187, 187);
+    margin-right: 10px;
+}
+#Afivenumber{
+    margin-top: 1px;
+    margin:auto;
+    font-size: 14px;
+    margin-left: 5px;
+}
+#Afivestarimgyellow{
+    margin-right: 7px;
+}
+#Acommenthead{
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#Awritecommentand{
+    width:100%;
+    height:60%;
+    /* border:5px  solid red; */
+    display: flex;
+    font-size: 14px;
+}
+#Awritecomment{
+    width:80%;
+    height:100%;
+    /* border:1px solid green; */
+    color:rgb(61, 60, 60);
+    line-height: 20px;
+}
+#Asubmitted{
+    width:15%;
+    margin-left:5%;
+    line-height: 5px;
+    height:100%;
+    /* border:1px solid black; */
+}
+#Amoredetails{
+    width:20%;
+    height:15%;
+    /* border:1px solid black; */
+}
+#Amoredetailsword{
+    margin-top: 1px;
+    color:#5e7f96;
+    text-decoration: underline;
+}
+#Abottomline{
+    width:100%;
+    height:10%;
+    /* border:3px solid black; */
+    display: flex;
+    font-size: 14px;
+    color:rgb(61, 60, 60);
+}
+#Amakeboldbottom{
+    font-weight: bold;
+    margin-right: 7px;
+}
+#Awasthisbox{
+    width:100%;
+    height:12%;
+    /* border:1px solid black; */
+    display: flex;
+    font-weight: bold;
+    margin-right: 7px;
+    font-size: 14px;               
+    color:rgb(61, 60, 60);
+} 
+.Abotrec{
+    margin-top: 1px;        
+}
+#meraman{
+    width:100%;
+    height:300px;
+    /* border:1px solid black; */
+}
+#Anurecommend{
+    font-size: 12px;
+    color:rgb(61, 60, 60);
+}
+
+

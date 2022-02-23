@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"  type = "image/x-icon"> 
+    <title>Shop Paula's Choice</title>
+    <link rel="stylesheet" type="text/css" href="./styles/product_data.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/handf.css">
+    <link rel="stylesheet" href="./styles/handf(sac).css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<style>
+    #dboxer1{
+    margin-top: 360%;
+}
+</style>
+<body>
+    <div id="Anavbar"></div>
+
+    <div id="signModal" class="modal">
+        <div class="modal1">
+            <span id="dclse"><i class="fas fa-times" id="cross1"></i></span>
+            <h1><Strong>Create Account</Strong></h1>
+            <div id="ib">
+                <p>Email</p>
+                <input type="text" id="dmail">
+            </div>
+            <div id="ib1">
+                <p>First Name</p>
+                <input type="text" id="dsfname">
+            </div>
+            <div id="ib2">
+                <p>Last Name</p>
+                <input type="text" id="dlname">
+            </div>
+            <div id="ib3">
+                <p>Password</p>
+                <input type="password" id="dspass">
+            </div>
+            <div id="ib4">
+                <h2>Create Account</h2>
+            </div>
+            <div id="or">
+                <p><span>or</span></p>
+            </div>
+            <div id="ib5">
+                <a href="">
+                    <h2>SIGN IN</h2>
+                </a>
+            </div>
+            <div id="or">
+                <p><span>or</span></p>
+            </div>
+            <div id="ib6">
+                <a href="">
+                    <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+                </a>
+            </div>
+        </div>
+      </div>
+      <div id="logModal" class="modal">
+        <div id="modal2">
+            <span id="dclse"><i class="fas fa-times" id="cross"></i></span>
+            <h1><Strong>Sign In</Strong></h1>
+            <div id="iib">
+                <p>Email</p>
+                <input type="text" id="dumail" required>
+            </div>
+                <div id="iib1">
+                    <p>Password</p>
+                    <input type="password" id="dupass" >
+                </div>
+                <div id="iib4">
+                    <h2>Sign In</h2>
+                </div>
+                <div id="or">
+                    <p><span>or</span></p>
+                </div>
+                <div id="iib2">
+                    <h2>Create Account</h2>
+                </div>
+                <div id="or">
+                    <p><span>or</span></p>
+                </div>
+                <div id="ib6">
+                    <a href="">
+                        <h4><i class="fab fa-facebook"></i> SIGN IN WITH FACEBOOK</h4>
+                    </a>
+                </div>
+        </div>
+      </div>
+
+
+    <div id="Acontainer">
+        <!-- <div id="Ahome"><i class="fa badge" style="font-size:29px" value="Best Seller">&#xf07a;</i></div> -->
+        <div id="Adowncont">
+            <div id="Afilter">
+                <p id="Afit">Filter By</p>
+                <p id="Aopt">CATEGORY</p>
+                <div><input class="AHA" id="Acheckbox" type="checkbox"><label>AHA & BHA Exfoliants (33)</label></div>
+                <div><input class="Aresist" id="Acheckbox" type="checkbox"  onclick="Aresist()"><label>Resist (6)</label></div>
+                <div><input class="ASerums" id="Acheckbox" type="checkbox"><label>Antioxidant Serums (5)</label></div>
+                <div><input class="Amens" id="Acheckbox" type="checkbox" onclick="Amens()"><label>Men's (2)</label></div>
+                <div><input class="Aearth" id="Acheckbox" type="checkbox" onclick="Aearth()"><label>Earth Sourced (2)</label></div>
+                <div><input class="Abodycare" id="Acheckbox" type="checkbox" onclick="Abodycare()"><label>Body Care (3)</label></div>
+                
+                <p id="Aopt">SKIN CONCERN</p>
+                <div><input class="Acne" id="Acheckbox" type="checkbox"><label>Acne Breakouts (6)</label></div>
+                <div><input class="Anti-Aging" id="Acheckbox" type="checkbox"><label>Anti-Aging (35)</label></div>
+                <div><input class="Arecovery" id="Acheckbox" type="checkbox" onclick="Askinrec()"><label>Skin Recovery (4)</label></div>
+                <div><input class="Askinperfecting" id="Acheckbox" type="checkbox" onclick="Askinperfecting()"><label>Skin Perfecting (2)</label></div>
+                <div><input class="Ablumpy" id="Acheckbox" type="checkbox"><label>Blumpy Skin (16)</label></div>
+
+                <p id="Aopt">COLLECTION</p>
+                <div><input class="Aboosters" id="Acheckbox" type="checkbox"><label>Boosters (8)</label></div>
+                <div><input class="Acalm" id="Acheckbox" type="checkbox" onclick="Acalm()"><label>Calm Redness Relief (5)</label></div>
+                <div><input class="Aclear" id="Acheckbox" type="checkbox" onclick="Aclear()"><label>Clear for Acne (1)</label></div>
+                <div><input class="Aclinical" id="Acheckbox" type="checkbox" onclick="Aclinical()"><label>Clinical (4)</label></div>
+                <div><input class="Adefense" id="Acheckbox" type="checkbox" onclick="Adefense()"><label>Defense (2)</label></div>
+
+                <p id="Aopt">SKIN TYPE</p>
+                <div><input class="Allskin" id="Acheckbox" type="checkbox"><label>All Skin Types (37)</label></div>
+                <div><input class="Acombo" id="Acheckbox" type="checkbox"><label>Combination Skin (46)</label></div>
+                <div><input class="Adry" id="Acheckbox" type="checkbox"><label>Dry/Very Dry Skin (47)</label></div>
+                <div><input class="Asensetive" id="Acheckbox" type="checkbox"><label>Extra Sensitive Skin (11)</label></div>
+                <div><input class="Anormal" id="Acheckbox" type="checkbox"><label>Normal Skin (51)</label></div>
+
+            </div>
+            <div id="Aproductout">
+                <div id=Ahead>
+                    <h1 id="Aname">Skin Care</h1>
+                    <div id="Asortfilterflex">
+                    <div id="Asort">
+                        <p>Sort by:</p>
+                        <select id="Aselect" onchange="Asortfunt()">
+                            <option value="best">Best Sellers</option>
+                            <option value="top">Top Rated</option>
+                            <option value="most">Most Relevant</option>
+                        </select>
+                    </div>
+                    <div id="Afiltermediaquery"><p>FILTERS</p></div>
+                </div>
+                </div>
+                    <div id="Aproductin">
+                    <div id="Amainpro"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    
+</body>
+</html>
+<script src="./components/product_data.js"></script>
+<!-- <script src="./components/footer.js"></script> -->
+<script type="module">
+import navbar from "./components/dnav.js"
+    import footer from "./components/dfoot.js"
+    let nav = document.getElementById("Anavbar")
+    nav.innerHTML = navbar()
+
+
+
+    let foot = document.getElementById("footer")
+    foot.innerHTML = footer()
+
+
+
+    let mod = document.getElementById("signModal")
+    let sign = document.getElementById("dsign")
+
+    let log = document.getElementById("dlog")
+    let mod2 = document.getElementById("logModal")
+    let close = document.getElementById("cross")
+    let close1 = document.getElementById("cross1")
+
+    sign.onclick = () =>{
+        mod.style.visibility = "visible"
+    }
+    window.onclick= (event) => {
+        if(event.target == mod || event.target == mod2){
+            mod.style.visibility = "hidden"
+            mod2.style.visibility = "hidden"
+        }
+    }
+    log.onclick = ()=>{
+        mod2.style.visibility = "visible"
+    }
+    close.onclick = ()=> {
+        console.log("magic")
+       mod2.style.visibility = "hidden"
+       
+    }
+    close1.onclick = ()=> {
+       mod.style.visibility = "hidden"
+       
+    }
+    let create = document.getElementById("ib4")
+    create.onclick = function(){
+        registerData()
+        mod.style.visibility = "hidden"
+    }
+
+    var arr = JSON.parse(localStorage.getItem("userdata")) || []
+    function registerData(){
+        event.preventDefault()
+        var name = document.querySelector("#dsfname").value
+        var email = document.querySelector("#dmail").value
+        var password = document.querySelector("#dspass").value
+
+        var obj = {
+            username : name,
+            usermail : email,
+            userpass : password,
+        }
+        arr.push(obj)
+        console.log(arr)
+        localStorage.setItem("userdata",JSON.stringify(arr))
+    }
+   
+    let login = document.getElementById("iib4")
+    login.onclick = function(){
+        loginData()
+    }
+
+    var loginarr = JSON.parse(localStorage.getItem("userdata")) || []
+    function loginData(){
+        var id = document.querySelector("#dumail").value
+        var pass = document.querySelector("#dupass").value
+        for(var i = 0; i<loginarr.length; i++){
+            console.log("111")
+            if(loginarr[i].usermail == id && loginarr[i].userpass == pass){
+                alert("logged Successfully")
+                let a = loginarr[i].username
+                var x = localStorage.setItem("name",JSON.stringify(a))
+                let z = JSON.parse(localStorage.getItem("name"))
+                let user = document.getElementById("user")
+                user.innerText = z
+                mod2.style.visibility = "hidden"
+            }  
+        }
+    }
+        let b = JSON.parse(localStorage.getItem("name")) || []
+        let user = document.getElementById("user")
+        user.innerText = b
+
+
+        var accordions = document.getElementsByClassName("accordion");
+
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].onclick = function() {
+    this.classList.toggle('is-open');
+
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      // accordion is currently open, so close it
+      content.style.maxHeight = null;
+    } else {
+      // accordion is currently closed, so open it
+      content.style.maxHeight = content.scrollHeight + "px";
+      console.log("hello")
+    }
+  }
+}
+
+let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+ document.getElementById("dcount").innerText = cartData.length
+
+</script>

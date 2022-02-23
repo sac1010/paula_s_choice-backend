@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/handf.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel = "icon" href = "https://cdn.shopper.com/images/store-logos/paulaschoice-com-au-1554772002099.png"  type = "image/x-icon"> 
+    <title>Beauty Begins</title>
+</head>
+<style>
+    #BeautyBeginsWithU{
+        width: 90%;
+        margin: auto;
+    }
+    #beautyLog{
+        display: grid;
+        grid-template: repeat(2,auto)/repeat(4,1fr);
+        grid-template-areas: 
+        "h h h h"
+        "f b b b";
+    }
+    #beauty1{
+        grid-area: h;
+    }
+    #beauty2{
+        grid-area: f;
+    }
+    #beauty3{
+        grid-area: b;
+    }
+
+    #beautyP1{
+        margin-bottom: 2%;
+    }
+
+    #beautyP2{
+        margin-bottom: 2%;
+    }
+
+    #beautyP3{
+        margin-bottom: 2%;
+    }
+
+    #perkTag{
+        display: grid;
+        grid-template: repeat(2,auto)/repeat(4,1fr);
+        grid-template-areas: 
+        "p1 p1 p1 p1"
+        "p2 p2 p3 p3";
+        margin-bottom: 2%;
+    }
+    #perk1{
+        grid-area: p1;
+    }
+    #perk2{
+        grid-area: p2;
+    }
+    #perk3{
+        grid-area: p3;
+    }
+</style>
+<body>
+    <div id="navBar"></div>
+
+
+    <div id="BeautyBeginsWithU">
+        <div id="beautyLog">
+            <div id="beauty1">
+                <img src="./landingPage/images/begins.png" width="100%" height="100%" alt="">
+            </div>
+
+            <div id="beauty2">
+                <a href=""><img src="./landingPage/images/sign_in1.png" width="100%" height="100%" alt=""></a>
+            </div>
+
+            <div id="beauty3">
+                <a href=""><img src="./landingPage/images/create_Acc4.png" width="100%" height="100%" alt=""></a>
+            </div>
+        </div>
+
+        <div id="beautyP1">
+            <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwe16aba8a/images/loyalty/LR_NotLoggedIn_Steps_Desktop.jpg" width="100%" height="100%" alt="">
+        </div>
+
+        <div id="beautyP2">
+            <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw86fdab97/images/loyalty/desktoplist.jpg" width="100%" height="100%" alt="">
+        </div>
+
+        <div id="beautyP3">
+            <a href=""><img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw43893caf/images/loyalty/LR_NotLoggedIn_Questions_Desktop.jpg" width="100%" height="50%" alt=""></a>
+        </div>
+
+
+
+        <div id="perkTag">
+            <div id="perk1">
+                <img src="./landingPage/images/unlock_ur_perks.png" width="100%" height="100%" alt="">
+            </div>
+    
+            <div id="perk2">
+                <a href=""><img src="./landingPage/images/sign_in_peerks.png" width="100%" height="100%" alt=""></a>
+            </div>
+            
+            <div id="perk3">
+                <a href=""><img src="./landingPage/images/create_acc_perks.png" width="100%" height="100%" alt=""></a>
+            </div>
+        </div> 
+    </div>
+
+
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+
+    import navbar from "./components/dnav.js"
+    import footer from "./components/dfoot.js"
+
+    let nav = document.getElementById("navBar")
+    nav.innerHTML = navbar()
+
+    let foot = document.getElementById("footer")
+    foot.innerHTML = footer()
+    let y = JSON.parse(localStorage.getItem("name"))
+    
+
+    let user = document.getElementById("user")
+    user.innerText = y;
+
+    
+
+
+</script>

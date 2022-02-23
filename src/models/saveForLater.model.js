@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
 
 const saveSchema = mongoose.Schema({
-    userId:{Type:mongoose.Schema.Types.ObjectId,
+    userId:{type:mongoose.Schema.Types.ObjectId,
         ref:"user",
         required:true
         },
-    products:[{Type:mongoose.Schema.Types.ObjectId,
+    products:[{type:mongoose.Schema.Types.ObjectId,
           ref:"product"          
 }]
 },{

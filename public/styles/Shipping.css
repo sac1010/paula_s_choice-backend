@@ -1,0 +1,225 @@
+#RLeft{
+    width: 50%;
+    border: 1px solid transparent;
+    margin-left: 10%;
+    
+}
+#Rright{
+    margin-top: 40px;
+    width: 20%;
+    border: 1px solid transparent;
+    background-color: white;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    background-color: ghostwhite;
+    height: 100%;
+}
+#Rhead{
+    text-align: center;
+    line-height: 5px;
+    width: 100%;
+     
+}
+#Rhead>a>h2{
+    letter-spacing: 2.5px;
+}
+#Rhead :hover {
+    cursor: pointer;
+}
+h4{
+    letter-spacing: 7px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#steps {
+    width: 99%;
+    display: flex;
+    font-weight: bold;
+}
+#steps>hr {
+    transform: rotate(90deg);
+    height: 100px;
+    width: 0;
+     
+}
+#cl {
+    border: 1px solid transparent;
+    border-radius:50%;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+#secCl {
+     
+    border-radius:50%;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: lavender;
+    color: white;
+
+}
+#mHead {
+    width: 100%;
+    height: 150px;
+    border: 1px solid transparent;
+}
+#Rmain {
+    width: 94.5%;
+    height: 780px; 
+    border: 1px solid transparent;
+    background-color: white;
+    color: black;
+    padding: 2px 20px;
+    margin-top: 30px;
+     
+
+}
+#Rmain > h2{
+    font-weight: normal;
+}
+#Rmain > p1{
+    font-weight: bold;
+    font-size: 16px;
+}
+#name {
+    display: flex;
+    justify-content: space-between;
+}
+#fname,#lname {
+    height:20px;
+    margin-top: 13px;
+    width:310px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#country{
+    margin-top: 15px;
+    height:50px;
+    width:100%;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#StreetAdd,#City,#phone{
+    margin-top: 15px;
+    height:20px;
+    width:555px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+label{
+    color: steelblue;
+}
+#area{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+ #pin {
+    height:18px;
+    margin-top: 6px;
+    width:320px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#state{
+    height:52px;
+    margin-top: 6px;
+    width:330px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+ #button{
+     display: flex;
+     margin-top: 28px;
+ }
+#btns{
+    padding:20px 35px;
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    border:0px;
+    border-radius: 5px;
+    margin-right: 15px;
+
+}
+#btnc{
+    padding:20px 35px;
+    font-weight: bold;
+     
+    border:0px;
+    border-radius: 5px;
+    margin-right: 15px;
+
+}
+#btnc,#btns:hover{
+    cursor: pointer;
+}
+#terms> img{
+    height: 30px;
+    width: 85px;
+    margin-top: 20px;
+    margin-left: 1.2px;
+    margin-right: 2px;
+}
+#terms{
+    display: flex;
+     
+}
+#terms> p>a{
+    color: blue;
+}
+#terms> p{
+    font-size: small;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.bold{
+    font-weight: bold;
+}
+#scontainer>div{
+display: flex;
+justify-content: space-between;
+height: 80px;
+}
+#scontainer>div>img{
+    height: 100%;
+}
+#scontainer>div>div:nth-child(2){
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+}
+hr {
+    border-top: 0.5px solid rgb(216, 214, 214);
+  }
+  .summary{
+      width: 100px;
+  }
+ 
+ 

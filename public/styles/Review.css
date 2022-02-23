@@ -1,0 +1,147 @@
+body{
+     
+    font-family: proxima-nova, sans-serif;
+    background-color: ghostwhite;
+    height: 100%;
+}
+#Rhead{
+    text-align: center;
+    line-height: 5px;
+    width: 100%;
+     
+}
+#Rhead>a>h2{
+    letter-spacing: 2.5px;
+}
+#Rhead :hover {
+    cursor: pointer;
+}
+h4{
+    letter-spacing: 7px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#steps {
+    width: 70%;
+    display: flex;
+    font-weight: bold;
+    margin: auto;
+     
+}
+#steps>hr {
+    transform: rotate(90deg);
+    height: 100px;
+    width: 0;
+     
+}
+#cl {
+    border: 1px solid transparent;
+    border-radius:50%;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+#secCl {
+     
+    border-radius:50%;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: lavender;
+    color: white;
+
+}
+#mHead {
+    width: 90%;
+    height: 150px;
+     
+    margin: auto;
+}
+#Rcont{
+    width: 60%;
+     
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+     
+     
+}
+#shippingDet{
+    height: 400px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#address{
+    display: grid;
+     
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}    
+button{
+    height: 55px;
+    width: 120px;
+    background-color: rgb(80, 195, 224);
+    color: white;
+    font-weight: bold;
+    margin-left: 48%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+}
+#comment{
+    margin-top: 35px;
+     
+}
+#Rcomment{
+    height: 50px;
+     
+     
+}
+#up{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#addres{
+    line-height: 2px;
+}
+#terms> img{
+    height: 30px;
+    width: 85px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+#terms{
+    display: flex;
+    margin-left: 22%;
+     
+}
+#terms> p>a{
+    color: blue;
+}
+#terms> p{
+    font-size: small;
+    margin-top: 30px;
+}
+ 
