@@ -1,10 +1,10 @@
 const mongoose = require("mongoose")
 
 const orderSchema = new mongoose.Schema({
-products:[{Type:mongoose.Schema.Types.ObjectId,
+products:[{type:mongoose.Schema.Types.ObjectId,
         ref:"product"          
 }],
-userId:{Type:mongoose.Schema.Types.ObjectId,
+userId:{type:mongoose.Schema.Types.ObjectId,
     ref:"user",
     required:true
     }
