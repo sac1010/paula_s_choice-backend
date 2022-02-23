@@ -15,7 +15,7 @@ function addorder(event){
     else{
         
         document.querySelector("#Rmyform").addEventListener("submit",function(){
-            window.location.href="Review.html";
+            window.location.href="/Review";
         })
     }
     var object={
