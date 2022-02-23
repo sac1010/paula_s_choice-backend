@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #homeDisplay{
+        margin: auto;
+        width: 95%;
+        margin-bottom: 5%;
+    }
+    #homeDiv1>a>img{
+        width: 100%;
+        /* margin: auto; */
+    }
+    #homeDiv1{
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    #homeDiv2{
+        margin-bottom: 5%;
+    }
+    #category{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+
+    }
+
+    #homeDiv4{
+        display: flex;
+        gap: 10%;
+     
+        margin: auto;
+       /* border: 1px solid rgb(214, 30, 30); */
+        /* background: burlywood; */
+        width: 50%;
+        
+        
+    }
+    #homeDiv4>div:nth-child(2){
+            border-bottom: 7px solid black;
+    /* width: 100%; */
+            margin-bottom: 0px;
+  }
+hr{
+   margin-top: 0px;
+   width: 50%;
+   margin: auto;
+   border: 2px solid rgb(141, 140, 140);
+    /* color: black; */
+    background-color: rgb(95, 93, 93);
+    margin-bottom: 5%;
+}
+
+
+#homeDiv5{
+    margin-bottom: 5%;
+}
+
+#homeDiv6{
+    margin-bottom: 5%;
+}
+
+#homeDiv7{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+#homeDiv8{
+    display: flex;
+    /* margin-bottom: 5%; */
+    
+}
+#homeDiv9{
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    background-color:#fbf2e7 ;
+    border: 1px solid black;
+    margin-bottom: 5%;
+}
+#homeDiv9>a{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+#homeDiv9>a>p{
+    padding: auto;
+    margin-top: 3%;
+}
+
+</style>
+<body>
+    <div id="homeDisplay">
+        <div id="homeDiv1">
+            <a href="Products.html"><img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw180ac48d/images/homepage-new/us_211229_desktop_hp-panel_routine-focus.jpg" alt=""></a>
+
+            
+        </div>
+
+        <div id="homeDiv2">
+            <a href=""><img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwed856e08/images/homepage-new/pc_211229_desktop_hp-panel_expert-edit.jpg" alt="" width="100%" height="50%"></a>
+
+        </div>
+
+        <div id="category">
+            <a href="cleansers.html"><img src="images\cleansers.png" width="100%" height="100%" alt=""></a>
+            <a href="toners.html"><img src="images\toners.png" width="100%" height="100%" alt=""></a>
+            <a href="exfoliants.html"><img src="images\exfoliants.png" width="100%" height="100%" alt=""></a>
+            <a href="moisturizers.html"><img src="images\moisturizers.png" width="100%" height="100%" alt=""></a>
+            <a href="sunscreen.html"><img src="images\sunscreen.png" width="100%" height="100%" alt=""></a>
+            <a href="acne.html"><img src="images\acne.png" width="100%" height="100%" alt=""></a>
+            <a href="anti_aging.html"><img src="images\antiaging.png" width="100%" height="100%" alt=""></a>
+            <a href="whats_new.html"><img src="images\whatsNew.png" width="100%" height="100%" alt=""></a>
+            <!-- <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw8d51952d/images/homepage-new/desktoplaunchpad/us_220101_desktop_launchpad.jpg" alt=""> -->
+        </div>
+
+
+
+
+        <div id="homeDiv4">
+
+           <div onclick="best()" id="best"><h2 >BEST SELLERS</h2></div>
+           <div onclick="award()" id="award"><h2 id="award">AWARD WINNERS</h2></div>
+           <div onclick="kits()" id="kits"><h2>KITS</h2></div>
+
+        </div>
+        <hr>
+
+
+
+        <div id="homeDiv5">
+            <h3>display Products</h3>
+        </div>
+
+        <div id="homeDiv6">
+            <a href="beautyBegins.html"><img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd6b440a1/images/homepage-new/pc_210303_desktop_hp-panel_loyalty_short.jpg" width="100%" height="100%" alt=""></a>
+        </div>
+
+
+      
+
+        <div id="homeDiv7">
+            <a href="quiz.html"><img src="images/Screenshot 2022-01-19 125247.png" alt="" width="100%"  height="100%"></a>
+            <a href="routine.html"><img src="images\Screenshot 2022-01-19 125400.png" alt="" width="100%" height="100%"></a>
+        </div>
+
+
+        <div id="homeDiv8">
+            <a href=""><img src="images\beautyBegins.png" alt="" width="100%" height="90%"></a>
+            
+            <a href="philo.html"><img src="images\philos.png" alt="" width="100%" height="90%"></a>
+            <a href="recycle.html"><img src="images\recycling.png" alt="" width="100%" height="90%"></a>
+        </div>
+
+
+        <div id="homeDiv9">
+            <a href="handling.html"><p>WE'RE IN TOGETHER. HERE'S HOW WE'RE HANDLING COVID-19  </p></a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    function best(){
+        console.log("here");
+        document.getElementById("best").style.borderBottom = "7px solid black";
+    }
+
+    function award(){
+        console.log("here");
+        document.getElementById("award").style.borderBottom = "7px solid black";
+    }
+
+      function kits(){
+        console.log("here");
+        document.getElementById("kits").style.borderBottom = "7px solid black";
+    }
+</script>

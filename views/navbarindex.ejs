@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3cc9ecf17.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: proxima-nova,sans-serif;
+        }
+        #dfrstbr{
+            display: flex;
+            height: 50px;
+            width: 99.88%;
+            border: 1px solid black;
+            margin-top: 0px;
+        }
+        #dfrstbr>div{
+            flex: 1;
+            border-right:1px solid rgb(255,255,250);
+            background-color: rgb(87,87,92);
+            color: rgb(255,255,250);
+        }
+        #dfrstbr>div:nth-child(3){
+            border: 0;
+        }
+        #dfrstbr>div>p{
+            text-align: center;
+
+        }
+        #dfrstbr a{
+            color:rgb(124,191,250);
+            font-size: small;
+        }
+        #dscndbr{
+            display: flex;
+            height: 100px;
+            width: 99.88%;
+            border-bottom: 1px solid grey;
+        }
+        .dsignoffer>p{
+            color: rgb(105,140,164);
+            padding-left: 25px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .dsignoffer>p>i{
+            color: black                        ;
+        }
+        .dpaula{
+            margin-left: 21%;
+        }
+        .dpaula>a{
+            text-decoration: none;
+            color: black;
+        }
+        .dpaula>a>h1{
+            font-size: 28px;
+            letter-spacing: 3px;
+            padding-top: 5px;
+        }
+        .dpaula>a>h3{
+            text-align: center;
+            margin-top: -24px;
+            letter-spacing:8px;
+            font-size: 15px;
+        }
+        .dsearch{
+            margin-left: 3%;
+            width: 200px;
+            height: 30%;
+            border: 2px solid rgb(213,216,220);
+            margin-top: 35px;
+            border-radius: 20px;
+        }
+        .dsearch>input{
+            width: 75%;
+            height: 85%;
+            font-size: 15px;
+            margin-top: 1.5px;
+            margin-left: 15px;
+            border: 0;
+            outline: none;
+        }
+        .dsearch>button{
+            margin-left: -7px;
+            width: 15%;
+            height: 90%;
+            font-size: large;
+            background: transparent;
+            border: 0;
+            border-left: 1px solid rgb(213,216,220);
+            color: rgb(87,87,92);
+        }
+        .daccount{
+            margin-top: 18px;
+            margin-left: 15px;
+            display: flex;
+        }
+        .daccount>h3{
+            font-weight: normal;
+            font-size: large;
+            margin-top: 27px;
+            color: rgb(87,87,92);
+        }
+        .daccount>a{
+            color: rgb(87,87,92);
+            margin-top: 17px;
+            margin-left: 10px;
+            font-size: xx-large;
+        }
+        .dbag{
+            margin-top: 18px;
+            margin-left: 25px;
+            display: flex;
+        }
+        .dbag>h3{
+            font-weight: normal;
+            font-size: large;
+            margin-top: 27px;
+            color: rgb(87,87,92);
+        }
+        .dbag>a{
+            color: rgb(87,87,92);
+            margin-top: 17px;
+            margin-left: 10px;
+            font-size: xx-large;
+        }
+        .dbag>p{
+            background-color: purple;
+            height: 20px;
+            width: 15px;
+            padding-top: 2px;
+            padding-left:6px;
+            color: snow;
+            border-radius: 7px;
+            margin-top: 12px;
+        }
+        #dthrdbr{
+            display: flex;
+            height: 48px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        #dthrdbr>div{
+            height: 40px;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            font-size: small;
+        }
+        #dthrdbr>div:nth-child(1){
+            margin-left: 2%;
+        }
+        #dthrdbr>div:nth-child(5){
+            margin-left: 17.5%;
+        }
+        #dthrdbr>div:hover{
+            border-bottom: 2px solid black;
+        }
+        #dfooter{
+            width: 99.88%;
+            height: 590px;
+            margin-top: 2%;
+            margin-bottom: 0;
+        }
+        #dbox1{
+            display: flex;
+            height: 85%;
+            width: 100%;
+        }
+        .dlft{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            color: rgb(51,49,51);
+            background-color: rgb(232,208,194);
+        }
+        .drgt{
+            width: 60%;
+            height: 100%;
+            background-color: rgb(87,87,92);
+        }
+        #dbox2{
+            height: 15%;
+            width: 100%;
+            display: flex;
+            background-color: rgb(51,49,51);
+        }
+        .dlft>div{
+            height: 50%;
+            width: 25%;
+            margin-top: 2%;
+            font-size: 11.5px;
+        }
+        .dlft>div:nth-child(1){
+            margin-left: 35%;
+        }
+        .dlft>div:nth-child(1)>p:nth-child(1){
+            font-weight: 800;
+        }
+        .dlft>div:nth-child(2)>p{
+            padding-left: 15px;
+        }
+        .dlft>div:nth-child(2)>p:nth-child(1){
+            padding-top: 28px;
+        }
+        #dtp{
+            display: flex;
+            height: 55%;
+            margin-top: 2%;
+        }
+        #dtp>div{
+            width:18%;
+            height:100%;
+            margin-left: 50px;
+            font-size: 11.5px;
+            color: snow;
+        }
+        #dtp>div>p{
+            padding-left: 10px;
+        }
+        #dtp>div>p>a{
+            color: snow;
+            text-decoration: none;
+        }
+        #dtp>div:nth-child(1){
+            margin-left: 45px;
+        }
+        #dtp>div>p:nth-child(1){
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        #dtp>div>p:nth-child(2){
+            margin-top: -5px;
+        }
+        #dmd{
+            height: 65px;
+            width: 100%;
+            margin-top: 35px;
+            display: flex;
+        }
+        #dmd>div{
+            flex: 1;
+            height: 100%;
+            color: snow;
+        }
+        #dmd>div>p{
+            font-size: 11.5px;
+            font-weight: 800;
+            padding-left: 55px;
+            margin-top: 0;
+        }
+        #dmd>div>div{
+            height: 60%;
+            width: 80%;
+            margin-top: -7px;
+            margin-left: 55px;
+            display: flex;
+        }
+        #dmd>div:nth-child(1)>div{
+            border: 1px solid snow;
+        }
+        #dmd>div>div>input{
+            width: 75%;
+            border: 0;
+            outline: none;
+            padding-left: 10px;
+        }
+        #dmd>div>div>button{
+            border: 0;
+            color: snow;
+            margin-left: 0;
+            padding-left: 7px;
+            background-color: rgb(87,87,92);
+        }
+        #dmd>div>div>a{
+            text-decoration: none;
+            color: snow;
+            font-size: large;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+        #dtd{
+            height: 65px;
+            width: 100%;
+            margin-top: 25px;
+            display: flex;
+        }
+        #dtd>div{
+            flex: 1;
+            height: 100%;
+            color: snow;
+        }
+        #dtd>div>p{
+            font-size: 11.5px;
+            font-weight: 800;
+            padding-left: 55px;
+            margin-top: 0;
+        }
+        #dtd>div>div{
+            height: 60%;
+            width: 80%;
+            margin-top: -7px;
+            margin-left: 55px;
+            display: flex;
+        }
+        #dtd>div:nth-child(1)>div>img{
+            height: 70%;
+            width: 100%;
+        }
+        #dtd>div:nth-child(2)>div>img{
+            height: 50%;
+            margin-top: 5px;
+        }
+        .dabt{
+            flex:1;
+            color: snow;
+            font-size: 11px;
+        }
+        .dabt>p{
+            padding-left: 50px;
+            padding-top: 20px;
+        }
+        .dtrms{
+            flex:2;
+            color: snow;
+            font-size: 11px;
+            display: flex;
+        }
+        .dtrms>div{
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 16px;
+            margin-top: 35px;
+            border-left:1px solid snow ;
+        }
+        .dtrms>div:nth-child(1){
+            border: 0;
+            padding-left: 70px;
+        }
+        .dtrms>div>p{
+            margin-top: 2px;
+        }
+        #dthrdbr>div:hover .dbox{
+            top: 100px;
+            opacity: 1;
+            visibility: visible;
+        }
+        .daccount:hover .dbox{
+            top: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+        .dbox{
+            margin-left: -35px;
+            margin-top: 95px;
+            position: absolute;
+            background-color: white;
+            height: 300px;
+            width: 74%; 
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .dac{
+            width: 20%;
+            height: auto;
+            margin-left: -12%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .dac1>p{
+            padding: 5px;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .dac1>p:nth-child(2){
+            margin-top: -10px;
+        }
+        .dac1 a{
+            text-decoration: none;
+            color: rgb(88,124,148);
+            font-weight: 700;
+        }
+        .dac2{
+            border-top: 8px solid gainsboro;
+        }
+        .dac2>div{
+            border-top: 1px solid gainsboro;
+        }
+        .dac2 p{
+            padding-left: 30px;
+        }
+        .dac2 p:hover{
+            text-decoration: underline;
+        }
+        .dcnt{
+            display: flex;
+            font-size: 14px;
+            justify-content: space-around;
+        }
+        .dm{
+            margin-left: 13px;
+            border-left: 1px solid black;
+        }
+        .dcnt p{
+            padding: 5px;
+            padding-left: 10px;
+        }
+        .dicns {
+            width: 100%;
+            height: 85px;
+            border-top: 1px solid grey;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
+        }
+        .dbox1{
+            width: 32%; 
+            font-size: 14px;
+            display: flex;
+        }
+        .dbox1>div{
+            margin-left: 20px;
+        }
+        .dbox1 p {
+            padding: 5px;
+            padding-left: 10px;
+        }
+        .dbox2{
+            width: 33%;
+            height: 385px;
+        }
+        .dd{
+            display: flex;
+            font-size: 14px;
+            justify-content: space-around;
+        }
+        .dd p{
+            padding: 5px;
+            padding-left: 10px;
+        }
+        .dd2{
+            height: 50px;
+            border: 1px solid transparent;
+            font-size: 15px;
+            font-weight: 800;
+            text-align: right;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
+        }
+        .dd2>a{
+            color: black;
+            text-decoration: none;
+        }
+        .dd2>a>p{
+            margin-right: 10px;
+        }
+        .dbox3{
+            width: 31%;
+            display: flex;
+            height: auto;
+            justify-content: space-around;
+        }
+        .dbox3 p{
+            padding: 5px;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+        .dbox4{
+            width: 35%;
+            margin-left:-27.4% ;
+            display: flex;
+            justify-content: space-around;
+        }
+        .dbox4 div{
+            width: 180px;
+            height: 265px;
+        }
+        .dbox4 img{
+            height: 100%;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .dbox4 p {
+            padding: 5px;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+        .dbox5{
+            width: 35%;
+            margin-left:-20.9% ;
+            display: flex;
+            justify-content: space-around;
+        }
+        .dbox5>div{
+            width: 180px;
+            height: 265px;
+        }
+        .dbox5 p{
+            padding: 5px;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+        .dbox5 img{
+            height: 100%;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .dhvr>p:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="dfrstbr">
+            <div>
+                <p>Free Shipping on $49</p>
+            </div>
+            <div>
+                <p>20% Off 2+ Items</p>
+            </div>
+            <div>
+                <p>Paula's Choice Perks <a href="">Get Started</a></p>
+            </div>
+        </div>
+        <div id="dscndbr">
+            <div class="dsignoffer">
+                <p><i class="far fa-envelope"></i>Sign-Up for Special Offers</p>
+            </div>
+            <div class="dpaula">
+                <a href="">
+                <h1>PAULA'S CHOICE</h1>
+                <h3>SKINCARE</h3>
+            </a>
+            </div>
+            <div class="dsearch">
+                <input type="text" id="dsrch" placeholder="Search for skin care">
+                <button id="dsym">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="daccount">
+                <h3 id="user">SIGN IN </h3>
+                <a href=""><i class="fas fa-user"></i></a>
+                <div class="dbox dac">
+                    <div class="dac1">
+                        <p>HELLO <strong>BEAUTIFUL</strong>/<strong>HANDSOME</strong>,</p>
+                        <p><a href="">Login</a> or <a href="">Sign Up</a></p>
+                    </div>
+                    <div class="dac2">
+                        <div>
+                            <p>Account Profile</p>
+                        </div>
+                        <div>
+                            <p>Orders</p>
+                        </div>
+                        <div>
+                            <p>Shipping Information</p>
+                        </div>
+                        <div>
+                            <p>Billing Information</p>
+                        </div>
+                    </div>
+                    <div class="dac2">
+                        <div>
+                            <p>Paula's Choice Perks</p>
+                        </div>
+                        <div>
+                            <p>Auto Replenishment</p>
+                        </div>
+                        <div>
+                            <p>My Routine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dbag">
+                <h3>BAG</h3>
+                <a href=""><i class="fas fa-shopping-bag"></i></a>
+                <p id="dcount">0</p>
+            </div>
+        </div>
+        <div id="dthrdbr">
+            <div class="dscp">
+                <p>SKIN CARE PRODUCTS</p>
+                <div class="dbox">
+                    <div class="dcnt">
+                        <div class="dhvr">
+                            <p>Body Care</p>
+                            <p>Cleanser</p>
+                            <p>Exfoliant</p>
+                            <div class="dm dhvr">
+                                <p>AHA Exfoliant</p>
+                                <p>BHA Exfoliant</p>
+                            </div>
+                        </div>
+                        <div class="dhvr">
+                            <p>Eye Cream</p>
+                            <p>Face Masks</p>
+                            <p>Face Serum</p>
+                            <p>Face Toner</p>
+                            <p>Hair Care</p>
+                        </div>
+                        <div class="dhvr">
+                            <p>Lip Care</p>
+                            <p>Makeup</p>
+                            <p>Men's Skin Care</p>
+                        </div>
+                        <div class="dhvr">
+                            <p>Moisturizer</p>
+                            <div class="dm dhvr">
+                                <p>Dry Skin Moisturizer</p>
+                                <p>Anti-Aging Moisturizer</p>
+                                <p>Oily Skin Moisturizer</p>
+                            </div>
+                            <p>Natural Skin Care</p>
+                        </div>
+                        <div class="dhvr">
+                            <p>Skin Booster</p>
+                            <p>Skin Brigthener</p>
+                            <p>Skin Supplements</p>
+                            <p>Sunscreen</p>
+                        </div>
+                    </div>
+                    <div class="dicns">
+
+
+                    </div>   
+                </div>
+            </div>
+            <div class="dsc">
+                <p>SKIN CONCERNS</p>
+                <div class="dbox dbox1">
+                    <div class="dhvr">
+                        <p>Acne-Prone</p>
+                    <div class="dm dhvr">
+                        <p>Benzoyl Peroxide Treatments</p>
+                    </div>
+                    <p>Anti-Aging</p>
+                    <div class="dm dhvr">
+                        <p>Wrinkles</p>
+                    </div>
+                    <p>Anti-Pollution Skin Care</p>
+                    <p>Blackheads</p>
+                    <p>Bumpy Skin</p>
+                    </div>
+                    <div class="dhvr">
+                        <p>Dehydrated Skin</p>
+                        <p>Dull Skin</p>
+                        <p>Clogged Pores</p>
+                        <p>Oil Control</p>
+                        <p>Skin Firming</p>
+                        <p>Skin Redness</p>
+                        <p>Uneven Skin Tone</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dst">
+                <p>SKIN TYPE</p>
+                <div class="dbox dbox2">
+                    <div class="dd">
+                        <div class="dhvr">
+                            <p>Dry Skin</p>
+                            <div class="dm dhvr">
+                                <p>Face Wash for Dry Skin</p>
+                                <p>Moisturizer for Dry Skin</p>
+                                <p>Toner for Dry Skin</p>
+                            </div>
+                            <p>Normal Skin</p>
+                            <p>Combination Skill</p>
+                        </div>
+                        <div class="dhvr">
+                            <p>Oily Skin</p>
+                            <div class="dm dhvr">
+                                <p>Face Wash for Oily Skin</p>
+                                <p>Moisturizer for Oily Skin</p>
+                                <p>Toner for Oily Skin</p>
+                            </div>
+                            <p>Sensitive Skin</p>
+                            <div class="dm dhvr">
+                                <p>Face Wash for Sensitive Skin</p>
+                                <p>Moisturizer for Sensitive Skin</p>
+                                <p>Toner for Sensitive Skin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dd2">
+                       <a href=""><p>SHOP BY SKIN TYPES ></p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="di">
+                <p>INGREDIENTS</p>
+                <div class="dbox dbox3">
+                    <div class="dhvr">
+                        <p>Azelaic Acid</p>
+                        <p>Bakuchiol</p>
+                        <p>Ceramides</p>
+                        <p>Glycolic Acid</p>
+                        <p>Hyaluronic Acid</p>
+                        <p>Lactic Acid</p>
+                    </div>
+                    <div class="dhvr">
+                        <p>Niacinamide</p>
+                        <p>Omega Fatty Acids</p>
+                        <p>Peptides</p>
+                        <p>Retinol</p>
+                        <p>Salicylic Acid</p>
+                        <p>Vitamin C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dt">
+                <p>TRENDING</p>
+                <div class="dbox dbox4">
+                    <div class="dhvr">
+                        <p>Award Winners</p>
+                        <p>Collections</p>
+                        <p>Expert Picks</p>
+                        <p>Offers</p>
+                        <p>Top Rated</p>
+                    </div>
+                    <div>
+                        <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw70632ec7/images/plp-card/pc_210516_desktop_plp-card_glamour-beauty-award.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dscr">
+                <p>SKIN CARE RESOURCES</p>
+                <div class="dbox dbox5">
+                    <div class="dhvr">
+                        <p>Routine Finder</p>
+                        <p>Skin Quiz</p>
+                        <p>Expert Advice</p>
+                        <div class="dm dhvr">
+                            <p>Ingredient Dictionary</p>
+                            <p>Skin Care Advice</p>
+                        </div>
+                        <p>Paula's Choice Perks</p>
+                    </div>
+                    <div>
+                        <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwb588c324/images/plp-card/pc_210303_desktop_plp-card_loyalty-sub_cta.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dfooter">
+        <div id="dbox1">
+            <div class="dlft">
+                <div>
+                    <p> OUR COLLECTIONS</p>
+                    <p>Boosters</p>
+                    <p>Calm</p>
+                    <p>Clear</p>
+                    <p>Clinical</p>
+                    <p>Defense</p>
+                    <p>Earth Sourced</p>
+                    <p>Exfoliant</p>
+                    <p>Hydralight</p>
+                </div>
+                <div>
+                    <p>Moisture Boost</p>
+                    <p>Omega+ Complex</p>
+                    <p>PC4Men</p>
+                    <p>Resist</p>
+                    <p>Skin Balancing</p>
+                    <p>Skin Perfecting</p>
+                    <p>Skin Recovery</p>
+                    <p>View All</p>
+                </div>
+            </div>
+            <div class="drgt">
+                <div id="dtp">
+                    <div>
+                        <p>WHO WE ARE</p>
+                        <p><a href="/about.html"> About Us </a></p>
+                        <p>Paula's Story</p>
+                        <p>Paula's Choice Perks</p>
+                        <p>COVID-19 Information</p>
+                        <p>Sustainability & Recycling</p>
+                        <p>Careers</p>
+                        <p>Auto Replenishment</p>
+                        <p>Science Advisory Board</p>
+                        <p>Research & Education Team</p>
+                        <p>On The Rise Program</p>
+                    </div>
+                    <div>
+                        <p>CLIENT SERVICES</p>
+                        <p>Order Status</p>
+                        <p>Help Center</p>
+                        <p>Private Consultation</p>
+                        <p>My Account</p>
+                        <p>Email Us</p>
+                    </div>
+                    <div>
+                        <p>PARTNERS</p>
+                        <p>Student Discount</p>
+                        <p>Affiliate Program</p>
+                        <p>International</p>
+                    </div>
+                </div>
+                <div id="dmd">
+                    <div>
+                        <p>SIGN UP FOR SPECIAL OFFERS</p>
+                        <div>
+                            <input type="text" placeholder="Enter your email">
+                            <button id="dsub">SIGN UP</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>1.800.831.4088</p>
+                        <div>
+                           <a href="https://www.facebook.com/PaulasChoice.Inc"> <i class="fab fa-facebook-f"></i></a>
+                           <a href="https://twitter.com/paulaschoice"><i class="fab fa-twitter"></i></a>
+                           <a href="https://www.youtube.com/user/PaulasChoiceBeauty"> <i class="fab fa-youtube"></i></a>
+                           <a href="https://www.pinterest.com/paulaschoice"> <i class="fab fa-pinterest-p"></i></a>
+                           <a href="https://www.instagram.com/paulaschoice"> <i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="dtd">
+                    <div>
+                        <p>PAYMENT OPTIONS</p>
+                        <div>
+                            <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw8a429350/images/footer/desktop-payment-icons.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>SAFE & SECURE</p>
+                        <div>
+                            <img src="https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw0f07a73e/images/footer/mcafee-60.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dbox2">
+            <div class="dabt">
+                <p>© Copyright 2021 Paula's Choice.
+                     All rights reserved.
+                     Paula's Choice and Cosmetics Cop are
+                      registered trademarks of Paula's Choice, LLC.</p>
+            </div>
+            <div class="dtrms">
+                <div>
+                    <p>TERMS OF USE</p>
+                </div>
+                <div>
+                    <p>ACCESSIBILITY</p>
+                </div>
+                <div>
+                    <p>PRIVACY/SECURITY</p>
+                </div>
+                <div>
+                    <p>DON'T SELL MY DATA</p>
+                </div>
+                <div>
+                    <p>SITE MAP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

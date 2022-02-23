@@ -1,0 +1,40 @@
+#covid{
+    height: auto;
+    width: 95%;
+    margin: auto;
+}
+#covid>p{
+    padding: 20px;
+    padding-left: 30px;
+}
+.bld{
+    font-size: x-large;
+    padding-left: 35px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.bld1{
+    margin-top: -15px;
+}
+.dtog{
+    height: 100px;
+    width:100%;
+    background-color: rgb(245,235,223);
+    font-size: 40px;
+}
+.dtog>p{
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-left: 35px;
+    font-weight: 700;
+}
+span{
+    color: rgb(114, 171, 214);
+}
+#psign{
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+#dthrdbr{
+    z-index: 1000;
+}
