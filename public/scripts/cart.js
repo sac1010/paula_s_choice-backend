@@ -341,7 +341,7 @@ function displayProd(data){
         div.append(div2,name,about,price,div3)
         div.setAttribute("class","givehoverstyle")
         div.onclick=function(){
-            window.location.href="product_individual.html"
+            window.location.href="/product_individual"
         }
         document.querySelector("#Anre").append(div);
 
@@ -359,7 +359,7 @@ function displayProd(data){
 document.getElementById("checkout").addEventListener("click", ()=>{
     localStorage.setItem("subTotal", JSON.stringify(subtotal))
     localStorage.setItem("estTotal", JSON.stringify(estTotal))
-    window.location.href = 'Shipping.html'
+    window.location.href = '/Shipping'
 
 })
 
