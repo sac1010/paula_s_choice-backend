@@ -12,11 +12,12 @@ router.get("/", async(req, res)=>{
        const size = 12
        const products = await Product.find(filter).skip((page-1)*size).limit(size).lean().exec()
        res.status(200).send(products)
-    }catch(e){
+    }
+    catch(e){
         res.status(500).send(e.message)
     }
 
-})
+    })
 
 router.patch("/", async(req, res)=>{
     try{
