@@ -40,7 +40,7 @@ router.post("/", async(req, res)=>{
 router.get("/:userId", async(req, res)=>{
     try{
         let userId = req.params.userId
-       const cart = await Cart.findOne({userId:{$eq:userId}}).lean().exec()
+       const cart = await Cart.findOne({userId:{$eq:userId}}).populate({ path: "products.productId"}).lean().exec()
        res.status(200).send(cart)
     }catch(e){
         res.status(500).send(e.message)
