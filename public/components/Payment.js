@@ -1,37 +1,72 @@
 document.querySelector("#Rmyform").addEventListener("submit",addorder)
-var orderdata=JSON.parse(localStorage.getItem("paymentdata"))||[]
+//var orderdata=JSON.parse(localStorage.getItem("paymentdata"))||[]
 function addorder(event){
-    event.preventDefault()
+    
+    // event.preventDefault()
      
-    var cardnumber=document.querySelector("#cardNo").value
-    var date=document.querySelector("#expMonth").value
-    var cvv=document.querySelector("#cvv").value
-    if(cardnumber=="" || cardnumber.length!=16){
-        alert("Error")
-    }
-    else if(cvv=="" || cvv.length!=3){
-        alert("Error")
-    }
-    else{
-        
-        document.querySelector("#Rmyform").addEventListener("submit",function(){
-            window.location.href="/Review";
-        })
-    }
-    var object={
+    const cardnumber=document.querySelector("#cardNo").value
+    const date=document.querySelector("#expMonth").value
+    const cvv=document.querySelector("#cvv").value
+
+    let object = {
          
         cardnumber:cardnumber,
         date:date,
         cvv:cvv,
     };
-    orderdata.push(object)
-    localStorage.setItem("paymentdata",JSON.stringify(orderdata))
+    for (k in  object) {
+        if ( object[k].length == 0) {
+          alert("Please filled all feild");
+          return;
+        }
+      }
     
-
+      removeItems()
+    
+    
+      window.location.href = "/Review";
+    // if(cardnumber=="" || cardnumber.length!=16){
+    //     alert("Error")
+    // }
+    // else if(cvv=="" || cvv.length!=3){
+    //     alert("Error")
+    // }
+    // else{
+        
+    //     document.querySelector("#Rmyform").addEventListener("submit",function(){
+    //         window.location.href="/Review";
+    //     })
+    // }
+    // var object={
+         
+    //     cardnumber:cardnumber,
+    //     date:date,
+    //     cvv:cvv,
+    // };
+    // orderdata.push(object)
+    // localStorage.setItem("paymentdata",JSON.stringify(orderdata))
     
 }
+async function removeItems() {
 
-//code for cart details
+    const userObj = JSON.parse(localStorage.getItem("token"));
+    const userId = userObj.id;
+  
+    // console.log(userId);
+    // console.log(prodId);
+  
+    const result = await fetch("/cart/removeitems", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userId
+      }),
+    }).then((res) => res.json());
+}
+
+//code for cart details.............................................................................................................
 let cartData = JSON.parse(localStorage.getItem("cartData"))  || []
 console.log(cartData)
 
