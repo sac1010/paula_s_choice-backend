@@ -48,4 +48,25 @@ router.get("/:userId", async(req, res)=>{
 
 })
 
+router.delete("/", async(req, res)=>{
+    try{
+        let userId = req.body.userId
+        let productId = req.body.productId
+       let cart = await Cart.findOne({userId:{$eq:userId}}).lean().exec()
+       let products = cart.products
+       for(let i=0; i<products.length; i++){
+           if(products[i].productId==productId){
+              products.splice(i, 1)
+              cart = await Cart.findOneAndUpdate({userId}, {products}, {new:true}).lean().exec()
+              console.log(cart)
+              return res.send(cart)
+           }
+       }  
+     
+    }catch(e){
+        res.status(500).send(e.message)
+    }
+
+})
+
 module.exports = router 
