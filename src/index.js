@@ -1,12 +1,13 @@
 const express= require("express")
 const connect = require("./configs/db")
+const cors = require("cors")
 const cartController= require("./controllers/cart.controller")
 const productsController = require("./controllers/products.controller")
 const commentController = require("./controllers/comment.controller")
 const {register,login} = require("../src/controllers/auth.controller")
 const paymentController = require("./controllers/payment.controller");
 const app = express()
-
+app.use(cors())
 app.use(express.json())
 app.use("/products", productsController)
 app.use("/cart", cartController)
