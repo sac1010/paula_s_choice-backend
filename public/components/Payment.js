@@ -1,6 +1,6 @@
 document.querySelector("#Rmyform").addEventListener("submit",addorder)
 //var orderdata=JSON.parse(localStorage.getItem("paymentdata"))||[]
-function addorder(event){
+function addorder(){
     
     // event.preventDefault()
      
