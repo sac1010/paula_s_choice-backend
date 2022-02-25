@@ -766,83 +766,126 @@
         foot.innerHTML = footer()
 
 
-        let mod = document.getElementById("signModal")
-    let sign = document.getElementById("dsign")
+        let mod = document.getElementById("signModal");
+  let sign = document.getElementById("dsign");
 
-    let log = document.getElementById("dlog")
-    let mod2 = document.getElementById("logModal")
-    let close = document.getElementById("cross")
-    let close1 = document.getElementById("cross1")
+  let log = document.getElementById("dlog");
+  let mod2 = document.getElementById("logModal");
+  let close = document.getElementById("cross");
+  let close1 = document.getElementById("cross1");
+  let ls = document.getElementById("log-sign")
+  let usrName = document.getElementById("usrName")
+  let lo = document.getElementById("logout")
+  lo.style.display = "none"
 
-    sign.onclick = () =>{
-        mod.style.visibility = "visible"
+  sign.onclick = () => {
+    mod.style.visibility = "visible";
+  };
+  window.onclick = (event) => {
+    if (event.target == mod || event.target == mod2) {
+      mod.style.visibility = "hidden";
+      mod2.style.visibility = "hidden";
     }
-    window.onclick= (event) => {
-        if(event.target == mod || event.target == mod2){
-            mod.style.visibility = "hidden"
-            mod2.style.visibility = "hidden"
+  };
+  log.onclick = () => {
+    mod2.style.visibility = "visible";
+  };
+  close.onclick = () => {
+    console.log("magic");
+    mod2.style.visibility = "hidden";
+  };
+  close1.onclick = () => {
+    mod.style.visibility = "hidden";
+  };
+  let create = document.getElementById("ib4");
+  create.onclick = function () {
+    registerData();
+    mod.style.visibility = "hidden";
+  };
+
+  async function registerData() {
+    try{
+            
+            let mail = {email:document.querySelector("#dmail").value,
+                        firstName: document.getElementById("dsfname").value,
+                        lastName: document.getElementById("dlname").value,
+                        password: document.getElementById("dspass").value
+                      };
+
+            let response = await fetch("http://localhost:2345/register",{
+                method:"POST",
+                body:JSON.stringify(mail),
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+            })
+
+            let data = await response.json()
+            console.log(data)
+            mod.style.visibility = "hidden";
+        } catch(err){
+            console.log(err.message)
         }
-    }
-    log.onclick = ()=>{
-        mod2.style.visibility = "visible"
-    }
-    close.onclick = ()=> {
-        console.log("magic")
-       mod2.style.visibility = "hidden"
-       
-    }
-    close1.onclick = ()=> {
-       mod.style.visibility = "hidden"
-       
-    }
-    let create = document.getElementById("ib4")
-    create.onclick = function(){
-        registerData()
-        mod.style.visibility = "hidden"
-    }
+    
 
-    var arr = JSON.parse(localStorage.getItem("userdata")) || []
-    function registerData(){
-        event.preventDefault()
-        var name = document.querySelector("#dsfname").value
-        var email = document.querySelector("#dmail").value
-        var password = document.querySelector("#dspass").value
+  }
 
-        var obj = {
-            username : name,
-            usermail : email,
-            userpass : password,
+  let login = document.getElementById("iib4");
+  login.onclick = function () {
+    loginData();
+    mod2.style.visibility = "hidden";
+  };
+
+  // var loginarr = JSON.parse(localStorage.getItem("userdata")) || [];
+  async function loginData() {
+    try{
+      let id = document.querySelector("#dumail").value;
+      let pass = document.querySelector("#dupass").value;
+      let mail = {email: id,
+                  password: pass}
+                let response = await fetch("http://localhost:2345/login",{
+                method:"POST",
+                body:JSON.stringify(mail),
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+            })
+
+            let data = await response.json()
+            console.log(data)
+            localStorage.setItem("userInfo",JSON.stringify(data))
+            nameApnd()
+
+
+      
+
+    }catch(err){
+        console.log(err.message)
+    }
+  }
+  nameApnd()
+  function nameApnd(){
+      let userData = JSON.parse(localStorage.getItem("userInfo")) || null;
+      if(userData){
+        let uName = document.getElementById("user");
+        uName.innerHTML = userData.user.firstName;
+        usrName.innerText = userData.user.firstName
+        ls.style.display = "none"
+        lo.style.display = "block"
+        lo.style.marginTop = "-10px"
+        lo.style.color = "rgb(88,124,148)"
+        lo.onclick = ()=>{
+          logOut()
         }
-        arr.push(obj)
-        console.log(arr)
-        localStorage.setItem("userdata",JSON.stringify(arr))
-    }
-   
-    let login = document.getElementById("iib4")
-    login.onclick = function(){
-        loginData()
-    }
-
-    var loginarr = JSON.parse(localStorage.getItem("userdata")) || []
-    function loginData(){
-        var id = document.querySelector("#dumail").value
-        var pass = document.querySelector("#dupass").value
-        for(var i = 0; i<loginarr.length; i++){
-            console.log("111")
-            if(loginarr[i].usermail == id && loginarr[i].userpass == pass){
-                alert("logged Successfully")
-                let a = loginarr[i].username
-                var x = localStorage.setItem("name",JSON.stringify(a))
-                let z = JSON.parse(localStorage.getItem("name"))
-                let user = document.getElementById("user")
-                user.innerText = z
-                mod2.style.visibility = "hidden"
-            }  
-        }
-    }
-        let b = JSON.parse(localStorage.getItem("name")) || []
-        let user = document.getElementById("user")
-        user.innerText = b
+      }
+      // lo.onclick = logOut()
+  }
+  function logOut(){
+    ls.style.display = "block"
+    lo.style.display = "none"
+    localStorage.setItem("userInfo",null)
+    window.location.reload()
+  }
 
 
 
