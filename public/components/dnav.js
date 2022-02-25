@@ -41,8 +41,9 @@ function navbar(){
         <a href=""><i id="fauser" class="fas fa-user"></i></a>
         <div class="dbox dac">
             <div class="dac1">
-                <p>HELLO <strong>BEAUTIFUL</strong>/<strong>HANDSOME</strong>,</p>
-                <p><span id="dlog">Login</span> or <span id="dsign">Sign Up</span></p>
+            <p>HELLO <Strong id="usrName">BEAUTIFUL/HANDSOME</strong>,</p>
+            <p id="log-sign"><span id="dlog">Login</span> or <span id="dsign">Sign Up</span></p>
+            <p id="logout">LogOut</p>
             </div>
             <div class="dac2">
                 <div>
