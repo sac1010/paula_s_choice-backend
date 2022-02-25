@@ -1,41 +1,44 @@
 document.querySelector("#Rmyform").addEventListener("submit",addresspart)
-  var data=JSON.parse(localStorage.getItem("addressdata"))||[];
+  //var data=JSON.parse(localStorage.getItem("addressdata"))||[];
 
-   var button = document.querySelector("#btns").addEventListener("click",function(){
-       window.location.href="/Payment"
-   })
+//    var button = document.querySelector("#btns").addEventListener("click",function(){
+//        window.location.href="/Payment"
+//    })
   
 function addresspart(event){
-    event.preventDefault();
+    //event.preventDefault();
      
-    var firstname=document.querySelector("#fname").value
-    var lastname=document.querySelector("#lname").value
-    var country=document.querySelector("#country").value
-    var StreetAdd=document.querySelector("#StreetAdd").value;
-    var city=document.querySelector("#City").value
-    var state=document.querySelector("#state").value
-    var pin=document.querySelector("#pin").value
-    var phone=document.querySelector("#phone").value
+     const firstname=document.querySelector("#fname").value
+     const lastname=document.querySelector("#lname").value
+     const country=document.querySelector("#country").value
+     const StreetAdd=document.querySelector("#StreetAdd").value;
+     const city=document.querySelector("#City").value
+     const state=document.querySelector("#state").value
+     const pin=document.querySelector("#pin").value
+     const phone=document.querySelector("#phone").value
 
     //  console.log(email,firstname,lastname,country,address,city,state,pin,phone)
     // console.log("here");
-    var obj={
+    let obj={
          
          
-        firstname:firstname,
-        lastname:lastname,
-        country:country,
-        StreetAdd:StreetAdd,
-        city:city,
-        state:state,
-        pin:pin,
-        phone:phone,
+        firstname, 
+        lastname ,
+        country ,
+        StreetAdd ,
+        city ,
+        state ,
+        pin ,
+        phone ,
        
     };
-      data.push(obj)
-     console.log(obj)
-     localStorage.setItem("addressdata",JSON.stringify(data))
-    //   window.location.href="order.html";
+    for (k in  obj) {
+        if ( obj[k].length === 0) {
+          alert("Please fill all feilds");
+          return;
+        }
+      }
+      window.location.href = "/payment";
 }
 
 
