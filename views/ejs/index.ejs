@@ -362,132 +362,152 @@
   document.querySelector("#best").addEventListener("click", best);
   function best() {
     console.log("here");
-    var data = [
-      {
-        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwe307fdcd/images/products/calm-redness-relief-spf-30-mineral-moisturizer-dry-9130-L.png?sw=360&sfrm=png",
-        name: "CALM",
-        about:
-          "Redness Relief SPF 30 Mineral Moisturizer for Normal to Dry Skin",
-        price: "$31.00",
-        reviews: "137",
-        star1: 4,
-        desc: "A mineral-based sunscreen that replenishes dry, sensitive skin with smoothing hydration while protecting it against damaging UVA/UVB rays.",
-        point1: "Diminishes the appearance of redness",
-        point2: "Helps keep skin looking younger, longer",
-        point3: "Creamy lotion texture",
-        point4: "Use as the last step in your AM skincare routine",
-        why: "CALM Redness Relief SPF 30 Mineral Moisturizer Normal to Dry Skin combines the gentlest mineral-based sunscreen ingredients in a creamy advanced formula. You will have beautiful hydrated skin with the improved appearance of fine lines, dullness, and uneven skin tone. Sensitive skin will be comforted and cushioned with soothing emollients and a skin-enriching texture.",
-        what: "A redness-minimizing mix of soothing plant extracts, antioxidants, and peptides work to calm sensitive skin so it looks visibly younger and feels healthier. With daily use, skin will become less prone to temporary redness and visible signs of sensitivity, and, most important, may help to lower the risk of premature skin aging. The pure mineral zinc oxide sunscreen decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. Gentle enough even for skin prone to rosacea.",
-        how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
-        sideimg1:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
-        sideimg2:
-          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwfbfb4897/images/pdp/us_210218_desktop_pdp-banner_calm-dry-kit.jpg",
-        img22:
-          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw49f5a8a7/images/views/calm-redness-relief-spf-30-mineral-moisturizer-dry-9130-L-alt.png?sw=360&sfrm=png",
-        youtube: "https://www.youtube.com/embed/sxMdsikC9uM",
-        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
-      },
-      {
-        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw2a819a6d/images/products/skin-recovery-replenishing-moisturizer-1860-L.png?sw=360&sfrm=png",
-        name: "SKIN RECOVERY",
-        about: "Replenishing Moisturizer",
-        price: "$31.00",
-        reviews: "411",
-        star1: 4,
-        desc: "Contains a proprietary blend of proven moisturizing ingredients for instant and lasting hydration for dry skin. Helps minimize the appearance of wrinkles and visibly improves skin’s texture.",
-        point1: "Helps preserve skin’s moisture content",
-        point2: "Antioxidants and plant oils restore radiance",
-        point3: "Luxurious creamy texture",
-        point4: "Use as the last step in your PM skincare routine",
-        why: "SKIN RECOVERY Replenishing Moisturizer blends research-proven hydrating ingredients with plant- and vitamin-derived antioxidants that help deliver anti-aging results for renewed radiance and amazing softness like you’ve never experienced before.",
-        what: "Drenches dry skin with a mix of emollients, anti-aging peptides, and fortifying antioxidants that work to repel the impact of free-radical damage and help defend against environmental attack. From the first application, skin looks and feels perfectly supple and comfortable, even around the eyes. Loved by those with very sensitive skin, but suitable even for skin prone to eczema.",
-        how: "Ideal for softening and smoothing the face, neck and eye area. At night, use as the last step in your skincare routine. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
-        sideimg1:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
-        sideimg2:
-          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw84440e67/images/pdp/us_200713_desktop_pdp-panel_1860_review.jpg",
-        img22:
-          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw18e7bab7/images/views/skin-recovery-replenishing-moisturizer-1860-L-swatch.png?sw=360&sfrm=png",
-        youtube: "https://www.youtube.com/embed/wdn4A8q00XM",
-        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
-      },
-      {
-        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw4e4509b0/images/products/calm-redness-relief-spf-30-mineral-moisturizer-oily-9170-L.png?sw=360&sfrm=png",
-        name: "CALM",
-        about:
-          "Redness Relief SPF 30 Mineral Moisturizer for Normal to Oily Skin",
-        price: "$31.00",
-        reviews: "99",
-        star1: 4,
-        desc: "A lightweight mineral-based sunscreen that calms and soothes sensitive skin while protecting it against damaging UVA/UVB rays.",
-        point1: "Diminishes the appearance of redness",
-        point2: "Helps keep skin looking younger, longer",
-        point3: "Non-greasy lotion leaves a soft matte finish",
-        point4: "Use as the last step in your AM skincare routine",
-        why: "CALM Redness Relief SPF 30 Mineral Moisturizer Normal to Oily Skin pampers sensitive, reddened skin with its gentle, broad-spectrum mineral-based sun protection and soothing antioxidants, all in an ultra-light silky lotion that leaves a soft matte finish.",
-        what: "Moisturizes while providing soothing skin relief and preventing the appearance of premature aging from sun damage. The SPF 30 is a significant benefit as it decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. It’s gentle enough for sensitive skin and even suitable for skin prone to rosacea.",
-        how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
-        sideimg1:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
-        sideimg2:
-          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd8545e61/images/pdp/us_210218_desktop_lp_pdp-banner_calm-oily-kit.jpg",
-        img22:
-          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwb65a73ee/images/products/calm-redness-relief-moisturizer-oily-9180-L.png?sw=360&sfrm=png",
-        youtube: "https://www.youtube.com/embed/sxMdsikC9uM",
-        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
-      },
-      {
-        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwd9f2b7e1/images/products/pc4men-sooth-smooth-8720-L.png?sw=360&sfrm=png",
-        name: "PC4MEN",
-        about: "Soothe + Smooth",
-        price: "$33.00",
-        reviews: "23",
-        star1: 5,
-        desc: "Change your thinking about after-shave. Address those bumps, help stop skin from looking older, calm redness and soften skin, all in one non-irritating, fragrance-free formula.",
-        point1: "Combats multiple signs of aging",
-        point2: "Minimizes pore size",
-        point3: "Soothes redness & softens skin",
-        point4: "Water-light, non-irritating formula",
-        why: "PC4MEN Soothe + Smooth is like no other after-shave you’ve ever used; it's gentle and fragrance free, yet delivers dramatic results with its combination of potent exfoliating and anti-aging ingredients. This water-light fluid calms redness, doesn’t sting even a little, softens skin, vanquishes redness, and minimizes signs of aging.",
-        what: "Quickly makes red bumps less visible, calms razor sting, unclogs pores, and diminishes the signs of aging—all in a completely non-irritating formula. The watery texture makes it feel like there’s nothing on your face, yet the fast-penetrating formula delivers powerful benefits, making skin quickly look and feel softer and healthier.",
-        how: "Use twice daily after cleansing or shaving. It can also be used on days you don’t shave. For daytime, follow with PC4MEN Daytime Protect SPF 30. At night, follow with PC4MEN Nighttime Repair.  If you have a salicylate allergy, check with your physician before using any products that contain salicylic acid.",
-        sideimg1:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
-        sideimg2:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
-        img22:
-          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwd9f2b7e1/images/products/pc4men-sooth-smooth-8720-L.png?sw=360&sfrm=png",
-        youtube: "https://www.youtube.com/embed/5vxKbS1TN-w",
-        star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
-      },
-      {
-        img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw162f68cd/images/products/calm-redness-relief-1-percent-bha-lotion-exfoliant-9100-L.png?sw=360&sfrm=png",
-        name: "CALM",
-        about: "Redness Relief 1% BHA Lotion Exfoliant",
-        price: "$32.00",
-        reviews: "147",
-        star1: 4,
-        desc: "A completely gentle, non-abrasive, leave-on exfoliant that sheds built-up layers of dead skin to reveal the hidden radiant skin beneath. Perfect for someone with sensitive skin who wants to visibly diminish pore size and the appearance of wrinkles and ease redness.",
-        point1: "Salicylic acid (BHA) provides gentle exfoliation",
-        point2: "Reveals glowing, hydrated skin",
-        point3: "Lightweight lotion is perfect for sensitive skin",
-        point4: "Use twice daily after cleansing & toning skin",
-        why: "CALM Redness Relief 1% BHA Lotion Exfoliant is a leave-on, sheer lightweight lotion with a texture that works to soothe redness and smooth away dry skin with skin-plumping hydration. It also diminishes the appearance of wrinkles and lessens the size of pores.",
-        what: "Gently exfoliates skin’s surface as well as inside the pores to enhance skin renewal, while hydrating and soothing ingredients promote visibly calm, even-toned skin. Skin-soothing plant extracts ease extra-sensitive, red skin for a more unified, healthier-looking appearance. Helps unclog and refine the look of enlarged pores and diminishes the appearance of wrinkles. Gentle enough even for those with skin prone to rosacea.",
-        how: "Apply once or twice daily after cleansing and toning. Apply a dime-sized amount over the entire face, including the eye (avoid the lower lash line and eyelids). Do not rinse. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
-        sideimg1:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
-        sideimg2:
-          "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw48e719e1/images/pdp/us_210218_desktop_pdp-banner_calm-exfoliant.jpg",
-        img22:
-          "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwe6991130/images/products/calm-redness-relief-1-percent-bha-lotion-exfoliant-9109-S.png?sw=360&sfrm=png",
-        youtube: "https://www.youtube.com/embed/3wjvz2WTqHg",
-        star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
-      },
-    ];
+    // var data = [
+    //   {
+    //     img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwe307fdcd/images/products/calm-redness-relief-spf-30-mineral-moisturizer-dry-9130-L.png?sw=360&sfrm=png",
+    //     name: "CALM",
+    //     about:
+    //       "Redness Relief SPF 30 Mineral Moisturizer for Normal to Dry Skin",
+    //     price: "$31.00",
+    //     reviews: "137",
+    //     star1: 4,
+    //     desc: "A mineral-based sunscreen that replenishes dry, sensitive skin with smoothing hydration while protecting it against damaging UVA/UVB rays.",
+    //     point1: "Diminishes the appearance of redness",
+    //     point2: "Helps keep skin looking younger, longer",
+    //     point3: "Creamy lotion texture",
+    //     point4: "Use as the last step in your AM skincare routine",
+    //     why: "CALM Redness Relief SPF 30 Mineral Moisturizer Normal to Dry Skin combines the gentlest mineral-based sunscreen ingredients in a creamy advanced formula. You will have beautiful hydrated skin with the improved appearance of fine lines, dullness, and uneven skin tone. Sensitive skin will be comforted and cushioned with soothing emollients and a skin-enriching texture.",
+    //     what: "A redness-minimizing mix of soothing plant extracts, antioxidants, and peptides work to calm sensitive skin so it looks visibly younger and feels healthier. With daily use, skin will become less prone to temporary redness and visible signs of sensitivity, and, most important, may help to lower the risk of premature skin aging. The pure mineral zinc oxide sunscreen decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. Gentle enough even for skin prone to rosacea.",
+    //     how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
+    //     sideimg1:
+    //       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+    //     sideimg2:
+    //       "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwfbfb4897/images/pdp/us_210218_desktop_pdp-banner_calm-dry-kit.jpg",
+    //     img22:
+    //       "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw49f5a8a7/images/views/calm-redness-relief-spf-30-mineral-moisturizer-dry-9130-L-alt.png?sw=360&sfrm=png",
+    //     youtube: "https://www.youtube.com/embed/sxMdsikC9uM",
+    //     star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    //   },
+    //   {
+    //     img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw2a819a6d/images/products/skin-recovery-replenishing-moisturizer-1860-L.png?sw=360&sfrm=png",
+    //     name: "SKIN RECOVERY",
+    //     about: "Replenishing Moisturizer",
+    //     price: "$31.00",
+    //     reviews: "411",
+    //     star1: 4,
+    //     desc: "Contains a proprietary blend of proven moisturizing ingredients for instant and lasting hydration for dry skin. Helps minimize the appearance of wrinkles and visibly improves skin’s texture.",
+    //     point1: "Helps preserve skin’s moisture content",
+    //     point2: "Antioxidants and plant oils restore radiance",
+    //     point3: "Luxurious creamy texture",
+    //     point4: "Use as the last step in your PM skincare routine",
+    //     why: "SKIN RECOVERY Replenishing Moisturizer blends research-proven hydrating ingredients with plant- and vitamin-derived antioxidants that help deliver anti-aging results for renewed radiance and amazing softness like you’ve never experienced before.",
+    //     what: "Drenches dry skin with a mix of emollients, anti-aging peptides, and fortifying antioxidants that work to repel the impact of free-radical damage and help defend against environmental attack. From the first application, skin looks and feels perfectly supple and comfortable, even around the eyes. Loved by those with very sensitive skin, but suitable even for skin prone to eczema.",
+    //     how: "Ideal for softening and smoothing the face, neck and eye area. At night, use as the last step in your skincare routine. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
+    //     sideimg1:
+    //       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+    //     sideimg2:
+    //       "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw84440e67/images/pdp/us_200713_desktop_pdp-panel_1860_review.jpg",
+    //     img22:
+    //       "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dw18e7bab7/images/views/skin-recovery-replenishing-moisturizer-1860-L-swatch.png?sw=360&sfrm=png",
+    //     youtube: "https://www.youtube.com/embed/wdn4A8q00XM",
+    //     star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    //   },
+    //   {
+    //     img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw4e4509b0/images/products/calm-redness-relief-spf-30-mineral-moisturizer-oily-9170-L.png?sw=360&sfrm=png",
+    //     name: "CALM",
+    //     about:
+    //       "Redness Relief SPF 30 Mineral Moisturizer for Normal to Oily Skin",
+    //     price: "$31.00",
+    //     reviews: "99",
+    //     star1: 4,
+    //     desc: "A lightweight mineral-based sunscreen that calms and soothes sensitive skin while protecting it against damaging UVA/UVB rays.",
+    //     point1: "Diminishes the appearance of redness",
+    //     point2: "Helps keep skin looking younger, longer",
+    //     point3: "Non-greasy lotion leaves a soft matte finish",
+    //     point4: "Use as the last step in your AM skincare routine",
+    //     why: "CALM Redness Relief SPF 30 Mineral Moisturizer Normal to Oily Skin pampers sensitive, reddened skin with its gentle, broad-spectrum mineral-based sun protection and soothing antioxidants, all in an ultra-light silky lotion that leaves a soft matte finish.",
+    //     what: "Moisturizes while providing soothing skin relief and preventing the appearance of premature aging from sun damage. The SPF 30 is a significant benefit as it decreases the risk of skin cancer and early skin aging caused by the sun if used as directed with other sun protection measures. It’s gentle enough for sensitive skin and even suitable for skin prone to rosacea.",
+    //     how: "Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
+    //     sideimg1:
+    //       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+    //     sideimg2:
+    //       "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dwd8545e61/images/pdp/us_210218_desktop_lp_pdp-banner_calm-oily-kit.jpg",
+    //     img22:
+    //       "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwb65a73ee/images/products/calm-redness-relief-moisturizer-oily-9180-L.png?sw=360&sfrm=png",
+    //     youtube: "https://www.youtube.com/embed/sxMdsikC9uM",
+    //     star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    //   },
+    //   {
+    //     img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwd9f2b7e1/images/products/pc4men-sooth-smooth-8720-L.png?sw=360&sfrm=png",
+    //     name: "PC4MEN",
+    //     about: "Soothe + Smooth",
+    //     price: "$33.00",
+    //     reviews: "23",
+    //     star1: 5,
+    //     desc: "Change your thinking about after-shave. Address those bumps, help stop skin from looking older, calm redness and soften skin, all in one non-irritating, fragrance-free formula.",
+    //     point1: "Combats multiple signs of aging",
+    //     point2: "Minimizes pore size",
+    //     point3: "Soothes redness & softens skin",
+    //     point4: "Water-light, non-irritating formula",
+    //     why: "PC4MEN Soothe + Smooth is like no other after-shave you’ve ever used; it's gentle and fragrance free, yet delivers dramatic results with its combination of potent exfoliating and anti-aging ingredients. This water-light fluid calms redness, doesn’t sting even a little, softens skin, vanquishes redness, and minimizes signs of aging.",
+    //     what: "Quickly makes red bumps less visible, calms razor sting, unclogs pores, and diminishes the signs of aging—all in a completely non-irritating formula. The watery texture makes it feel like there’s nothing on your face, yet the fast-penetrating formula delivers powerful benefits, making skin quickly look and feel softer and healthier.",
+    //     how: "Use twice daily after cleansing or shaving. It can also be used on days you don’t shave. For daytime, follow with PC4MEN Daytime Protect SPF 30. At night, follow with PC4MEN Nighttime Repair.  If you have a salicylate allergy, check with your physician before using any products that contain salicylic acid.",
+    //     sideimg1:
+    //       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+    //     sideimg2:
+    //       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+    //     img22:
+    //       "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwd9f2b7e1/images/products/pc4men-sooth-smooth-8720-L.png?sw=360&sfrm=png",
+    //     youtube: "https://www.youtube.com/embed/5vxKbS1TN-w",
+    //     star: "https://drncvpyikhjv3.cloudfront.net/sites/126/2019/05/28170418/five-stars.png",
+    //   },
+    //   {
+    //     img: "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dw162f68cd/images/products/calm-redness-relief-1-percent-bha-lotion-exfoliant-9100-L.png?sw=360&sfrm=png",
+    //     name: "CALM",
+    //     about: "Redness Relief 1% BHA Lotion Exfoliant",
+    //     price: "$32.00",
+    //     reviews: "147",
+    //     star1: 4,
+    //     desc: "A completely gentle, non-abrasive, leave-on exfoliant that sheds built-up layers of dead skin to reveal the hidden radiant skin beneath. Perfect for someone with sensitive skin who wants to visibly diminish pore size and the appearance of wrinkles and ease redness.",
+    //     point1: "Salicylic acid (BHA) provides gentle exfoliation",
+    //     point2: "Reveals glowing, hydrated skin",
+    //     point3: "Lightweight lotion is perfect for sensitive skin",
+    //     point4: "Use twice daily after cleansing & toning skin",
+    //     why: "CALM Redness Relief 1% BHA Lotion Exfoliant is a leave-on, sheer lightweight lotion with a texture that works to soothe redness and smooth away dry skin with skin-plumping hydration. It also diminishes the appearance of wrinkles and lessens the size of pores.",
+    //     what: "Gently exfoliates skin’s surface as well as inside the pores to enhance skin renewal, while hydrating and soothing ingredients promote visibly calm, even-toned skin. Skin-soothing plant extracts ease extra-sensitive, red skin for a more unified, healthier-looking appearance. Helps unclog and refine the look of enlarged pores and diminishes the appearance of wrinkles. Gentle enough even for those with skin prone to rosacea.",
+    //     how: "Apply once or twice daily after cleansing and toning. Apply a dime-sized amount over the entire face, including the eye (avoid the lower lash line and eyelids). Do not rinse. For daytime, follow with a broad-spectrum sunscreen rated SPF 30 or greater.",
+    //     sideimg1:
+    //       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeQAAABoCAMAAAAXdXPcAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC",
+    //     sideimg2:
+    //       "https://www.paulaschoice.com/on/demandware.static/-/Library-Sites-paulachoice/default/dw48e719e1/images/pdp/us_210218_desktop_pdp-banner_calm-exfoliant.jpg",
+    //     img22:
+    //       "https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/en_US/dwe6991130/images/products/calm-redness-relief-1-percent-bha-lotion-exfoliant-9109-S.png?sw=360&sfrm=png",
+    //     youtube: "https://www.youtube.com/embed/3wjvz2WTqHg",
+    //     star: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjTzmXWUBWKS1oBgoWVDtzHXnfMGhbvjTzuVuMCBdvdmhHB9n4m8wv48KCAXG50tURw&usqp=CAU",
+    //   },
+    // ];
+
+
+    async function pauladata(){
+    try{
+        var response= await fetch(`http://localhost:2345/products`)
+        let data = await response.json();
+        displayProd(data)
+        // displayProd(Aresist)
+        console.log("data:",data)
+    }
+    catch(e){
+        console.log("e:",e)
+    }
+}
+
+pauladata()
+
 
     displayProd(data);
+    // var count=0;
+    
+    // for(var i=0;i<5;i++){
     function displayProd(data) {
       document.querySelector("#Anurecommend").innerHTML = "";
       data.map(function (elem) {
@@ -540,6 +560,8 @@
         // }
       });
     }
+  }
+  
 
     // for adding products to bag by sachin
     //  document.getElementById("Aaddtobagbox").addEventListener("click", ()=>{
@@ -554,7 +576,7 @@
     //ends here
 
     // document.getElementById("best").style.borderBottom = "7px solid black";
-  }
+  
 
   document.querySelector("#kits").addEventListener("click", kits);
   function kits() {
