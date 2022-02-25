@@ -1,9 +1,89 @@
-// var data=[
+
+
+// API calling
+
+async function pauladata(){
+    try{
+        var response= await fetch(`http://localhost:2345/products`)
+        let data = await response.json();
+        displayProd(data)
+        // displayProd(Aresist)
+        console.log("data:",data)
+    }
+    catch(e){
+        console.log("e:",e)
+    }
+}
+
+pauladata()
+ 
+ 
+ // appending whole data
+ 
+     function displayProd(data){
+         data.map(function(elem){
+             var div=document.createElement("div");
+             var div2=document.createElement("div");
+             div2.style.height="220px";
+             div2.style.backgroundColor="#f9f9fb"
+             var div3=document.createElement("div");
+             div3.style.display="flex";
+             var img=document.createElement("img");
+             img.src=elem.img;
+             img.style.width="100%";
+             img.style.height="100%";
+             var name=document.createElement("p")
+             name.textContent=elem.name;
+             name.style.fontSize="13px";
+             var about=document.createElement("p")
+             about.textContent=elem.about;
+             about.style.fontSize="13px"
+             about.style.fontWeight="600";
+             var price=document.createElement("p")
+             price.textContent="$"+elem.price;
+             price.style.marginTop="24px";
+             price.style.fontSize="13px";
+             price.style.color="blue";
+             var star=document.createElement("img")
+             star.src=elem.star;
+             star.style.width="100px"
+             star.style.height="20px"
+             var reviews=document.createElement("p")
+             reviews.textContent=elem.reviews+" "+"Reviews";
+             reviews.style.fontSize="11px";
+             reviews.style.fontWeight="600";
+             reviews.style.marginTop="4px";
+             reviews.style.marginLeft="5px";
+             div2.append(img);
+             div3.append(star,reviews)
+             div.append(div2,name,about,price,div3)
+             div.onclick=function(){
+                 window.location.href="product_individual.html"
+             }
+             document.querySelector("#Amainpro").append(div);
+ 
+ 
+//              // sending data to localStorage
+             var arr=[]
+             arr.push(elem)
+             div.addEventListener("click",senddata);
+             function senddata(){
+                 localStorage.setItem("paulasChoice",JSON.stringify(arr))
+             }
+         })
+     }
+     
+ 
+ // sorting function starts
+
+
+
+//  var data=[
 //     {
 //          img:"https://www.paulaschoice.com/dw/image/v2/BBNX_PRD/on/demandware.static/-/Sites-pc-catalog/default/dwf0fd0988/images/products/skin-perfecting-2-percent-bha-liquid-2010-L.png?sw=360&sfrm=png",
 //          name:"SKIN PERFECTING",
 //          about:"2% BHA Liquid Exfoliant",
-//          price: 32.00,
+//          price: "$32.00",
 //          reviews:"3908",
 //          star1:4,
 //          desc:"Our #1 product worldwide + cult favorite, this gentle leave-on exfoliant with salicylic acid quickly unclogs pores, smooths wrinkles, brightens and evens out skin tone.",
@@ -761,81 +841,6 @@
 //      },
 //  ]
 
-
-// API calling
-
-async function pauladata(){
-    try{
-        var response= await fetch(`http://localhost:2345/products`)
-        let data = await response.json();
-        displayProd(data)
-        // displayProd(Aresist)
-        console.log("data:",data)
-    }
-    catch(e){
-        console.log("e:",e)
-    }
-}
-
-pauladata()
- 
- 
- // appending whole data
- 
-     function displayProd(data){
-         data.map(function(elem){
-             var div=document.createElement("div");
-             var div2=document.createElement("div");
-             div2.style.height="220px";
-             div2.style.backgroundColor="#f9f9fb"
-             var div3=document.createElement("div");
-             div3.style.display="flex";
-             var img=document.createElement("img");
-             img.src=elem.img;
-             img.style.width="100%";
-             img.style.height="100%";
-             var name=document.createElement("p")
-             name.textContent=elem.name;
-             name.style.fontSize="13px";
-             var about=document.createElement("p")
-             about.textContent=elem.about;
-             about.style.fontSize="13px"
-             about.style.fontWeight="600";
-             var price=document.createElement("p")
-             price.textContent=elem.price;
-             price.style.marginTop="24px"
-             price.style.fontSize="13px"
-             var star=document.createElement("img")
-             star.src=elem.star;
-             star.style.width="100px"
-             star.style.height="20px"
-             var reviews=document.createElement("p")
-             reviews.textContent=elem.reviews+" "+"Reviews";
-             reviews.style.fontSize="11px";
-             reviews.style.fontWeight="600";
-             reviews.style.marginTop="4px";
-             reviews.style.marginLeft="5px";
-             div2.append(img);
-             div3.append(star,reviews)
-             div.append(div2,name,about,price,div3)
-             div.onclick=function(){
-                 window.location.href="product_individual.html"
-             }
-             document.querySelector("#Amainpro").append(div);
- 
- 
-             // sending data to localStorage
-             var arr=[]
-             arr.push(elem)
-             div.addEventListener("click",senddata);
-             function senddata(){
-                 localStorage.setItem("paulasChoice",JSON.stringify(arr))
-             }
-         })
-     }
-     
- 
- // sorting function starts
  
  
  
