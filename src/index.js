@@ -1,6 +1,7 @@
 const express= require("express")
 const connect = require("./configs/db")
 const cors = require("cors")
+const path = require("path")
 const cartController= require("./controllers/cart.controller")
 const productsController = require("./controllers/products.controller")
 const commentController = require("./controllers/comment.controller")
@@ -11,8 +12,8 @@ const saveForLaterController = require("./controllers/saveLater.controller")
 const app = express()
 
 // Create the views part of the application
-// app.set("views", path.join(__dirname, "views/"));
-// app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views/"));
+app.set("view engine", "ejs");
 
 
 
