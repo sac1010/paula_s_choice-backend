@@ -10,7 +10,7 @@ const paymentController = require("./controllers/payment.controller");
 const app = express()
 
 // Create the views part of the application
-app.set("views", path.join(__dirname, "views/"));
+//app.set("views", path.join(__dirname, "views/"));
 app.set("view engine", "ejs");
 
 // Create the routes or router handlers
