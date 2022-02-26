@@ -12,7 +12,7 @@ router.post("/", async(req, res)=>{
         //check if the product already exists in the cart if then increse the quantity
         for(let i=0; i<products.length; i++){
             if(products[i].productId==req.body.products[0].productId){
-               products[i].quantity++
+               products[i].quantity += +(req.body.products[0].quantity) || 1
                cart = await Cart.findOneAndUpdate({userId}, {products}, {new:true}).lean().exec()
                console.log(cart)
                return res.send(cart)
@@ -48,7 +48,7 @@ router.get("/:userId", async(req, res)=>{
 
 })
 
-router.delete("/", async(req, res)=>{
+router.post("/delete", async(req, res)=>{
     try{
         let userId = req.body.userId
         let productId = req.body.productId
