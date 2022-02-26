@@ -40,8 +40,8 @@ app.get("/",(req,res) => {
     res.render("ejs/index.ejs")
 })
 
-app.get("/products_data", (req, res) => {
-    res.render("ejs/products_data.ejs")
+app.get("/product_data", (req, res) => {
+    res.render("ejs/product_data.ejs")
 })
 
 app.get("/product_individual", (req, res) => {
