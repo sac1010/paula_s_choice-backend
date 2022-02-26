@@ -12,7 +12,7 @@ const saveForLaterController = require("./controllers/saveLater.controller")
 const app = express()
 
 // Create the views part of the application
-app.set("views", path.join(__dirname, "views/"));
+// app.set("views", path.join(__dirname, "views/"));
 app.set("view engine", "ejs");
 
 
