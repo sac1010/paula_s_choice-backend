@@ -24,7 +24,7 @@ function addorder(event){
       removeItems()
     
     
-      window.location.href = "/Review";
+      window.location.href = '/Review';
     // if(cardnumber=="" || cardnumber.length!=16){
     //     alert("Error")
     // }

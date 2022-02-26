@@ -6,7 +6,7 @@ document.querySelector("#Rmyform").addEventListener("submit",addresspart)
 //    })
   
 function addresspart(event){
-    //event.preventDefault();
+    event.preventDefault();
      
      const firstname=document.querySelector("#fname").value
      const lastname=document.querySelector("#lname").value
@@ -38,7 +38,7 @@ function addresspart(event){
           return;
         }
       }
-      window.location.href = "Payment.html";
+      window.location.href = '/Payment';
 }
 
 
