@@ -1,8 +1,8 @@
 document.querySelector("#Rmyform").addEventListener("submit",addorder)
 //var orderdata=JSON.parse(localStorage.getItem("paymentdata"))||[]
-function addorder(){
+function addorder(event){
     
-    // event.preventDefault()
+    event.preventDefault()
      
     const cardnumber=document.querySelector("#cardNo").value
     const date=document.querySelector("#expMonth").value

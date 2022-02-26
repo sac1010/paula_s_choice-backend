@@ -38,7 +38,7 @@ function addresspart(event){
           return;
         }
       }
-      window.location.href = "/payment";
+      window.location.href = "Payment.html";
 }
 
 

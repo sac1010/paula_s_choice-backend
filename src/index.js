@@ -40,7 +40,7 @@ app.get("/",(req,res) => {
     res.render("ejs/index.ejs")
 })
 
-app.get("/productdata", (req, res) => {
+app.get("/products_data", (req, res) => {
     res.render("ejs/products_data.ejs")
 })
 
@@ -51,55 +51,55 @@ app.get("/product_individual", (req, res) => {
 app.get("/about", (req, res) => {
     res.render("ejs/about.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/beautyBegins", (req, res) => {
     res.render("ejs/beautyBegins.ejs")
 })
 app.get("/cart", (req, res) => {
     res.render("ejs/cart.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/Complete", (req, res) => {
     res.render("ejs/Complete.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/Covid-19", (req, res) => {
     res.render("ejs/Covid-19.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/handling", (req, res) => {
     res.render("ejs/handling.ejs")
 })
-app.get("/ejs", (req, res) => {
-    res.render("ejs/moisturizer.ejs")
+app.get("/moisturizers", (req, res) => {
+    res.render("ejs/moisturizers.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/navbarindex", (req, res) => {
     res.render("ejs/navbarindex.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/Payment", (req, res) => {
     res.render("ejs/Payment.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/philo", (req, res) => {
     res.render("ejs/philo.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/quiz", (req, res) => {
     res.render("ejs/quiz.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/recycle", (req, res) => {
     res.render("ejs/recycle.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/Review", (req, res) => {
     res.render("ejs/Review.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/Shipping", (req, res) => {
     res.render("ejs/Shipping.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/test", (req, res) => {
     res.render("ejs/test.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/unit3Project", (req, res) => {
     res.render("ejs/unit3Project.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/whats_new", (req, res) => {
     res.render("ejs/whats_new.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/xyz", (req, res) => {
     res.render("ejs/xyz.ejs")
 })
 
