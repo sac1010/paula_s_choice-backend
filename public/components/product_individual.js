@@ -278,7 +278,7 @@ var Aindividual=JSON.parse(localStorage.getItem("paulasChoice"));
             div.append(div2,name,about,price,div3)
             div.setAttribute("class","givehoverstyle")
             div.onclick=function(){
-                window.location.href="product_individual.html"
+                window.location.href="/product_individual"
             }
             document.querySelector("#Are").append(div);
 

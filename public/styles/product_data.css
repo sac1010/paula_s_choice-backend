@@ -125,6 +125,14 @@ label{
         margin-left: 63%;
         /* border:1px solid black; */
     }
+    .nb{
+        width:100%;
+        height:100%;
+        transition: transform .6s;
+    }
+    .nb:hover{
+        transform: scale(1.2)
+    }
     
 
     @media only screen and (min-width:375px) and (max-width:768px){

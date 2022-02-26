@@ -30,8 +30,7 @@ pauladata()
              div3.style.display="flex";
              var img=document.createElement("img");
              img.src=elem.img;
-             img.style.width="100%";
-             img.style.height="100%";
+             img.setAttribute("class","nb")
              var name=document.createElement("p")
              name.textContent=elem.name;
              name.style.fontSize="13px";
@@ -43,7 +42,6 @@ pauladata()
              price.textContent="$"+elem.price;
              price.style.marginTop="24px";
              price.style.fontSize="13px";
-             price.style.color="blue";
              var star=document.createElement("img")
              star.src=elem.star;
              star.style.width="100px"
@@ -58,7 +56,7 @@ pauladata()
              div3.append(star,reviews)
              div.append(div2,name,about,price,div3)
              div.onclick=function(){
-                 window.location.href="product_individual.html"
+                 window.location.href="/product_individual"
              }
              document.querySelector("#Amainpro").append(div);
  
