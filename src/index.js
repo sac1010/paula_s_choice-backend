@@ -13,30 +13,48 @@ const res = require("express/lib/response")
 
 // Create the express app using middleware
 const app = express()
+app.use(express.json())
+// Create the routes or router handlers
+app.use(cors())
+
+app.use("/products", productsController)
+app.use("/cart", cartController)
+app.use("/comment", commentController)
+app.post("/register",register)
+app.post("/login",login)
+app.use("/Shipping", ShippingController);
+app.use("/payment", paymentController);
+app.use("/saveForLater", saveForLaterController)
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }));
+
+
+
 
 // Create the views part of the application
-// app.set("views", path.join(__dirname, "views/"));
+// app.set("views", path.join(__dirname, "views"));
+
 app.set("view engine", "ejs");
 
 app.get("/",(req,res) => {
     res.render("ejs/index.ejs")
 })
 
-app.get("/ejs", (req, res) => {
+app.get("/productdata", (req, res) => {
     res.render("ejs/products_data.ejs")
 })
 
-app.get("/ejs", (req, res) => {
-    res.render("ejs/products_individual.ejs")
+app.get("/product_individual", (req, res) => {
+    res.render("ejs/product_individual.ejs")
 })
 
-app.get("/ejs", (req, res) => {
+app.get("/about", (req, res) => {
     res.render("ejs/about.ejs")
 })
 app.get("/ejs", (req, res) => {
     res.render("ejs/beautyBegins.ejs")
 })
-app.get("/ejs", (req, res) => {
+app.get("/cart", (req, res) => {
     res.render("ejs/cart.ejs")
 })
 app.get("/ejs", (req, res) => {
@@ -85,17 +103,7 @@ app.get("/ejs", (req, res) => {
     res.render("ejs/xyz.ejs")
 })
 
-// Create the routes or router handlers
-app.use(cors())
-app.use(express.json())
-app.use("/products", productsController)
-app.use("/cart", cartController)
-app.use("/comment", commentController)
-app.post("/register",register)
-app.post("/login",login)
-app.use("/Shipping", ShippingController);
-app.use("/payment", paymentController);
-app.use("/saveForLater", saveForLaterController)
+
 
 app.listen(2345, async()=>{
     try{
