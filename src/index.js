@@ -36,7 +36,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.set("view engine", "ejs");
 
-app.get("/",(req,res) => {
+app.get("/index",(req,res) => {
     res.render("ejs/index.ejs")
 })
 
