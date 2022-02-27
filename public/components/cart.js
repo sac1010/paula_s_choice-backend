@@ -96,7 +96,7 @@ cartData.map(function(elem, index){
     title.innerText  = elem.productId.about
     size.innerText = Math.ceil(Math.random()*7)+" "+"oz";
     size.style.marginBottom="40px"
-    total.innerText = `$${num*(elem.productId.qty||1)}`
+    total.innerText = `$${num*(elem.quantity||1)}`
     img.src = elem.productId.img;
     price.innerText = `$${num}`
     titleAndPrice.append(title, price)
