@@ -399,7 +399,7 @@ document.getElementById("estimate").addEventListener("click", ()=>{
 document.getElementById("checkout").addEventListener("click", ()=>{
     localStorage.setItem("subTotal", JSON.stringify(subtotal))
     localStorage.setItem("estTotal", JSON.stringify(estTotal))
-    window.location.href = 'Shipping.html'
+    window.location.href = '/Shipping'
 
 })
 
