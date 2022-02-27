@@ -1320,6 +1320,29 @@ pauladata()
   //   }
   // }
 
-  let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
-  document.getElementById("dcount").innerText = cartData.length;
+  // let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+  // document.getElementById("dcount").innerText = cartData.length;
+let userDetails = JSON.parse(localStorage.getItem("userInfo")) || null
+let userId = userDetails.user._id
+let cartObj
+
+
+async function getCart(){
+    try{
+        let response= await fetch(`http://localhost:2345/cart/${userId}`)
+         cartObj = await response.json();
+       let cartData = cartObj.products
+        let cartCount = 0;
+    for(let i=0; i<cartData.length;i++){
+        cartCount+=cartData[i].quantity
+    }
+    document.getElementById("dcount").innerText = cartCount
+        
+    }
+    catch(e){
+        console.log("e:",e)
+    }
+}
+
+getCart()
 </script>
