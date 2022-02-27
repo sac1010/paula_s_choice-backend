@@ -56,7 +56,7 @@ async function removeItems() {
     // console.log(prodId);
   
     const result = await fetch("/cart/removeitems", {
-      method: "POST",
+      method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
