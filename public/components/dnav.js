@@ -25,7 +25,7 @@ function navbar(){
         </button>
     </div>
     <div class="dpaula">
-        <a href="./index">
+        <a href="/src/index.html">
         <p id="goupside">PAULA'S CHOICE</p>
         <h3>SKINCARE</h3>
     </a>
