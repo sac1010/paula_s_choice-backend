@@ -15,11 +15,11 @@ router.get("/process", async (req, res) => {
 
 router.delete("/process", async (req, res) => {
   try{
-    const product =await Products.deleteMany(req.body._id)
+    const items =await Products.deleteMany(req.body._id)
     return res.render("ejs/Complete");
   }
   catch(err){
-    return res.status(400).send(user)
+    return res.status(400).send(items)
   }
   
 });
