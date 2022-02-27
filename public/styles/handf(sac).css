@@ -42,6 +42,7 @@
     color: black;
 }
 .dpaula{
+    margin-bottom: 15px;
     margin-left: 25%;
 }
 .dpaula>a{
@@ -55,7 +56,7 @@
 }
 .dpaula>a>h3{
     text-align: center;
-    margin-top: -24px;
+    margin-top: -15px;
     letter-spacing:8px;
     font-size: 15px;
 }
