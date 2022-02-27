@@ -309,6 +309,9 @@ var Aindividual=JSON.parse(localStorage.getItem("paulasChoice"));
         let userId = userDetails.user._id
         let productId = Aindividual[0]._id || null
         let quantity = +(document.getElementById("Aquantityselect").value)
+        if(!userId){
+            alert("please login to add items to cart")
+        }
         console.log(productId)
         console.log(userId)
         addToCart()

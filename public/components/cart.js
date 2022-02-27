@@ -1,5 +1,9 @@
 let userDetails = JSON.parse(localStorage.getItem("userInfo")) || null
-let userId = userDetails.user._id
+console.log(userDetails)
+let userId = userDetails.user._id || null
+if(userId== undefined)(
+    alert("please login")
+)
 let subtotal
 let estTotal
 
@@ -24,7 +28,7 @@ getCart()
 
 
 function displayCart(cartData){
-    if(cartData.length===0){
+    if(cartData.length===0 ){
         document.getElementById("main").style.display = "none"
         document.getElementById("emptyAlert").style.display = "block"
     }
