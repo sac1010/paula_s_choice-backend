@@ -83,7 +83,14 @@ cartData.map(function(elem, index){
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
-    <option value="5">5</option>`
+    <option value="5">5</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>`
     let num = elem.productId.price
     qty.value = +(elem.quantity) || 1;
     title.innerText  = elem.productId.about
@@ -98,6 +105,7 @@ cartData.map(function(elem, index){
     mixDiv.append(top, bottom)
     mainDiv.append(img, titleAndPrice, size, mixDiv)
     document.getElementById("container").append(hr,mainDiv)
+    qty.disabled = true
     qty.addEventListener("change", function(){
         // elem.qty = qty.value
         // localStorage.setItem("cartData", JSON.stringify(cartData))
@@ -406,5 +414,7 @@ document.getElementById("checkout").addEventListener("click", ()=>{
     window.location.href = '/Shipping'
 
 })
+
+
 
 
