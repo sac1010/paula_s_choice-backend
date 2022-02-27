@@ -1,5 +1,5 @@
 document.querySelector("#Rmyform").addEventListener("submit",addresspart)
-  //var data=JSON.parse(localStorage.getItem("addressdata"))||[];
+  var data=JSON.parse(localStorage.getItem("addressdata"))||[];
 
 //    var button = document.querySelector("#btns").addEventListener("click",function(){
 //        window.location.href="/Payment"
