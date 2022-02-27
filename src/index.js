@@ -104,8 +104,9 @@ app.get("/xyz", (req, res) => {
 })
 
 
+const port = process.env.PORT || 2345
 
-app.listen(2345, async()=>{
+app.listen(port, async()=>{
     try{
         await connect()
         console.log("listening on port 2345")
