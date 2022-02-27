@@ -1,3 +1,10 @@
+//code for cart details
+let userDetails = JSON.parse(localStorage.getItem("userInfo")) || null
+let userId = userDetails.user._id
+let cartObj
+
+
+
 document.querySelector("#Rmyform").addEventListener("submit",addorder)
 //var orderdata=JSON.parse(localStorage.getItem("paymentdata"))||[]
 function addorder(event){
@@ -21,10 +28,10 @@ function addorder(event){
         }
       }
     
-      removeItems()
+     
     
     
-      window.location.href = '/Review';
+      
     // if(cardnumber=="" || cardnumber.length!=16){
     //     alert("Error")
     // }
@@ -45,31 +52,28 @@ function addorder(event){
     // };
     // orderdata.push(object)
     // localStorage.setItem("paymentdata",JSON.stringify(orderdata))
+    removeItems()
+    window.location.href = '/Review';
     
 }
 async function removeItems() {
-
-    const userObj = JSON.parse(localStorage.getItem("token"));
-    const userId = userObj.id;
-  
-    // console.log(userId);
-    // console.log(prodId);
-  
-    const result = await fetch("/cart/removeitems", {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        userId
-      }),
-    }).then((res) => res.json());
+ try{
+  const result = await fetch("http://localhost:2345/payment", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      userId
+    }),
+  })
+ }catch(e){
+   console.log(e.message)
+ }
 }
 
-//code for cart details
-let userDetails = JSON.parse(localStorage.getItem("userInfo")) || null
-let userId = userDetails.user._id
-let cartObj
+
+
 
 
 async function getCart(){

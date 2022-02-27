@@ -1,26 +1,18 @@
 const express = require("express");
-const { findByIdAndDelete, deleteMany } = require("../models/cart.model");
-
+const Cart = require("../models/cart.model")
 const router = express.Router();
-const Products= require("../models/products.model")
-router.get("/", async (req, res) => {
-  return res.render("ejs/payment", {});
-});
 
-module.exports = router;
-
-router.get("/process", async (req, res) => {
-  return res.render("ejs/Complete");
-});
-
-router.delete("/process", async (req, res) => {
+router.post("/", async(req, res)=>{
+  userId = req.body.userId
   try{
-    const product =await Products.deleteMany(req.body._id)
-    return res.render("ejs/Complete");
+    let cart = await Cart.findOneAndDelete({userId}).lean().exec() 
+    res.status(200).send("deleted cart")
+  }catch(e){
+    res.status(500).send(e.message)
   }
-  catch(err){
-    return res.status(400).send(user)
-  }
+ 
   
-});
+})
+
+module.exports = router
 
