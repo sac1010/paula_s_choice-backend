@@ -45,6 +45,10 @@ function addresspart(event){
 }
 
 
+localStorage.setItem("addressdata",JSON.stringify(data))
+
+
+
 //code for cart details
 let userDetails = JSON.parse(localStorage.getItem("userInfo")) || null
 let userId = userDetails.user._id

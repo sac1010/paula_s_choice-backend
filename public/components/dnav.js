@@ -31,7 +31,7 @@ function navbar(){
     </a>
     </div>
     <div class="dsearch">
-        <input type="text" id="dsrch" placeholder="Search for skin care">
+        <input type="text" id="dsrch" placeholder="Search products">
         <button id="dsym">
             <i class="fas fa-search"></i>
         </button>

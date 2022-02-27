@@ -61,7 +61,7 @@ a:hover{
     color: black                        ;
 }
 .dpaula{
-    margin-left: 330px;
+    margin-left: 250px;
     font-size: 14px;
 }
 .dpaula>a{
@@ -95,7 +95,7 @@ a:hover{
 }
 .dsearch{
     margin-left: 9%;
-    width: 200px;
+    width: 180px;
     height: 37%;
     border: 2px solid rgb(213,216,220);
     margin-top: 35px;

@@ -83,13 +83,20 @@ cartData.map(function(elem, index){
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
-    <option value="5">5</option>`
+    <option value="5">5</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>`
     let num = elem.productId.price
     qty.value = +(elem.quantity) || 1;
     title.innerText  = elem.productId.about
     size.innerText = Math.ceil(Math.random()*7)+" "+"oz";
     size.style.marginBottom="40px"
-    total.innerText = `$${num*(elem.productId.qty||1)}`
+    total.innerText = `$${num*(elem.quantity||1)}`
     img.src = elem.productId.img;
     price.innerText = `$${num}`
     titleAndPrice.append(title, price)
@@ -98,6 +105,7 @@ cartData.map(function(elem, index){
     mixDiv.append(top, bottom)
     mainDiv.append(img, titleAndPrice, size, mixDiv)
     document.getElementById("container").append(hr,mainDiv)
+    qty.disabled = true
     qty.addEventListener("change", function(){
         // elem.qty = qty.value
         // localStorage.setItem("cartData", JSON.stringify(cartData))
@@ -407,4 +415,28 @@ document.getElementById("checkout").addEventListener("click", ()=>{
 
 })
 
+
+nameApnd()
+function nameApnd(){
+    let userData = JSON.parse(localStorage.getItem("userInfo")) || null;
+    if(userData){
+      let uName = document.getElementById("user");
+      uName.innerHTML = userData.user.firstName;
+      usrName.innerText = userData.user.firstName
+      ls.style.display = "none"
+      lo.style.display = "block"
+      lo.style.marginTop = "-10px"
+      lo.style.color = "rgb(88,124,148)"
+      lo.onclick = ()=>{
+        logOut()
+      }
+    }
+    // lo.onclick = logOut()
+}
+function logOut(){
+  ls.style.display = "block"
+  lo.style.display = "none"
+  localStorage.setItem("userInfo",null)
+  window.location.reload()
+}
 
