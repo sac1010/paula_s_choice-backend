@@ -1,3 +1,10 @@
+//code for cart details
+let userDetails = JSON.parse(localStorage.getItem("userInfo")) || null
+let userId = userDetails.user._id
+let cartObj
+
+
+
 document.querySelector("#Rmyform").addEventListener("submit",addorder)
 //var orderdata=JSON.parse(localStorage.getItem("paymentdata"))||[]
 function addorder(event){
@@ -21,10 +28,10 @@ function addorder(event){
         }
       }
     
-      removeItems()
+     
     
     
-      window.location.href = '/Review';
+      
     // if(cardnumber=="" || cardnumber.length!=16){
     //     alert("Error")
     // }
@@ -45,33 +52,48 @@ function addorder(event){
     // };
     // orderdata.push(object)
     // localStorage.setItem("paymentdata",JSON.stringify(orderdata))
+    removeItems()
+    window.location.href = '/Review';
     
 }
 async function removeItems() {
-
-    const userObj = JSON.parse(localStorage.getItem("token"));
-    const userId = userObj.id;
-  
-    // console.log(userId);
-    // console.log(prodId);
-  
-    const result = await fetch("/cart/removeitems", {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        userId
-      }),
-    }).then((res) => res.json());
+ try{
+  const result = await fetch("http://localhost:2345/payment", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      userId
+    }),
+  })
+ }catch(e){
+   console.log(e.message)
+ }
 }
 
-//code for cart details.............................................................................................................
-let cartData = JSON.parse(localStorage.getItem("cartData"))  || []
-console.log(cartData)
 
 
-displayCart(cartData)
+
+
+async function getCart(){
+    try{
+        let response= await fetch(`http://localhost:2345/cart/${userId}`)
+         cartObj = await response.json();
+       let cartData = cartObj.products
+       console.log(cartData)
+       document.getElementById("cartNum").innerText = `${cartData.length} items`
+        displayCart(cartData)
+    }
+    catch(e){
+        console.log("e:",e)
+    }
+}
+
+getCart()
+
+
+
 
 let subtotal = JSON.parse(localStorage.getItem("subTotal"))
 let estTotal = JSON.parse(localStorage.getItem("estTotal"))
@@ -80,7 +102,7 @@ document.getElementById("subtotal").innerText = `$${subtotal}`
 document.getElementById("estTotal").innerText = `$${estTotal}`
 document.getElementById("estTotal1").innerText = `$${estTotal}`
 document.getElementById("shipping").innerText = `$${shipping}`
-document.getElementById("cartNum").innerText = `${cartData.length} items`
+
 function displayCart(data){
 data.forEach(elem => {
    let mainDiv =  document.createElement("div")
@@ -88,15 +110,15 @@ data.forEach(elem => {
    let img = document.createElement("img")
    let mix =document.createElement("div");
    let price = document.createElement("div");
-   img.src = elem.img
-   price.innerText = elem.price;
+   img.src = elem.productId.img
+   price.innerText = elem.productId.price;
    let title = document.createElement("div");
    let size = document.createElement("div");
    let qty = document.createElement("div");
 
 
-   title.innerText = elem.about
-    qty.innerText = `qty: ${elem.qty || 1}`;
+   title.innerText = elem.productId.about
+    qty.innerText = `qty: ${elem.productId.qty || 1}`;
     size.innerText = "size: "+ Math.ceil(Math.random()*7)+" "+"oz"
    mix.append(title, size, qty)
    mainDiv.append(img, mix, price)
