@@ -43,11 +43,29 @@ function addresspart(event){
 
 
 //code for cart details
-let cartData = JSON.parse(localStorage.getItem("cartData"))  || []
-console.log(cartData)
+let userDetails = JSON.parse(localStorage.getItem("userInfo")) || null
+let userId = userDetails.user._id
+let cartObj
 
 
-displayCart(cartData)
+async function getCart(){
+    try{
+        let response= await fetch(`http://localhost:2345/cart/${userId}`)
+         cartObj = await response.json();
+       let cartData = cartObj.products
+       console.log(cartData)
+       document.getElementById("cartNum").innerText = `${cartData.length} items`
+        displayCart(cartData)
+    }
+    catch(e){
+        console.log("e:",e)
+    }
+}
+
+getCart()
+
+
+
 
 let subtotal = JSON.parse(localStorage.getItem("subTotal"))
 let estTotal = JSON.parse(localStorage.getItem("estTotal"))
@@ -56,7 +74,7 @@ document.getElementById("subtotal").innerText = `$${subtotal}`
 document.getElementById("estTotal").innerText = `$${estTotal}`
 document.getElementById("estTotal1").innerText = `$${estTotal}`
 document.getElementById("shipping").innerText = `$${shipping}`
-document.getElementById("cartNum").innerText = `${cartData.length} items`
+
 function displayCart(data){
 data.forEach(elem => {
    let mainDiv =  document.createElement("div")
@@ -64,15 +82,15 @@ data.forEach(elem => {
    let img = document.createElement("img")
    let mix =document.createElement("div");
    let price = document.createElement("div");
-   img.src = elem.img
-   price.innerText = elem.price;
+   img.src = elem.productId.img
+   price.innerText = elem.productId.price;
    let title = document.createElement("div");
    let size = document.createElement("div");
    let qty = document.createElement("div");
 
 
-   title.innerText = elem.about
-    qty.innerText = `qty: ${elem.qty || 1}`;
+   title.innerText = elem.productId.about
+    qty.innerText = `qty: ${elem.productId.qty || 1}`;
     size.innerText = "size: "+ Math.ceil(Math.random()*7)+" "+"oz"
    mix.append(title, size, qty)
    mainDiv.append(img, mix, price)
