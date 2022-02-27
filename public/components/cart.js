@@ -416,5 +416,27 @@ document.getElementById("checkout").addEventListener("click", ()=>{
 })
 
 
-
+nameApnd()
+function nameApnd(){
+    let userData = JSON.parse(localStorage.getItem("userInfo")) || null;
+    if(userData){
+      let uName = document.getElementById("user");
+      uName.innerHTML = userData.user.firstName;
+      usrName.innerText = userData.user.firstName
+      ls.style.display = "none"
+      lo.style.display = "block"
+      lo.style.marginTop = "-10px"
+      lo.style.color = "rgb(88,124,148)"
+      lo.onclick = ()=>{
+        logOut()
+      }
+    }
+    // lo.onclick = logOut()
+}
+function logOut(){
+  ls.style.display = "block"
+  lo.style.display = "none"
+  localStorage.setItem("userInfo",null)
+  window.location.reload()
+}
 
