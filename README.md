@@ -2,7 +2,12 @@
 <h4>Project Clone of https://www.paulaschoice.com/ site<h4>
 <h4>In this project we have tried to make a look alike clone of Paula's Choice. With our efforts and the technology stack, that we have learned till now in Unit-4 in Masai School, we were able to clone the front end, integrated it with backend and added similar looks and features.<h4>
   
+<h1>Home Page<h1>
+<h1>When the user visits they see this page, it consists of beautiful ui components and animations.<h1>
 <img src="https://i.ibb.co/BrFBHjX/home1.png" alt="home1" border="0">
+	
+<h1><h1>
+<h1><h1>
 <img src="https://i.ibb.co/djf5PJQ/home2.png" alt="home2" border="0">
 <img src="https://i.ibb.co/L5LC96w/home3.png" alt="home3" border="0">
 <img src="https://i.ibb.co/r0WSSJW/home4.png" alt="home4" border="0">
