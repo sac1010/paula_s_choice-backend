@@ -8,7 +8,9 @@
 	
 <p>Home Page<p>
 <img src="https://i.ibb.co/djf5PJQ/home2.png" alt="home2" border="0">
+<p>Home Page<p>
 <img src="https://i.ibb.co/L5LC96w/home3.png" alt="home3" border="0">
+<p>Home Page Footer<p>
 <img src="https://i.ibb.co/r0WSSJW/home4.png" alt="home4" border="0">
 <img src="https://i.ibb.co/txJTFYy/pay1.png" alt="pay1" border="0">
 <img src="https://i.ibb.co/xHQk0Cf/pay2.png" alt="pay2" border="0">
