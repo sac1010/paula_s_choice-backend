@@ -12,9 +12,13 @@
 <img src="https://i.ibb.co/L5LC96w/home3.png" alt="home3" border="0">
 <p>Home Page Footer<p>
 <img src="https://i.ibb.co/r0WSSJW/home4.png" alt="home4" border="0">
+<p>Shipping Address Page<p>
 <img src="https://i.ibb.co/txJTFYy/pay1.png" alt="pay1" border="0">
+<p>Payment Page<p>
 <img src="https://i.ibb.co/xHQk0Cf/pay2.png" alt="pay2" border="0">
+<p>Cart Page<p>
 <img src="https://i.ibb.co/jbq4yXv/payment.png" alt="payment" border="0">
+<p>Product Page<p>
 <img src="https://i.ibb.co/0XRKVhk/prod.png" alt="prod" border="0">
 	
 	
